@@ -53,6 +53,8 @@
 //imports
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { useAuthStore } from '@/store/index';
+
 
 //create ref instances of username and password
 const username=ref('');
@@ -62,6 +64,7 @@ const password=ref('');
 const savedAccounts=JSON.parse(localStorage.getItem('accounts'))||[];
 
 const router=useRouter();
+const authStore = useAuthStore();
 
 const login=ref({
     loginSuccess:false,
@@ -75,8 +78,9 @@ const loginAction=()=>{
     
     if(foundAccount){
         login.value.loginSuccess=true;
+        authStore.setUser({ username: username.value });
         setTimeout(()=>{
-        router.push('/createAccount'); ///should take to quiz site
+        router.push('/quizContent'); ///should take to quiz site
        },3000) 
        
     }else{
