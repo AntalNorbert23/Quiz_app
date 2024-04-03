@@ -1,6 +1,6 @@
 
 <template>
-    <div class="container font-serif">
+    <div class="font-serif">
         <router-view/>
     </div>
 </template>
