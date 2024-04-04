@@ -10,11 +10,12 @@
              </button>
              <div class="relative h-full flex items-center" @click="toggleLogOff">
                <button class="me-4 px-4 py-2 text-white">
-                 {{authStore.getUsername}} <span :class="{ 'transform rotate-180': isArrowRotated }" class="fa fa-chevron-circle-down text-center ms-1"></span>
+                 {{authStore.getUsername}} <span :class="{ 'rotate-180': isArrowRotated, 'rotate-back': !isArrowRotated }" class="fa fa-chevron-circle-down text-center ms-1"></span>
                </button>
                <transition
-                           enter-to-class="animate__animated animate__fadeInDown"
+                           enter-active-class="animate__animated animate__fadeInDown"
                            leave-active-class="animate__animated animate__fadeOutUp"
+                           
                >
                  <div class="absolute top-full left-5 -ml-2 bg-slate-600 rounded-b-lg flex items-start"
                       v-if="showLogOff"
@@ -52,6 +53,11 @@ const toggleLogOff=()=>{
 
 <style scoped>
   .rotate-180 {
+    transform: rotate(180deg);
     transition: transform 0.5s ease;
   }
+  .rotate-back {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
 </style>
