@@ -47,6 +47,7 @@
             </button> 
         </div> 
   </div> 
+  <loginFallback v-if="isLoading" />
 </template>
 
 <script setup>
@@ -54,6 +55,7 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '@/store/index';
+import  loginFallback  from './loginFallback.vue';
 
 
 //create ref instances of username and password
@@ -65,6 +67,7 @@ const savedAccounts=JSON.parse(localStorage.getItem('accounts'))||[];
 
 const router=useRouter();
 const authStore = useAuthStore();
+const isLoading = ref(false);
 
 const login=ref({
     loginSuccess:false,
@@ -77,10 +80,12 @@ const loginAction=()=>{
     const foundAccount=savedAccounts.find(account=>account.username === username.value && account.password === password.value);
     
     if(foundAccount){
+        isLoading.value = true;
         login.value.loginSuccess=true;
         authStore.setUser({ username: username.value });
         setTimeout(()=>{
         router.push('/quizContent'); ///should take to quiz site
+        isLoading.value = false;
        },3000) 
        
     }else{
