@@ -52,6 +52,7 @@
         </button> 
     </div> 
 </div> 
+<accountFallback v-if="isLoading" />
 </template>
 
 
@@ -59,11 +60,13 @@
 //imports
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import  accountFallback from './accountFallback.vue';
 
 //create ref instances of username and password
 const username=ref('');
 const password=ref('');
 const verifyPassword=ref("");
+const isLoading = ref(false);
 
 //get accounts from localstorage
 const existingAccounts=JSON.parse(localStorage.getItem('accounts'))||[];
@@ -96,6 +99,7 @@ const createAccount=()=>{
         }else if(alreadyExists){
                 createdAccount.value.errorMessage="The username already exists!";
         }else{
+            isLoading.value = true;
             createdAccount.value.userCreated=true;
             const newAccount={
                             username:username.value,
@@ -110,6 +114,7 @@ const createAccount=()=>{
           
         //redirect to login page after a bit of time
             setTimeout(()=>{
+                isLoading.value = false;
                router.push('/');
             },4000)
         } 
