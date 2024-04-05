@@ -2,9 +2,23 @@
      <header class="flex bg-slate-600 h-20 justify-center items-center ">
          <div class="flex-1 ps-8 text-3xl">Quizes application</div>
          <div class="flex justify-center items-center h-full">
-             <button class=' me-4 px-4 py-2 rounded-md bg-header text-white border border-white hover:text-black hover:cursor-pointer hover:bg-white'>
-                Personal data
-             </button>
+             <div class="relative h-full flex items-center ">
+               <button class=' me-4 px-4 py-2 rounded-md bg-header text-white border border-white hover:text-black hover:cursor-pointer hover:bg-white'
+                       @click="showPersonalData"
+               >
+                  Personal data
+               </button>
+               <transition  enter-active-class="animate__animated animate__zoomIn"
+                            leave-active-class="animate__animated animate__zoomOut"
+               >
+                 <div class="absolute bottom-[-40px] bg-slate-600 w-32 p-2 rounded-b-lg"
+                      v-if="showPersData"
+                 >
+                      <p class="m-0 text-xs text-white">Time: </p>
+                      <p class="m-0 text-xs text-white pt-1">Total time: </p>
+                 </div>
+               </transition>
+             </div>
              <button class=' me-4 px-4 py-2 rounded-md bg-header text-white border border-white hover:text-black hover:cursor-pointer hover:bg-white'>
                 Language <span class="fa fa-chevron-circle-down text-center ms-1"></span>
              </button>
@@ -37,6 +51,7 @@ const authStore = useAuthStore();
 const router=useRouter();
 const showLogOff=ref(false);
 const isArrowRotated = ref(false);
+const showPersData=ref(false);
 
 const logOff=()=>{
     setTimeout(() => {
@@ -48,6 +63,10 @@ const logOff=()=>{
 const toggleLogOff=()=>{
       showLogOff.value=!showLogOff.value;
       isArrowRotated.value = !isArrowRotated.value;
+}
+
+const showPersonalData=()=>{
+    showPersData.value=!showPersData.value;
 }
 </script>
 
