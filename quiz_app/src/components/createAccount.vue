@@ -83,20 +83,24 @@ const createdAccount=ref({
 const createAccount=()=>{
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     createdAccount.value.userCreated=false;
-    createdAccount.value.userCreatedTextShowed=true;
     setTimeout(() => {
         createdAccount.value.userCreatedTextShowed=false;
     }, 6000);
 
     if(username.value !=="" && password.value !== "" && verifyPassword.value!==""){
+       
         const alreadyExists=existingAccounts.some(account=>account.username===username.value);
         if(password.value!==verifyPassword.value){
+            createdAccount.value.userCreatedTextShowed=true;
                 createdAccount.value.errorMessage="Passwords don't match!";
         }else if(/\s/.test(username.value)){
+                createdAccount.value.userCreatedTextShowed=true;
                 createdAccount.value.errorMessage="Username cannot contain whitespace!";
         }else if(!passwordRegex.test(password.value)){
+                createdAccount.value.userCreatedTextShowed=true;
                 createdAccount.value.errorMessage = "Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character.";
         }else if(alreadyExists){
+                createdAccount.value.userCreatedTextShowed=true;
                 createdAccount.value.errorMessage="The username already exists!";
         }else{
             isLoading.value = true;
@@ -111,14 +115,20 @@ const createAccount=()=>{
                 username.value='';
                 password.value='';
                 verifyPassword.value='';
-          
+            setTimeout(() => {
+                isLoading.value = false;
+                setTimeout(() => {
+                    createdAccount.value.userCreatedTextShowed=true;
+                },0);
+            }, 4000);
         //redirect to login page after a bit of time
             setTimeout(()=>{
-                isLoading.value = false;
+               
                router.push('/');
-            },4000)
+            },5000)
         } 
      }else{
+        createdAccount.value.userCreatedTextShowed=true;
         createdAccount.value.errorMessage="The fields can't be empty!" ;
      }     
 }

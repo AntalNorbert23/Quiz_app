@@ -76,7 +76,6 @@ const login=ref({
 
 //login function that checks if there is the given account
 const loginAction=()=>{
-    login.value.loginTextShowed=true;
     const foundAccount=savedAccounts.find(account=>account.username === username.value && account.password === password.value);
     
     if(foundAccount){
@@ -85,10 +84,16 @@ const loginAction=()=>{
         authStore.setUser({ username: username.value });
         setTimeout(()=>{
         router.push('/quizContent'); ///should take to quiz site
-        isLoading.value = false;
        },3000) 
+       setTimeout(() => {
+            isLoading.value = false;
+            setTimeout(() => {
+                login.value.loginTextShowed=true;
+            }, 0);
+       }, 2000);
        
     }else{
+        login.value.loginTextShowed=true;
         login.value.loginSuccess=false;
         setTimeout(() => {
             login.value.loginTextShowed=false;
