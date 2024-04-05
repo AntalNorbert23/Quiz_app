@@ -3,7 +3,8 @@ import { defineStore } from 'pinia';
 export const useAuthStore = defineStore({
   id: 'auth',
   state: () => ({
-    user: JSON.parse(localStorage.getItem('user'))||null
+    user: JSON.parse(localStorage.getItem('user'))||null,
+    selectedComponent: 'tasks',
   }),
   actions: {
     setUser(user) {
@@ -13,6 +14,9 @@ export const useAuthStore = defineStore({
     logout(){
         this.user=null;
         localStorage.removeItem('user');
+    },
+    setSelectedComponent(component) {
+      this.selectedComponent = component;
     },
   },
   getters: {
