@@ -1,6 +1,6 @@
 <template>
      <header class="flex bg-slate-600 h-20 justify-center items-center ">
-         <div class="flex-1 ps-8 text-3xl">Quizes application</div>
+         <div class="flex-1 ps-8 text-3xl hover:cursor-pointer" @click="pushToQuiz">Quizes application</div>
          <div class="flex justify-center items-center h-full">
              <div class="relative h-full flex items-center ">
                <button class=' me-4 px-4 py-2 rounded-md bg-header text-white border border-white hover:text-black hover:cursor-pointer hover:bg-white'
@@ -68,6 +68,11 @@ const toggleLogOff=()=>{
 const showPersonalData=()=>{
     showPersData.value=!showPersData.value;
 }
+
+const pushToQuiz=()=>{
+      router.push('/quizContent');
+}
+
 </script>
 
 <style scoped>
