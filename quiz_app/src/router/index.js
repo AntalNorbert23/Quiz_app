@@ -19,9 +19,24 @@ const router = createRouter({
     {
       path:'/quizContent',
       name:'quizContent',
-      component:quizContent
+      component:quizContent,
+      meta: { requiresAuth: true } 
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.requiresAuth) { 
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (user) {
+      next();
+    } else {
+      next({ name: 'home' }); 
+    }
+  } else {
+    next(); 
+   
+  }
+});
 
 export default router
