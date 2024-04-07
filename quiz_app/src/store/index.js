@@ -4,8 +4,7 @@ export const useAuthStore = defineStore({
   id: 'auth',
   state: () => ({
     user: JSON.parse(localStorage.getItem('user'))||null,
-    selectedComponent: 'tasks',
-    selectedTask:null,
+    selectedTaskComponent: 'tasks',
   }),
   actions: {
     setUser(user) {
@@ -16,16 +15,8 @@ export const useAuthStore = defineStore({
         this.user=null;
         localStorage.removeItem('user');
     },
-    setSelectedComponent(component) {
-      this.selectedComponent = component;
-      this.selectedTask=component;
-    },
-    selectTask(task) {
-      this.selectedTask = task;
-      this.selectedComponent = task;
-    },
-    deselectTask() {
-      this.selectedTask = null;
+    selectTaskComponent(component) {
+      this.selectedTaskComponent = component;
     },
   },
   getters: {

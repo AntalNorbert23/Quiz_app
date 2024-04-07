@@ -2,6 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Login from '@/components/login.vue';
 import createAccount from '@/components/createAccount.vue';
 import quizContent from '@/components/quizContent.vue';
+import tasks from '@/components/tasks.vue';
+import claimTask from '@/components/claimTask.vue';
+import quizQuestions from '@/components/quizQuestions.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,7 +23,24 @@ const router = createRouter({
       path:'/quizContent',
       name:'quizContent',
       component:quizContent,
-      meta: { requiresAuth: true } 
+      meta: { requiresAuth: true }, 
+      children: [
+        {
+          path: 'tasks',
+          name: 'tasks',
+          component: tasks
+        },
+        {
+          path: 'claimTask',
+          name: 'claimTask',
+          component: claimTask
+        },
+        {
+          path: 'quizQuestions',
+          name: 'quizQuestions',
+          component: quizQuestions
+        }
+      ]
     }
   ]
 })

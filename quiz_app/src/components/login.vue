@@ -83,7 +83,7 @@ const loginAction=()=>{
         login.value.loginSuccess=true;
         authStore.setUser({ username: username.value });
         setTimeout(()=>{
-        router.push('/quizContent'); ///should take to quiz site
+        router.push('/quizContent/tasks'); ///should take to quiz site
        },3000) 
        setTimeout(() => {
             isLoading.value = false;
