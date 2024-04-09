@@ -4,7 +4,7 @@
         <div>
             <sideNav/>
         </div>
-        <div class="bg-orange-800 flex-1">
+        <div class="flex-1">
             <router-view/>  
          </div>
     </main>

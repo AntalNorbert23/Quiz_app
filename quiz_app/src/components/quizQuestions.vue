@@ -1,28 +1,54 @@
 <template>
   <div>
-      <h2>Quiz questions</h2>
+      <h2 class="text-4xl p-3">Quiz questions</h2>
       <div v-if="questions.length">
           <div v-for="(question,index) in questions" 
                :key="index"
-               v-show="currentIndex === index" 
+               v-show="currentIndex === index"
+               class="text-2xl flex flex-col items-center justify-center pt-3" 
           >
               <h3>{{ question.question }}</h3>
-              <ul>
+              <ul class="pt-3 pb-4">
                   <li v-for="(option,optionIndex) in question.options"
                       :key="optionIndex"
+                      class="flex items-center"
                   >
                       <input type="radio" :id="'option-'+ optionIndex"
                              :value="optionIndex"
                              v-model="selectedAnswers[index]"
                              @click="nextQuestionDelayed"
+                             class="pe-6 me-3 focus:outline-slate-600 focus-within:outline-slate-600 cursor-pointer"
                       >
                       <label :for="'option_' + optionIndex">{{ option }}</label>
-              </li>
+                </li>
               </ul>
           </div>
       </div>
       <div v-else>
           <p>No questions available</p>
+      </div>
+      <div class="flex justify-center pt-3">
+            <button class="fa fa-arrow-left cursor-pointer text-4xl hover:text-slate-400"
+                    @click="prevQuestion"
+                    :disabled="currentIndex === 0"
+            >
+            </button>
+            <button class="mx-6 px-3 py-2 border-slate-600 border-2 hover:bg-slate-400 hover:text-white hover:border-black">Submit Quiz</button>
+            <button class="fa fa-arrow-right cursor-pointer text-4xl hover:text-slate-400"
+                    @click="nextQuestion"
+                    :disabled="currentIndex === questions.length-1"
+            >
+            </button>
+      </div>
+      <div class="grid grid-cols-10 grid-rows-5 pt-8">
+          <div v-for="(question,index) in questions"
+               :key="index"
+               @click="jumptToQuestion(index)"
+               class="cursor-pointer mx-3 my-1 border-black border px-2 text-center hover:border-cyan-400"
+               :class="{ 'border-green-500': correctAnswers[index], 'border-red-500': correctAnswers[index] === false && currentIndex > index }"
+          >
+                {{ index+1 }}
+          </div>
       </div>
   </div>
 </template>
@@ -33,6 +59,7 @@
   const questions=ref([]);
   const selectedAnswers=ref([]);
   const currentIndex=ref(0);
+  const correctAnswers = ref(Array(questions.length).fill(null));
 
   //fetch the random json quiz sets
   const fetchQuizQuestions = async () =>{
@@ -67,11 +94,15 @@
   }
 
   //go automativally to the next question after an option was selected
-  const nextQuestionDelayed=()=>{
-      if(currentIndex.value<questions.value.length-1){
+  const nextQuestionDelayed = () => {
+      if(currentIndex.value < questions.value.length - 1){
           setTimeout(() => {
               currentIndex.value++;
           }, 200);
+          setTimeout(() => {
+              const prevIndex = currentIndex.value - 1;
+              correctAnswers.value[prevIndex] = selectedAnswers.value[prevIndex] === questions.value[prevIndex].correct_answer;
+          }, 400);
       }
   }
 
