@@ -46,6 +46,7 @@
 <script setup>
     import { useRouter } from 'vue-router';
     import { useAuthStore } from '@/store/index';
+    import { onMounted } from 'vue';
 
     const authStore = useAuthStore();
 
@@ -59,4 +60,13 @@
         router.push({ name: 'tasks' });
         authStore.selectedTaskComponent='tasks';
     }
+
+    //temporary refresh bug fixer 
+    const saveRoute = () => {
+        localStorage.setItem('lastVisitedRoute', 'tasks');
+    };
+
+    onMounted(() => {
+        saveRoute();
+    });
 </script>

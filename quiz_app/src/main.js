@@ -13,3 +13,10 @@ app.use(router)
 app.use(pinia)
 app.mount('#app')
 
+//temporary solution for refresh bug
+const lastVisitedRoute = localStorage.getItem('lastVisitedRoute');
+
+if (lastVisitedRoute) {
+  router.push({ name: lastVisitedRoute }).catch(() => {});
+}
+

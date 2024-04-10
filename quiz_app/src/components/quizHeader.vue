@@ -71,6 +71,7 @@ const showPersonalData=()=>{
 
 const pushToQuiz=()=>{
       router.push('/quizContent/tasks');
+      authStore.selectedTaskComponent='tasks';
 }
 
 </script>
