@@ -1,0 +1,305 @@
+{
+    "questions": [
+      {
+        "id": "51",
+        "question": "Who is the author of 'The Chronicles of Narnia' series?",
+        "options": ["J.R.R. Tolkien", "C.S. Lewis", "J.K. Rowling", "J.D. Salinger"],
+        "correct_answer": 1
+      },
+      {
+        "id": "52",
+        "question": "What is the chemical symbol for potassium?",
+        "options": ["Pt", "Po", "K", "P"],
+        "correct_answer": 2
+      },
+      {
+        "id": "53",
+        "question": "What is the largest moon in the solar system?",
+        "options": ["Ganymede", "Titan", "Callisto", "Io"],
+        "correct_answer": 0
+      },
+      {
+        "id": "54",
+        "question": "Who painted 'The Persistence of Memory'?",
+        "options": ["Salvador Dalí", "Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci"],
+        "correct_answer": 0
+      },
+      {
+        "id": "55",
+        "question": "What is the chemical symbol for tin?",
+        "options": ["Tn", "Ti", "Sn", "Ta"],
+        "correct_answer": 2
+      },
+      {
+        "id": "56",
+        "question": "What is the deepest part of the ocean?",
+        "options": ["Challenger Deep", "Puerto Rico Trench", "Mariana Trench", "Tonga Trench"],
+        "correct_answer": 0
+      },
+      {
+        "id": "57",
+        "question": "Who wrote 'The Odyssey'?",
+        "options": ["Homer", "Virgil", "Sophocles", "Euripides"],
+        "correct_answer": 0
+      },
+      {
+        "id": "58",
+        "question": "What is the chemical symbol for calcium?",
+        "options": ["Ca", "Co", "Cl", "Ce"],
+        "correct_answer": 0
+      },
+      {
+        "id": "59",
+        "question": "Which city is known as the City of Love?",
+        "options": ["Paris", "Venice", "Rome", "Prague"],
+        "correct_answer": 0
+      },
+      {
+        "id": "60",
+        "question": "Who is the protagonist of 'The Catcher in the Rye'?",
+        "options": ["Holden Caulfield", "Jay Gatsby", "Atticus Finch", "Huckleberry Finn"],
+        "correct_answer": 0
+      },
+      {
+        "id": "61",
+        "question": "What is the chemical symbol for nitrogen?",
+        "options": ["Ni", "Nt", "N", "Na"],
+        "correct_answer": 2
+      },
+      {
+        "id": "62",
+        "question": "What is the largest desert in North America?",
+        "options": ["Sahara Desert", "Mojave Desert", "Great Basin Desert", "Chihuahuan Desert"],
+        "correct_answer": 2
+      },
+      {
+        "id": "63",
+        "question": "Who wrote 'The Canterbury Tales'?",
+        "options": ["Geoffrey Chaucer", "William Shakespeare", "John Milton", "Dante Alighieri"],
+        "correct_answer": 0
+      },
+      {
+        "id": "64",
+        "question": "What is the chemical symbol for mercury?",
+        "options": ["Hg", "Me", "Mr", "Mg"],
+        "correct_answer": 0
+      },
+      {
+        "id": "65",
+        "question": "Which country is known as the Land of the Midnight Sun?",
+        "options": ["Norway", "Sweden", "Finland", "Iceland"],
+        "correct_answer": 0
+      },
+      {
+        "id": "66",
+        "question": "Who is the main character in 'The Lord of the Rings' series?",
+        "options": ["Frodo Baggins", "Harry Potter", "Bilbo Baggins", "Aragorn"],
+        "correct_answer": 0
+      },
+      {
+        "id": "67",
+        "question": "What is the chemical symbol for aluminum?",
+        "options": ["Al", "Au", "Am", "Ag"],
+        "correct_answer": 0
+      },
+      {
+        "id": "68",
+        "question": "What is the largest planet by mass in the solar system?",
+        "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+        "correct_answer": 0
+      },
+      {
+        "id": "69",
+        "question": "Who painted 'The Scream'?",
+        "options": ["Edvard Munch", "Pablo Picasso", "Vincent van Gogh", "Claude Monet"],
+        "correct_answer": 0
+      },
+      {
+        "id": "70",
+        "question": "What is the chemical symbol for sodium?",
+        "options": ["S", "Na", "N", "So"],
+        "correct_answer": 1
+      },
+      {
+        "id": "71",
+        "question": "What is the capital of Argentina?",
+        "options": ["Buenos Aires", "Santiago", "Montevideo", "Lima"],
+        "correct_answer": 0
+      },
+      {
+        "id": "72",
+        "question": "Who wrote 'The Iliad'?",
+        "options": ["Homer", "Virgil", "Sophocles", "Euripides"],
+        "correct_answer": 0
+      },
+      {
+        "id": "73",
+        "question": "What is the chemical symbol for neon?",
+        "options": ["Ne", "No", "Ni", "Na"],
+        "correct_answer": 0
+      },
+      {
+        "id": "74",
+        "question": "What is the highest waterfall in the world?",
+        "options": ["Angel Falls", "Niagara Falls", "Victoria Falls", "Iguazu Falls"],
+        "correct_answer": 0
+      },
+      {
+        "id": "75",
+        "question": "Who painted 'The Last Supper'?",
+        "options": ["Leonardo da Vinci", "Michelangelo", "Raphael", "Donatello"],
+        "correct_answer": 0
+      },
+      {
+        "id": "76",
+        "question": "What is the chemical symbol for phosphorus?",
+        "options": ["P", "Po", "Ph", "Ps"],
+        "correct_answer": 0
+      },
+      {
+        "id": "77",
+        "question": "Who wrote 'War and Peace'?",
+        "options": ["Leo Tolstoy", "Fyodor Dostoevsky", "Ivan Turgenev", "Anton Chekhov"],
+        "correct_answer": 0
+      },
+      {
+        "id": "78",
+        "question": "What is the chemical symbol for tungsten?",
+        "options": ["T", "Tu", "Tw", "W"],
+        "correct_answer": 3
+      },
+      {
+        "id": "79",
+        "question": "What is the largest carnivorous dinosaur?",
+        "options": ["Tyrannosaurus rex", "Spinosaurus", "Allosaurus", "Velociraptor"],
+        "correct_answer": 0
+      },
+      {
+        "id": "80",
+        "question": "Who composed 'The Four Seasons'?",
+        "options": ["Antonio Vivaldi", "Ludwig van Beethoven", "Johann Sebastian Bach", "Wolfgang Amadeus Mozart"],
+        "correct_answer": 0
+      },
+      {
+        "id": "81",
+        "question": "What is the chemical symbol for sulfur?",
+        "options": ["Su", "Sf", "S", "Sl"],
+        "correct_answer": 2
+      },
+      {
+        "id": "82",
+        "question": "What is the capital of Spain?",
+        "options": ["Madrid", "Barcelona", "Seville", "Valencia"],
+        "correct_answer": 0
+      },
+      {
+        "id": "83",
+        "question": "Who wrote 'The Picture of Dorian Gray'?",
+        "options": ["Oscar Wilde", "Edgar Allan Poe", "F. Scott Fitzgerald", "Virginia Woolf"],
+        "correct_answer": 0
+      },
+      {
+        "id": "84",
+        "question": "What is the chemical symbol for cobalt?",
+        "options": ["Cb", "Co", "Cl", "Cr"],
+        "correct_answer": 1
+      },
+      {
+        "id": "85",
+        "question": "What is the largest fish in the world?",
+        "options": ["Whale Shark", "Great White Shark", "Blue Whale", "Killer Whale"],
+        "correct_answer": 0
+      },
+      {
+        "id": "86",
+        "question": "Who composed 'Canon in D'?",
+        "options": ["Johann Pachelbel", "Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Johann Sebastian Bach"],
+        "correct_answer": 0
+      },
+      {
+        "id": "87",
+        "question": "What is the chemical symbol for radium?",
+        "options": ["Rd", "Ra", "R", "Rm"],
+        "correct_answer": 1
+      },
+      {
+        "id": "88",
+        "question": "What is the capital of Italy?",
+        "options": ["Rome", "Milan", "Florence", "Venice"],
+        "correct_answer": 0
+      },
+      {
+        "id": "89",
+        "question": "Who wrote 'Moby-Dick'?",
+        "options": ["Herman Melville", "Mark Twain", "Nathaniel Hawthorne", "Edgar Allan Poe"],
+        "correct_answer": 0
+      },
+      {
+        "id": "90",
+        "question": "What is the chemical symbol for zinc?",
+        "options": ["Zn", "Zi", "Ze", "Z"],
+        "correct_answer": 0
+      },
+      {
+        "id": "91",
+        "question": "What is the capital of Russia?",
+        "options": ["Moscow", "St. Petersburg", "Kiev", "Minsk"],
+        "correct_answer": 0
+      },
+      {
+        "id": "92",
+        "question": "Who wrote 'The Scarlet Letter'?",
+        "options": ["Nathaniel Hawthorne", "Herman Melville", "Edgar Allan Poe", "Ralph Waldo Emerson"],
+        "correct_answer": 0
+      },
+      {
+        "id": "93",
+        "question": "What is the chemical symbol for manganese?",
+        "options": ["M", "Mn", "Ma", "Mg"],
+        "correct_answer": 1
+      },
+      {
+        "id": "94",
+        "question": "What is the largest lizard in the world?",
+        "options": ["Komodo Dragon", "Nile Monitor", "Argentine Black and White Tegu", "Gila Monster"],
+        "correct_answer": 0
+      },
+      {
+        "id": "95",
+        "question": "Who composed 'Symphony No. 9'?",
+        "options": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Johann Sebastian Bach", "Franz Schubert"],
+        "correct_answer": 0
+      },
+      {
+        "id": "96",
+        "question": "What is the chemical symbol for barium?",
+        "options": ["B", "Ba", "Br", "Bl"],
+        "correct_answer": 1
+      },
+      {
+        "id": "97",
+        "question": "What is the capital of China?",
+        "options": ["Beijing", "Shanghai", "Hong Kong", "Guangzhou"],
+        "correct_answer": 0
+      },
+      {
+        "id": "98",
+        "question": "Who wrote 'The Grapes of Wrath'?",
+        "options": ["John Steinbeck", "Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain"],
+        "correct_answer": 0
+      },
+      {
+        "id": "99",
+        "question": "What is the chemical symbol for arsenic?",
+        "options": ["As", "Ar", "Ai", "Ac"],
+        "correct_answer": 0
+      },
+      {
+        "id": "100",
+        "question": "What is the largest spider by leg span?",
+        "options": ["Goliath Birdeater", "Brazilian Wandering Spider", "Huntsman Spider", "Black Widow"],
+        "correct_answer": 0
+      }
+    ]
+  }
+  

@@ -1,0 +1,305 @@
+{
+    "questions": [
+      {
+        "id": "101",
+        "question": "Who painted 'Guernica'?",
+        "options": ["Pablo Picasso", "Vincent van Gogh", "Salvador Dalí", "Claude Monet"],
+        "correct_answer": 0
+      },
+      {
+        "id": "102",
+        "question": "What is the chemical symbol for helium?",
+        "options": ["H", "He", "Hee", "Hm"],
+        "correct_answer": 1
+      },
+      {
+        "id": "103",
+        "question": "What is the smallest bone in the human body?",
+        "options": ["Stapes", "Femur", "Tibia", "Radius"],
+        "correct_answer": 0
+      },
+      {
+        "id": "104",
+        "question": "Who is the author of 'The Hunger Games' trilogy?",
+        "options": ["Suzanne Collins", "J.K. Rowling", "Stephenie Meyer", "Veronica Roth"],
+        "correct_answer": 0
+      },
+      {
+        "id": "105",
+        "question": "What is the chemical symbol for uranium?",
+        "options": ["Un", "Ur", "U", "Ul"],
+        "correct_answer": 2
+      },
+      {
+        "id": "106",
+        "question": "Which country is known as the Land of Smiles?",
+        "options": ["Thailand", "Vietnam", "Cambodia", "Laos"],
+        "correct_answer": 0
+      },
+      {
+        "id": "107",
+        "question": "Who wrote 'The Grapes of Wrath'?",
+        "options": ["John Steinbeck", "Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain"],
+        "correct_answer": 0
+      },
+      {
+        "id": "108",
+        "question": "What is the chemical symbol for helium?",
+        "options": ["H", "He", "Hee", "Hm"],
+        "correct_answer": 1
+      },
+      {
+        "id": "109",
+        "question": "What is the longest river in Europe?",
+        "options": ["Volga River", "Danube River", "Rhine River", "Seine River"],
+        "correct_answer": 0
+      },
+      {
+        "id": "110",
+        "question": "Who painted 'The Persistence of Memory'?",
+        "options": ["Salvador Dalí", "Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci"],
+        "correct_answer": 0
+      },
+      {
+        "id": "111",
+        "question": "What is the chemical symbol for radium?",
+        "options": ["Rd", "Ra", "R", "Rm"],
+        "correct_answer": 1
+      },
+      {
+        "id": "112",
+        "question": "Which planet is known as the Morning Star and Evening Star?",
+        "options": ["Venus", "Mars", "Mercury", "Jupiter"],
+        "correct_answer": 0
+      },
+      {
+        "id": "113",
+        "question": "Who wrote 'The Art of War'?",
+        "options": ["Sun Tzu", "Machiavelli", "Plato", "Napoleon Bonaparte"],
+        "correct_answer": 0
+      },
+      {
+        "id": "114",
+        "question": "What is the chemical symbol for platinum?",
+        "options": ["P", "Pl", "Pt", "Pm"],
+        "correct_answer": 2
+      },
+      {
+        "id": "115",
+        "question": "What is the capital of Turkey?",
+        "options": ["Istanbul", "Ankara", "Izmir", "Antalya"],
+        "correct_answer": 1
+      },
+      {
+        "id": "116",
+        "question": "Who composed 'Moonlight Sonata'?",
+        "options": ["Ludwig van Beethoven", "Johann Sebastian Bach", "Wolfgang Amadeus Mozart", "Franz Schubert"],
+        "correct_answer": 0
+      },
+      {
+        "id": "117",
+        "question": "What is the chemical symbol for osmium?",
+        "options": ["O", "Os", "Om", "Ol"],
+        "correct_answer": 1
+      },
+      {
+        "id": "118",
+        "question": "What is the largest island in the Mediterranean Sea?",
+        "options": ["Sicily", "Sardinia", "Cyprus", "Crete"],
+        "correct_answer": 0
+      },
+      {
+        "id": "119",
+        "question": "Who wrote 'The Three Musketeers'?",
+        "options": ["Alexandre Dumas", "Victor Hugo", "Gustave Flaubert", "Émile Zola"],
+        "correct_answer": 0
+      },
+      {
+        "id": "120",
+        "question": "What is the chemical symbol for francium?",
+        "options": ["F", "Fa", "Fr", "Fn"],
+        "correct_answer": 2
+      },
+      {
+        "id": "121",
+        "question": "What is the capital of Greece?",
+        "options": ["Athens", "Thessaloniki", "Patras", "Heraklion"],
+        "correct_answer": 0
+      },
+      {
+        "id": "122",
+        "question": "Who wrote 'The Divine Comedy'?",
+        "options": ["Dante Alighieri", "Geoffrey Chaucer", "John Milton", "Homer"],
+        "correct_answer": 0
+      },
+      {
+        "id": "123",
+        "question": "What is the chemical symbol for gold?",
+        "options": ["Au", "Go", "G", "Ag"],
+        "correct_answer": 0
+      },
+      {
+        "id": "124",
+        "question": "What is the largest desert in Asia?",
+        "options": ["Gobi Desert", "Arabian Desert", "Thar Desert", "Karakum Desert"],
+        "correct_answer": 0
+      },
+      {
+        "id": "125",
+        "question": "Who composed 'The Marriage of Figaro'?",
+        "options": ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Johann Sebastian Bach", "Franz Schubert"],
+        "correct_answer": 0
+      },
+      {
+        "id": "126",
+        "question": "What is the chemical symbol for silver?",
+        "options": ["S", "Si", "Ag", "Au"],
+        "correct_answer": 2
+      },
+      {
+        "id": "127",
+        "question": "What is the largest planet in the solar system?",
+        "options": ["Earth", "Jupiter", "Mars", "Saturn"],
+        "correct_answer": 1
+      },
+      {
+        "id": "128",
+        "question": "Who wrote 'The Catcher in the Rye'?",
+        "options": ["J.D. Salinger", "Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain"],
+        "correct_answer": 0
+      },
+      {
+        "id": "129",
+        "question": "What is the chemical symbol for argon?",
+        "options": ["Ar", "Ag", "An", "Ao"],
+        "correct_answer": 0
+      },
+      {
+        "id": "130",
+        "question": "What is the deepest part of the ocean?",
+        "options": ["Mariana Trench", "Puerto Rico Trench", "Java Trench", "Sunda Trench"],
+        "correct_answer": 0
+      },
+      {
+        "id": "131",
+        "question": "Who composed 'Symphony No. 5'?",
+        "options": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Johann Sebastian Bach", "Franz Schubert"],
+        "correct_answer": 0
+      },
+      {
+        "id": "132",
+        "question": "What is the chemical symbol for nitrogen?",
+        "options": ["Ni", "N", "Ng", "No"],
+        "correct_answer": 1
+      },
+      {
+        "id": "133",
+        "question": "What is the tallest tree species in the world?",
+        "options": ["Coast Redwood", "Giant Sequoia", "Sitka Spruce", "Douglas Fir"],
+        "correct_answer": 0
+      },
+      {
+        "id": "134",
+        "question": "Who composed 'Symphony No. 9'?",
+        "options": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Johann Sebastian Bach", "Franz Schubert"],
+        "correct_answer": 0
+      },
+      {
+        "id": "135",
+        "question": "What is the chemical symbol for potassium?",
+        "options": ["Pt", "Po", "K", "P"],
+        "correct_answer": 2
+      },
+      {
+        "id": "136",
+        "question": "What is the largest canyon in the world?",
+        "options": ["Grand Canyon", "Fish River Canyon", "Cotahuasi Canyon", "Tiger Leaping Gorge"],
+        "correct_answer": 0
+      },
+      {
+        "id": "137",
+        "question": "Who composed 'The Magic Flute'?",
+        "options": ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Johann Sebastian Bach", "Franz Schubert"],
+        "correct_answer": 0
+      },
+      {
+        "id": "138",
+        "question": "What is the chemical symbol for tungsten?",
+        "options": ["T", "Tu", "Tw", "W"],
+        "correct_answer": 3
+      },
+      {
+        "id": "139",
+        "question": "What is the most spoken language in the world?",
+        "options": ["Mandarin Chinese", "English", "Spanish", "Hindi"],
+        "correct_answer": 0
+      },
+      {
+        "id": "140",
+        "question": "Who wrote 'The Lord of the Rings' trilogy?",
+        "options": ["J.R.R. Tolkien", "George R.R. Martin", "J.K. Rowling", "C.S. Lewis"],
+        "correct_answer": 0
+      },
+      {
+        "id": "141",
+        "question": "What is the chemical symbol for silicon?",
+        "options": ["Si", "S", "Sl", "Sn"],
+        "correct_answer": 0
+      },
+      {
+        "id": "142",
+        "question": "What is the capital of Argentina?",
+        "options": ["Buenos Aires", "Cordoba", "Rosario", "Mendoza"],
+        "correct_answer": 0
+      },
+      {
+        "id": "143",
+        "question": "Who painted 'The Scream'?",
+        "options": ["Edvard Munch", "Pablo Picasso", "Vincent van Gogh", "Salvador Dalí"],
+        "correct_answer": 0
+      },
+      {
+        "id": "144",
+        "question": "What is the chemical symbol for cobalt?",
+        "options": ["Cb", "Co", "Cl", "Cr"],
+        "correct_answer": 1
+      },
+      {
+        "id": "145",
+        "question": "What is the largest lake in Africa?",
+        "options": ["Lake Victoria", "Lake Tanganyika", "Lake Malawi", "Lake Turkana"],
+        "correct_answer": 0
+      },
+      {
+        "id": "146",
+        "question": "Who wrote 'Crime and Punishment'?",
+        "options": ["Fyodor Dostoevsky", "Leo Tolstoy", "Anton Chekhov", "Ivan Turgenev"],
+        "correct_answer": 0
+      },
+      {
+        "id": "147",
+        "question": "What is the chemical symbol for lead?",
+        "options": ["P", "L", "Pb", "Pl"],
+        "correct_answer": 2
+      },
+      {
+        "id": "148",
+        "question": "What is the largest ocean on Earth?",
+        "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+        "correct_answer": 3
+      },
+      {
+        "id": "149",
+        "question": "Who composed 'The Nutcracker'?",
+        "options": ["Pyotr Ilyich Tchaikovsky", "Ludwig van Beethoven", "Johann Sebastian Bach", "Franz Schubert"],
+        "correct_answer": 0
+      },
+      {
+        "id": "150",
+        "question": "What is the chemical symbol for neon?",
+        "options": ["Ne", "No", "Na", "Ni"],
+        "correct_answer": 0
+      }
+    ]
+  }
+  
