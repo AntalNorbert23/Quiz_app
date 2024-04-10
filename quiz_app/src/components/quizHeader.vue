@@ -70,7 +70,7 @@ const showPersonalData=()=>{
 }
 
 const pushToQuiz=()=>{
-      router.push('/quizContent');
+      router.push('/quizContent/tasks');
 }
 
 </script>

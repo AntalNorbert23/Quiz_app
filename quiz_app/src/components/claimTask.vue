@@ -19,10 +19,10 @@
             <p>General Culture</p>
         </div>
         <div class="flex justify-center pt-2">
-            <p>100</p>
+            <p>50</p>
         </div>
         <div class="flex justify-center pt-2 hover:cursor-pointer"
-             @click="selectComponent"
+             @click="selectComponent('General Culture')"
         >
                 <p class="hover:text-slate-600" >Claim quiz</p>
         </div>
@@ -36,7 +36,7 @@
             <p>50</p>
         </div>
         <div class="flex justify-center pt-2 hover:cursor-pointer"
-             @click="selectComponent"
+             @click="selectComponent('Hungarian Culture')"
         >
                 <p class="hover:text-slate-600" >Claim quiz</p>
         </div>
@@ -45,10 +45,18 @@
 
 <script setup>
     import { useRouter } from 'vue-router';
+    import { useAuthStore } from '@/store/index';
+
+    const authStore = useAuthStore();
 
     const router=useRouter();
 
-    const selectComponent=()=>{
+    const selectComponent=(name)=>{
+        
+        const newId = authStore.rows.length + 1;
+        const newRow = { id: newId, name: name};
+        authStore.addRow(newRow);
         router.push({ name: 'tasks' });
+        authStore.selectedTaskComponent='tasks';
     }
 </script>
