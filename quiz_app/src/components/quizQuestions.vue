@@ -16,7 +16,8 @@
                       <input type="radio" :id="'option-'+ optionIndex"
                              :value="optionIndex"
                              v-model="selectedAnswers[index]"
-                             @click="nextQuestionDelayed"
+                             @click="nextQuestionDelayed(index, optionIndex)"
+                             :checked="isSelected(index, optionIndex)" 
                              class="pe-6 me-3 focus:outline-slate-600 focus-within:outline-slate-600 cursor-pointer"
                       >
                       <label :for="'option_' + optionIndex">{{ option }}</label>
@@ -45,7 +46,7 @@
                :key="index"
                @click="jumptToQuestion(index)"
                class="cursor-pointer mx-3 my-1 border-black border px-2 text-center hover:border-cyan-400"
-               :class="{ 'border-green-500': correctAnswers[index], 'border-red-500': correctAnswers[index] === false && currentIndex > index }"
+               :class="{ 'border-green-500': correctAnswers[index], 'border-red-500': correctAnswers[index] === false }"
           >
                 {{ index+1 }}
           </div>
@@ -59,7 +60,15 @@
   const questions=ref([]);
   const selectedAnswers=ref([]);
   const currentIndex=ref(0);
-  const correctAnswers = ref(Array(questions.length).fill(null));
+  const correctAnswers = ref([]);
+
+  const quizSetName='quizset-1';
+
+
+  //check if an option is selected for a question
+  const isSelected = (questionIndex, optionIndex) => {
+      return selectedAnswers.value[questionIndex] === optionIndex;
+  }
 
   //fetch the random json quiz sets
   const fetchQuizQuestions = async () =>{
@@ -68,16 +77,43 @@
           const quizSet=await import('./Questions/quiz-set-1.json')
           const data= quizSet.default;
           questions.value=data.questions;
-          selectedAnswers.value=Array(data.questions.length).fill(null)
-      }catch(error){
+
+          //get the selectedAnswers array with the saved selections
+          const savedQuizState = localStorage.getItem(quizSetName);
+    
+          if (savedQuizState) {
+              const quizState = JSON.parse(savedQuizState);
+              selectedAnswers.value = quizState.selectedAnswers;
+          } else {
+          // if there were no previous selections found, fill selectedAnswers with null 
+              selectedAnswers.value = Array(data.questions.length+1).fill(null);
+        }
+  }catch(error){
           console.error(error);
+      }
+  } 
+
+  //function to load the quiz from localstorage
+  const loadQuizState = () => {
+      const savedQuizState = localStorage.getItem(quizSetName);
+
+      if (savedQuizState) {
+          const quizState = JSON.parse(savedQuizState);
+          selectedAnswers.value = quizState.selectedAnswers;
+          correctAnswers.value = quizState.correctAnswers;
       }
   }
 
-  //onMounted fetch the data 
-  onMounted(()=>{
-      fetchQuizQuestions();
-  })
+  //function to save quiz to localstorage
+
+  const saveQuizState = () => {
+      const quizState = {
+          selectedAnswers: selectedAnswers.value,
+          correctAnswers: correctAnswers.value
+      };
+      
+      localStorage.setItem(quizSetName, JSON.stringify(quizState));
+}
 
   //function to go to the next question
   const nextQuestion= ()=>{
@@ -94,14 +130,15 @@
   }
 
   //go automativally to the next question after an option was selected
-  const nextQuestionDelayed = () => {
+  const nextQuestionDelayed = (questionIndex, optionIndex) => {
       if(currentIndex.value < questions.value.length - 1){
           setTimeout(() => {
               currentIndex.value++;
           }, 200);
           setTimeout(() => {
-              const prevIndex = currentIndex.value - 1;
-              correctAnswers.value[prevIndex] = selectedAnswers.value[prevIndex] === questions.value[prevIndex].correct_answer;
+              selectedAnswers.value[questionIndex] = optionIndex;
+              correctAnswers.value[questionIndex] = optionIndex === questions.value[questionIndex].correct_answer;
+              saveQuizState();
           }, 400);
       }
   }
@@ -120,6 +157,13 @@
           //message : check your answers again and correct them
       }
   }
+
+  //onMounted fetch the data 
+  onMounted(()=>{
+      fetchQuizQuestions();
+      loadQuizState();
+  })
+
 
   //should also implement the divs of the question to turn red if incorrect, idk yet after whole quiz submit and that's it or after every question
 </script>

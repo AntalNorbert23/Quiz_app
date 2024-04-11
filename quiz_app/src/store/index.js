@@ -5,7 +5,7 @@ export const useAuthStore = defineStore({
   state: () => ({
     user: JSON.parse(localStorage.getItem('user'))||null,
     selectedTaskComponent: 'tasks',
-    rows: []
+    rows: JSON.parse(localStorage.getItem('rows')) || [],
   }),
   actions: {
     setUser(user) {
@@ -21,7 +21,17 @@ export const useAuthStore = defineStore({
     },
     addRow(rowData) {
       this.rows.push(rowData);
-    }
+      this.saveRows();
+    },
+    saveRows() {
+      localStorage.setItem('rows', JSON.stringify(this.rows));
+    },
+    loadRows() {
+      const savedRows = localStorage.getItem('rows');
+      if (savedRows) {
+        this.rows = JSON.parse(savedRows);
+      }
+    },
   },
   getters: {
     getUsername() {

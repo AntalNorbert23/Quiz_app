@@ -38,6 +38,7 @@
   <script setup>
   import { useAuthStore } from '@/store/index';
   import { useRouter } from 'vue-router';
+  import { onMounted } from 'vue';
   
   const authStore = useAuthStore();
   const router=useRouter();
@@ -48,4 +49,9 @@
   const markQuiz=()=>{
     router.push({ name: 'quizQuestions' });
   }
+
+  onMounted(() => {
+  // Load the rows data when the component is mounted
+  authStore.loadRows();
+});
   </script>
