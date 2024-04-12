@@ -56,13 +56,16 @@
 
 <script setup>
   import { ref, onMounted } from 'vue';
+  import { useRoute } from 'vue-router';
 
   const questions=ref([]);
   const selectedAnswers=ref([]);
   const currentIndex=ref(0);
   const correctAnswers = ref([]);
 
-  const quizSetName='quizset-1';
+  const route = useRoute();
+  const quizSetName = route.params.quizSetName;
+
 
 
   //check if an option is selected for a question
@@ -74,12 +77,12 @@
   const fetchQuizQuestions = async () =>{
       try{
           //const randomIndex = Math.floor(Math.random()*totalQuizSet)
-          const quizSet=await import('./Questions/quiz-set-1.json')
+          const quizSet=await import(`./Questions/${quizSetName}.json`)
           const data= quizSet.default;
           questions.value=data.questions;
 
           //get the selectedAnswers array with the saved selections
-          const savedQuizState = localStorage.getItem(quizSetName);
+          const savedQuizState = localStorage.getItem(`quizState_${quizSetName}`);
     
           if (savedQuizState) {
               const quizState = JSON.parse(savedQuizState);
@@ -95,7 +98,7 @@
 
   //function to load the quiz from localstorage
   const loadQuizState = () => {
-      const savedQuizState = localStorage.getItem(quizSetName);
+      const savedQuizState = localStorage.getItem(`quizState_${quizSetName}`);
 
       if (savedQuizState) {
           const quizState = JSON.parse(savedQuizState);
@@ -112,7 +115,7 @@
           correctAnswers: correctAnswers.value
       };
       
-      localStorage.setItem(quizSetName, JSON.stringify(quizState));
+      localStorage.setItem(`quizState_${quizSetName}`, JSON.stringify(quizState));
 }
 
   //function to go to the next question

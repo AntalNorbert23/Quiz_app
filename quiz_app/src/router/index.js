@@ -36,7 +36,7 @@ const router = createRouter({
           component: claimTask
         },
         {
-          path: 'quizQuestions',
+          path: 'quizQuestions/:quizSetName',
           name: 'quizQuestions',
           component: quizQuestions
         }

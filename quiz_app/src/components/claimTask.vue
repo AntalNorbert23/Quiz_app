@@ -52,10 +52,10 @@
 
     const router=useRouter();
 
-    const selectComponent=(name)=>{
+    const selectComponent=(name,quizSetName)=>{
         
         const newId = authStore.rows.length + 1;
-        const newRow = { id: newId, name: name};
+        const newRow = { id: newId, name: name, quizSetName: quizSetName};
         authStore.addRow(newRow);
         router.push({ name: 'tasks' });
         authStore.selectedTaskComponent='tasks';

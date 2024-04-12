@@ -27,7 +27,7 @@
                 <p>50</p>
             </div>
             <div class="flex justify-center pt-2 hover:cursor-pointer"
-                @click="markQuiz"
+                @click="markQuiz(row.id)"
             >
                     <p class="hover:text-slate-600" >Mark quiz</p>
             </div>
@@ -45,10 +45,21 @@
 
   const rows = authStore.rows;
 
+  const quizSetNames = ['quiz-set-1', 'quiz-set-2', 'quiz-set-3'];
+  const randomQuizSetName = quizSetNames[Math.floor(Math.random() * quizSetNames.length)];
 
-  const markQuiz=()=>{
-    router.push({ name: 'quizQuestions' });
+ const markQuiz = (rowId) => {
+    let randomQuizSetName = localStorage.getItem(`randomQuizSetName_${rowId}`); // Get the random quiz set name from localStorage for this row
+    // Check if a random quiz set name has been generated and stored in localStorage for this row
+    if (!randomQuizSetName) {
+      // If not, generate a random quiz set name
+      randomQuizSetName = quizSetNames[Math.floor(Math.random() * quizSetNames.length)];
+      // Store the random quiz set name in localStorage to persist it for this row
+      localStorage.setItem(`randomQuizSetName_${rowId}`, randomQuizSetName);
+    }
+    router.push({ name: 'quizQuestions', params: { quizSetName: randomQuizSetName } });
   }
+
 
   onMounted(() => {
   // Load the rows data when the component is mounted
