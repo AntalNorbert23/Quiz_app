@@ -46,7 +46,7 @@
                :key="index"
                @click="jumptToQuestion(index)"
                class="cursor-pointer mx-3 my-1 border-black border px-2 text-center hover:border-cyan-400"
-               :class="{ 'border-green-500': correctAnswers[index], 'border-red-500': correctAnswers[index] === false }"
+               :class="{ 'border-green-500': correctAnswers[index] === true, 'border-red-500': correctAnswers[index] === false }"
           >
                 {{ index+1 }}
           </div>
@@ -86,7 +86,7 @@
               selectedAnswers.value = quizState.selectedAnswers;
           } else {
           // if there were no previous selections found, fill selectedAnswers with null 
-              selectedAnswers.value = Array(data.questions.length+1).fill(null);
+              selectedAnswers.value = Array(data.questions.length).fill(null);
         }
   }catch(error){
           console.error(error);
@@ -129,18 +129,27 @@
       }
   }
 
+const checkIfCorrect=(questionIndex,optionIndex)=>{
+    setTimeout(() => {
+              selectedAnswers.value[questionIndex] = optionIndex;
+              correctAnswers.value[questionIndex] = optionIndex === questions.value[questionIndex].correct_answer;
+          }, 400);
+}
+
   //go automativally to the next question after an option was selected
   const nextQuestionDelayed = (questionIndex, optionIndex) => {
       if(currentIndex.value < questions.value.length - 1){
           setTimeout(() => {
               currentIndex.value++;
           }, 200);
-          setTimeout(() => {
-              selectedAnswers.value[questionIndex] = optionIndex;
-              correctAnswers.value[questionIndex] = optionIndex === questions.value[questionIndex].correct_answer;
-              saveQuizState();
-          }, 400);
+        
+          checkIfCorrect(questionIndex,optionIndex);
+          
+      }else if(currentIndex.value === questions.value.length - 1){
+        
+          checkIfCorrect(questionIndex,optionIndex);
       }
+      saveQuizState();
   }
 
   const jumptToQuestion= (index)=>{
