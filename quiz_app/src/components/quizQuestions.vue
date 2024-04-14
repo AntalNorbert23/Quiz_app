@@ -76,7 +76,6 @@
   //fetch the random json quiz sets
   const fetchQuizQuestions = async () =>{
       try{
-          //const randomIndex = Math.floor(Math.random()*totalQuizSet)
           const quizSet=await import(`./Questions/${quizSetName}.json`)
           const data= quizSet.default;
           questions.value=data.questions;

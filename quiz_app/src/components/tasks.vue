@@ -49,12 +49,12 @@
   const randomQuizSetName = quizSetNames[Math.floor(Math.random() * quizSetNames.length)];
 
  const markQuiz = (rowId) => {
-    let randomQuizSetName = localStorage.getItem(`randomQuizSetName_${rowId}`); // Get the random quiz set name from localStorage for this row
-    // Check if a random quiz set name has been generated and stored in localStorage for this row
+    let randomQuizSetName = localStorage.getItem(`randomQuizSetName_${rowId}`); 
+   
     if (!randomQuizSetName) {
-      // If not, generate a random quiz set name
+    
       randomQuizSetName = quizSetNames[Math.floor(Math.random() * quizSetNames.length)];
-      // Store the random quiz set name in localStorage to persist it for this row
+      
       localStorage.setItem(`randomQuizSetName_${rowId}`, randomQuizSetName);
     }
     router.push({ name: 'quizQuestions', params: { quizSetName: randomQuizSetName } });
@@ -62,7 +62,7 @@
 
 
   onMounted(() => {
-  // Load the rows data when the component is mounted
+ 
   authStore.loadRows();
 });
   </script>
