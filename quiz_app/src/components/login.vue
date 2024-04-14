@@ -24,6 +24,7 @@
                    class="w-11/12 h-12 mx-4 text-left ps-4 border border-black focus:text-center focus:ps-0"
                    v-model="username"
                    id="username"
+                   @keydown.enter="loginAction"
             > 
             <div class="flex justify-normal">
                 <label for="password" class="mx-4 mt-4">Password</label>
@@ -33,6 +34,7 @@
                    class="w-11/12 h-12 mt-px mx-4 text-left ps-4 border border-black focus:text-center focus:ps-0"
                    v-model="password"
                    id="password"
+                   @keydown.enter="loginAction"
             >
             <router-link to="/createAccount" 
                          class="px-5 text-blue-400 text-sm text-center mt-2 mb-4"

@@ -113,14 +113,17 @@
           selectedAnswers: selectedAnswers.value,
           correctAnswers: correctAnswers.value
       };
+      setTimeout(() => {
+            localStorage.setItem(`quizState_${quizSetName}`, JSON.stringify(quizState));
+      }, 200);
       
-      localStorage.setItem(`quizState_${quizSetName}`, JSON.stringify(quizState));
 }
 
   //function to go to the next question
   const nextQuestion= ()=>{
       if(currentIndex.value<questions.value.length-1){
           currentIndex.value++;
+          saveQuizState();
       }
   }
 
@@ -128,6 +131,7 @@
   const prevQuestion= ()=>{
       if(currentIndex.value>0){
           currentIndex.value--;
+          saveQuizState();
       }
   }
 
@@ -141,9 +145,6 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
   //go automativally to the next question after an option was selected
   const nextQuestionDelayed = (questionIndex, optionIndex) => {
       if(currentIndex.value < questions.value.length - 1){
-          setTimeout(() => {
-              currentIndex.value++;
-          }, 200);
         
           checkIfCorrect(questionIndex,optionIndex);
           
@@ -151,7 +152,11 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
         
           checkIfCorrect(questionIndex,optionIndex);
       }
-      saveQuizState();
+      setTimeout(() => {
+              currentIndex.value++;
+              saveQuizState();
+          }, 200);
+      
   }
 
   const jumptToQuestion= (index)=>{

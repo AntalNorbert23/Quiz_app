@@ -25,6 +25,7 @@
                class="w-11/12 h-12 mx-4 text-left ps-4 border border-black focus:text-center focus:ps-0"
                v-model="username"
                id="username"
+               @keydown.enter="createAccount"
         > 
         <div class="flex justify-normal">
             <label for="password" class="mx-4 mt-2">Password</label>
@@ -34,6 +35,7 @@
                class="w-11/12 h-12 mt-px mx-4 text-left ps-4 border border-black focus:text-center focus:ps-0"
                v-model="password"
                id="password"
+               @keydown.enter="createAccount"
         >
         <div class="flex justify-normal">
             <label for="verifyPassword" class="mx-4 mt-2">Confirm Password</label>
@@ -43,6 +45,7 @@
                class="w-11/12 h-12 mt-px mx-4 text-left ps-4 border border-black focus:text-center focus:ps-0"
                v-model="verifyPassword"
                id="verifyPassword"
+               @keydown.enter="createAccount"
         >
 
         <button class="loginbutton w-11/12 mx-4 p-4 mb-6 mt-4 bg-blue-500 border-2 border-blue-500 tracking-widest hover:bg-white hover:text-blue-900"

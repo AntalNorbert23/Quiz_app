@@ -1,6 +1,6 @@
 <template>
     <quizHeader/>
-    <main class="flex h-[88.8vh]">
+    <main class="flex h-[100vh]">
         <div>
             <sideNav/>
         </div>
