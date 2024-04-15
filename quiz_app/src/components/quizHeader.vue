@@ -15,7 +15,7 @@
                       v-if="showPersData"
                  >
                       <p class="m-0 text-xs text-white">Time: </p>
-                      <p class="m-0 text-xs text-white pt-1">Total time: </p>
+                      <p class="m-0 text-xs text-white pt-1">Total time: {{ getTime(timerStore.totalTime) }} </p>
                  </div>
                </transition>
              </div>
@@ -45,8 +45,10 @@
 <script setup>
   import { useAuthStore } from '@/store/index';
   import { useRouter } from 'vue-router';
-  import { ref } from 'vue';
-  
+  import { ref} from 'vue';
+  import { useTimerStore } from '@/store/timerStore';
+
+const timerStore = useTimerStore();
 const authStore = useAuthStore();
 const router=useRouter();
 const showLogOff=ref(false);
@@ -74,6 +76,13 @@ const pushToQuiz=()=>{
       authStore.selectedTaskComponent='tasks';
 }
 
+const getTime = (time) => {
+  //converting ms to min and s
+  const minutes = Math.floor(time / 60000);
+  const seconds = ((time % 60000) / 1000).toFixed(0);
+      
+      return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+};
 </script>
 
 <style scoped>

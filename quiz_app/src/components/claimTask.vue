@@ -16,13 +16,13 @@
             <p>1</p>
         </div>
         <div class="flex justify-center pt-2">
-            <p>General Culture</p>
+            <p>General knowledge</p>
         </div>
         <div class="flex justify-center pt-2">
             <p>50</p>
         </div>
         <div class="flex justify-center pt-2 hover:cursor-pointer"
-             @click="selectComponent('General Culture')"
+             @click="selectComponent('General knowledge')"
         >
                 <p class="hover:text-slate-600" >Claim quiz</p>
         </div>
@@ -30,13 +30,13 @@
             <p>2</p>
         </div>
         <div class="flex justify-center pt-2">
-            <p>Hungarian culture</p>
+            <p>Hungarian knowledge</p>
         </div>
         <div class="flex justify-center pt-2">
             <p>50</p>
         </div>
         <div class="flex justify-center pt-2 hover:cursor-pointer"
-             @click="selectComponent('Hungarian Culture')"
+             @click="selectComponent('Hungarian knowledge')"
         >
                 <p class="hover:text-slate-600" >Claim quiz</p>
         </div>

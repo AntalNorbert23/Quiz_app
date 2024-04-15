@@ -55,8 +55,11 @@
 </template>
 
 <script setup>
-  import { ref, onMounted } from 'vue';
+  import { ref, onMounted,onBeforeUnmount } from 'vue';
   import { useRoute } from 'vue-router';
+  import { useTimerStore } from '@/store/timerStore';
+
+  const timerStore = useTimerStore();
 
   const questions=ref([]);
   const selectedAnswers=ref([]);
@@ -178,6 +181,11 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
   onMounted(()=>{
       fetchQuizQuestions();
       loadQuizState();
+      timerStore.startTimer();
+  })
+
+  onBeforeUnmount(()=>{
+      timerStore.stopTimer();
   })
 
 

@@ -1,6 +1,6 @@
 <template>
     <div class="text-lg w-full">
-        <p>Tasks to be done</p>
+        <h1 class="p-3 text-2xl">Tasks to be done</h1>
      
         <div v-for="(row, index) in rows" :key="index"
             class="grid grid-cols-4 grid-rows-2 border border-black mx-auto w-[90%] mt-6 py-2"
