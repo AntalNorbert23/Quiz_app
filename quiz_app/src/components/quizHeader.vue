@@ -76,13 +76,16 @@ const pushToQuiz=()=>{
       authStore.selectedTaskComponent='tasks';
 }
 
-const getTime = (time) => {
-  //converting ms to min and s
+const getTime = () => {
+  const savedTime = timerStore.loadTimeFromLocalStorage();
+  return savedTime !== null ? formatTime(savedTime) : '00:00';
+};
+
+const formatTime = (time) => {
   const minutes = Math.floor(time / 60000);
   const seconds = ((time % 60000) / 1000).toFixed(0);
-      
-      return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-};
+  return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}; 
 </script>
 
 <style scoped>
