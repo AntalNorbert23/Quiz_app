@@ -18,7 +18,9 @@
                              v-model="selectedAnswers[index]"
                              @click="nextQuestionDelayed(index, optionIndex)"
                              :checked="isSelected(index, optionIndex)" 
+                             :disabled="hasAnswerSelected(index)"
                              class="pe-6 me-3 focus:outline-slate-600 focus-within:outline-slate-600 cursor-pointer"
+                             :class="{'cursor-not-allowed': hasAnswerSelected(index) === true}"
                       >
                       <label :for="'option_' + optionIndex">{{ option }}</label>
                 </li>
@@ -58,8 +60,11 @@
   import { ref, onMounted,onBeforeUnmount } from 'vue';
   import { useRoute } from 'vue-router';
   import { useTimerStore } from '@/store/timerStore';
+  import { useQuizStore } from '@/store/score'
+  const correctAnswersCount = ref(0);
 
   const timerStore = useTimerStore();
+  const score= useQuizStore();
 
   const questions=ref([]);
   const selectedAnswers=ref([]);
@@ -106,6 +111,7 @@
           const quizState = JSON.parse(savedQuizState);
           selectedAnswers.value = quizState.selectedAnswers;
           correctAnswers.value = quizState.correctAnswers;
+          correctAnswersCount.value = quizState.correctAnswersCount;
       }
   }
 
@@ -114,7 +120,8 @@
   const saveQuizState = () => {
       const quizState = {
           selectedAnswers: selectedAnswers.value,
-          correctAnswers: correctAnswers.value
+          correctAnswers: correctAnswers.value,
+          correctAnswersCount: correctAnswersCount.value
       };
       setTimeout(() => {
             localStorage.setItem(`quizState_${quizSetName}`, JSON.stringify(quizState));
@@ -143,6 +150,11 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
               selectedAnswers.value[questionIndex] = optionIndex;
               correctAnswers.value[questionIndex] = optionIndex === questions.value[questionIndex].correct_answer;
           }, 400);
+    const correctOptionIndex = questions.value[questionIndex].correct_answer;
+    if (optionIndex === correctOptionIndex) {
+        correctAnswersCount.value++; 
+        score.setCorrectAnswersCount(score.correctAnswersCount + 1)
+    }
 }
 
   //go automativally to the next question after an option was selected
@@ -176,6 +188,10 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
           //message : check your answers again and correct them
       }
   }
+
+  const hasAnswerSelected = (questionIndex) => {
+        return selectedAnswers.value[questionIndex] !== null;
+}
 
   //onMounted fetch the data 
   onMounted(()=>{

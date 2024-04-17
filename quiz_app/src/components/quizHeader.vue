@@ -14,7 +14,7 @@
                  <div class="absolute bottom-[-40px] bg-slate-600 w-32 p-2 rounded-b-lg"
                       v-if="showPersData"
                  >
-                      <p class="m-0 text-xs text-white">Time: </p>
+                      <p class="m-0 text-xs text-white">Correct: <span>{{ correctAnswersCount }}</span> / 50</p>
                       <p class="m-0 text-xs text-white pt-1">Total time: {{ getTime(timerStore.totalTime) }} </p>
                  </div>
                </transition>
@@ -45,15 +45,22 @@
 <script setup>
   import { useAuthStore } from '@/store/index';
   import { useRouter } from 'vue-router';
-  import { ref} from 'vue';
+  import { ref, computed,watch} from 'vue';
   import { useTimerStore } from '@/store/timerStore';
+  import { useRoute } from 'vue-router';
+  import { useQuizStore } from '@/store/score';
+
 
 const timerStore = useTimerStore();
 const authStore = useAuthStore();
+const score=useQuizStore();
 const router=useRouter();
+const route = useRoute();
+
 const showLogOff=ref(false);
 const isArrowRotated = ref(false);
 const showPersData=ref(false);
+const quizSetName = ref(null); 
 
 const logOff=()=>{
     setTimeout(() => {
@@ -85,7 +92,25 @@ const formatTime = (time) => {
   const minutes = Math.floor(time / 60000);
   const seconds = ((time % 60000) / 1000).toFixed(0);
   return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-}; 
+};
+
+watch(() => route.params.quizSetName, (newQuizSetName) => {
+    quizSetName.value = newQuizSetName;
+    loadCorrectAnswersCount();
+});
+
+const correctAnswersCount = computed(() => score.correctAnswersCount);
+
+const loadCorrectAnswersCount = () => {
+    if (quizSetName.value) {
+        const savedQuizState = localStorage.getItem(`quizState_${quizSetName.value}`);
+        if (savedQuizState) {
+            const quizState = JSON.parse(savedQuizState);
+            score.setCorrectAnswersCount(quizState.correctAnswersCount);
+        }
+    }
+};
+
 </script>
 
 <style scoped>
