@@ -1,0 +1,305 @@
+{
+    "questions": [
+      {
+        "id": "1",
+        "question": "In which year was the composer Ferenc Liszt born?",
+        "options": ["1811", "1797", "1848", "1762"],
+        "correct_answer": 0
+      },
+      {
+        "id": "2",
+        "question": "What is the maximum depth of Lake Balaton?",
+        "options": ["12 meters", "10 meters", "15 meters", "20 meters"],
+        "correct_answer": 3
+      },
+      {
+        "id": "3",
+        "question": "Who was the leader of the Hungarian conquest?",
+        "options": ["Stephen I of Hungary", "Árpád", "Koppány", "Lehel"],
+        "correct_answer": 1
+      },
+      {
+        "id": "4",
+        "question": "In which city is the largest thermal bath in Europe located?",
+        "options": ["Budapest", "Hévíz", "Szeged", "Debrecen"],
+        "correct_answer": 1
+      },
+      {
+        "id": "5",
+        "question": "Who was the first king of Hungary?",
+        "options": ["Stephen I of Hungary", "Charles I of Hungary", "Sigismund, Holy Roman Emperor", "Árpád"],
+        "correct_answer": 0
+      },
+      {
+        "id": "6",
+        "question": "In which year was the first Hungarian constitution adopted?",
+        "options": ["1848", "1867", "1920", "1956"],
+        "correct_answer": 0
+      },
+      {
+        "id": "7",
+        "question": "What is the name of the famous Hungarian physicist who won the Nobel Prize in Physics in 1905?",
+        "options": ["Albert Einstein", "Niels Bohr", "Werner Heisenberg", "Philip Lenard"],
+        "correct_answer": 3
+      },
+      {
+        "id": "8",
+        "question": "Who wrote the Hungarian national anthem?",
+        "options": ["Ferenc Kölcsey", "Sándor Petőfi", "Mihály Vörösmarty", "József Attila"],
+        "correct_answer": 0
+      },
+      {
+        "id": "9",
+        "question": "What is the name of the Hungarian dish consisting of stewed meat, potatoes, and paprika?",
+        "options": ["Goulash", "Pörkölt", "Halászlé", "Lecsó"],
+        "correct_answer": 0
+      },
+      {
+        "id": "10",
+        "question": "Which Hungarian city is famous for its medieval castle?",
+        "options": ["Eger", "Sopron", "Szeged", "Pécs"],
+        "correct_answer": 0
+      },
+      {
+        "id": "11",
+        "question": "Who is considered the father of modern Hungarian literature?",
+        "options": ["Ferenc Kazinczy", "Mihály Vörösmarty", "Sándor Petőfi", "János Arany"],
+        "correct_answer": 0
+      },
+      {
+        "id": "12",
+        "question": "What is the name of the Hungarian dish made from layers of potato, sausage, and sour cream?",
+        "options": ["Töltött káposzta", "Lecsó", "Rakott krumpli", "Hortobágyi palacsinta"],
+        "correct_answer": 2
+      },
+      {
+        "id": "13",
+        "question": "Who was the famous Hungarian composer known for his operas such as 'The Barber of Seville' and 'Rigoletto'?",
+        "options": ["Béla Bartók", "Ferenc Liszt", "Franz Schubert", "Franz Liszt"],
+        "correct_answer": 1
+      },
+      {
+        "id": "14",
+        "question": "Which Hungarian city is famous for its wine region?",
+        "options": ["Eger", "Sopron", "Szeged", "Pécs"],
+        "correct_answer": 0
+      },
+      {
+        "id": "15",
+        "question": "What is the Hungarian word for 'hello'?",
+        "options": ["Helló", "Szia", "Üdvözlet", "Jó napot"],
+        "correct_answer": 1
+      },
+      {
+        "id": "16",
+        "question": "Who was the famous Hungarian inventor who created the Rubik's Cube?",
+        "options": ["Ernő Rubik", "Ferenc Anka", "Gábor Bojár", "András Szennay"],
+        "correct_answer": 0
+      },
+      {
+        "id": "17",
+        "question": "What is the name of the Hungarian festival celebrated on August 20th, commemorating the foundation of the Hungarian state?",
+        "options": ["St. Stephen's Day", "National Unity Day", "Revolution Day", "Memorial Day"],
+        "correct_answer": 0
+      },
+      {
+        "id": "18",
+        "question": "Who was the famous Hungarian-American magician and escapologist known for his sensational escape acts?",
+        "options": ["Houdini", "Copperfield", "Blaine", "Angel"],
+        "correct_answer": 0
+      },
+      {
+        "id": "19",
+        "question": "What is the name of the Hungarian dessert made from layers of sponge cake, chocolate cream, and apricot jam, topped with chocolate icing?",
+        "options": ["Dobos torte", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "20",
+        "question": "Who was the Hungarian mathematician known for his work in set theory and logic?",
+        "options": ["Paul Erdős", "János Bolyai", "Eugene Wigner", "John von Neumann"],
+        "correct_answer": 0
+      },
+      {
+        "id": "21",
+        "question": "What is the name of the Hungarian composer known for his operetta 'Die Fledermaus'?",
+        "options": ["Franz Liszt", "Béla Bartók", "Ferenc Erkel", "Johann Strauss II"],
+        "correct_answer": 3
+      },
+      {
+        "id": "22",
+        "question": "In which year did Hungary join the European Union?",
+        "options": ["1995", "2004", "2010", "2016"],
+        "correct_answer": 1
+      },
+      {
+        "id": "23",
+        "question": "What is the name of the Hungarian dish made from layered cabbage leaves stuffed with meat and rice, cooked in a tomato sauce?",
+        "options": ["Töltött káposzta", "Lecsó", "Rakott krumpli", "Hortobágyi palacsinta"],
+        "correct_answer": 0
+      },
+      {
+        "id": "24",
+        "question": "Who is considered the greatest Hungarian football player of all time?",
+        "options": ["Ferenc Puskás", "Sándor Kocsis", "Zoltán Czibor", "László Kubala"],
+        "correct_answer": 0
+      },
+      {
+        "id": "25",
+        "question": "What is the name of the Hungarian festival celebrated on March 15th, commemorating the Hungarian Revolution of 1848?",
+        "options": ["National Unity Day", "Revolution Day", "Memorial Day", "National Day of Hungary"],
+        "correct_answer": 0
+      },
+      {
+        "id": "26",
+        "question": "Who was the Hungarian-born scientist who won the Nobel Prize in Chemistry in 1937 for his work on vitamin C?",
+        "options": ["Albert Szent-Györgyi", "George de Hevesy", "Michael Polanyi", "Dennis Gábor"],
+        "correct_answer": 0
+      },
+      {
+        "id": "27",
+        "question": "What is the name of the Hungarian dish made from a savory stew of meat and vegetables, seasoned with paprika and served with sour cream?",
+        "options": ["Goulash", "Pörkölt", "Halászlé", "Töltött káposzta"],
+        "correct_answer": 1
+      },
+      {
+        "id": "28",
+        "question": "Which Hungarian city is famous for its thermal baths and spas?",
+        "options": ["Budapest", "Debrecen", "Szeged", "Pécs"],
+        "correct_answer": 0
+      },
+      {
+        "id": "29",
+        "question": "What is the name of the Hungarian dish consisting of fried dough, often served with powdered sugar or other toppings?",
+        "options": ["Lángos", "Pogácsa", "Kürtőskalács", "Rétes"],
+        "correct_answer": 0
+      },
+      {
+        "id": "30",
+        "question": "Who is the Hungarian-American actor known for his roles in 'The Silence of the Lambs' and 'Dracula'?",
+        "options": ["Béla Lugosi", "Vincent Price", "Peter Lorre", "Anthony Hopkins"],
+        "correct_answer": 3
+      },
+      {
+        "id": "31",
+        "question": "What is the Hungarian word for 'thank you'?",
+        "options": ["Köszönöm", "Szia", "Kérem", "Kérem szépen"],
+        "correct_answer": 0
+      },
+      {
+        "id": "32",
+        "question": "Who was the famous Hungarian-born illusionist and stunt performer known for his sensational escape acts?",
+        "options": ["Houdini", "Copperfield", "Blaine", "Angel"],
+        "correct_answer": 0
+      },
+      {
+        "id": "33",
+        "question": "What is the name of the Hungarian dish made from layered potato slices, sausage, and sour cream, baked in the oven?",
+        "options": ["Töltött káposzta", "Lecsó", "Rakott krumpli", "Hortobágyi palacsinta"],
+        "correct_answer": 2
+      },
+      {
+        "id": "34",
+        "question": "Who is the Hungarian-American billionaire and philanthropist known for his support of progressive causes and civil liberties?",
+        "options": ["George Soros", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+        "correct_answer": 0
+      },
+      {
+        "id": "35",
+        "question": "What is the name of the Hungarian traditional folk dance, characterized by intricate footwork and lively music?",
+        "options": ["Verbunkos", "Csárdás", "Magyar keringő", "Lángos"],
+        "correct_answer": 1
+      },
+      {
+        "id": "36",
+        "question": "Who was the Hungarian-American physicist known as the 'father of the hydrogen bomb'?",
+        "options": ["Edward Teller", "John von Neumann", "Leó Szilárd", "Eugene Wigner"],
+        "correct_answer": 0
+      },
+      {
+        "id": "37",
+        "question": "What is the name of the Hungarian dish made from fried dough, often served with sour cream and cheese?",
+        "options": ["Lángos", "Pogácsa", "Kürtőskalács", "Rétes"],
+        "correct_answer": 0
+      },
+      {
+        "id": "38",
+        "question": "Who was the Hungarian-American actress known for her roles in 'Casablanca' and 'Gaslight'?",
+        "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gábor"],
+        "correct_answer": 2
+      },
+      {
+        "id": "39",
+        "question": "What is the name of the Hungarian dessert made from layers of sponge cake, chocolate cream, and apricot jam, topped with chocolate icing?",
+        "options": ["Dobos torte", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "40",
+        "question": "Who was the Hungarian-American illusionist known for his escape acts, such as being chained underwater or locked in a crate and dropped into a river?",
+        "options": ["Harry Houdini", "David Copperfield", "Criss Angel", "David Blaine"],
+        "correct_answer": 0
+      },
+      {
+        "id": "41",
+        "question": "What is the name of the Hungarian dish made from fried bread dough, often served with garlic and sour cream?",
+        "options": ["Lángos", "Pogácsa", "Kürtőskalács", "Rétes"],
+        "correct_answer": 0
+      },
+      {
+        "id": "42",
+        "question": "Who was the Hungarian-born actress and inventor who starred in several Hollywood films and held patents for an early version of wireless communication?",
+        "options": ["Hedy Lamarr", "Zsa Zsa Gábor", "Marlene Dietrich", "Greta Garbo"],
+        "correct_answer": 0
+      },
+      {
+        "id": "43",
+        "question": "What is the name of the Hungarian dish made from thin pancakes filled with sweet cottage cheese, raisins, and served with powdered sugar?",
+        "options": ["Palacsinta", "Lecsó", "Rakott krumpli", "Töltött káposzta"],
+        "correct_answer": 0
+      },
+      {
+        "id": "44",
+        "question": "Who was the Hungarian-American business magnate and philanthropist known for founding the Open Society Foundations?",
+        "options": ["George Soros", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+        "correct_answer": 0
+      },
+      {
+        "id": "45",
+        "question": "What is the Hungarian word for 'please'?",
+        "options": ["Köszönöm", "Szia", "Kérem", "Kérem szépen"],
+        "correct_answer": 2
+      },
+      {
+        "id": "46",
+        "question": "Who was the Hungarian-born American actress known for her role as Gabrielle Solis on the television series 'Desperate Housewives'?",
+        "options": ["Eva Green", "Eva Longoria", "Eva Mendes", "Eva Herzigová"],
+        "correct_answer": 1
+      },
+      {
+        "id": "47",
+        "question": "What is the name of the Hungarian dish made from layered cabbage leaves stuffed with meat and rice, cooked in a tomato sauce?",
+        "options": ["Töltött káposzta", "Lecsó", "Rakott krumpli", "Hortobágyi palacsinta"],
+        "correct_answer": 0
+      },
+      {
+        "id": "48",
+        "question": "Who was the Hungarian-American physicist and inventor who played a key role in the development of radar and nuclear energy?",
+        "options": ["Edward Teller", "John von Neumann", "Leó Szilárd", "Eugene Wigner"],
+        "correct_answer": 2
+      },
+      {
+        "id": "49",
+        "question": "What is the name of the Hungarian dish made from thin layers of pastry filled with sweet cottage cheese, raisins, and served with powdered sugar?",
+        "options": ["Rétes", "Lecsó", "Rakott krumpli", "Töltött káposzta"],
+        "correct_answer": 0
+      },
+      {
+        "id": "50",
+        "question": "What is the name of the Hungarian dish made from fried bread dough, often served with powdered sugar or other toppings?",
+        "options": ["Lángos", "Pogácsa", "Kürtőskalács", "Rétes"],
+        "correct_answer": 0
+      }
+    ]
+  }
+  

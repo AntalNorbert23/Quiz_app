@@ -1,0 +1,305 @@
+{
+    "questions": [
+      {
+        "id": "301",
+        "question": "What is the Hungarian name for the parliament building located in Budapest?",
+        "options": ["Országház", "Várkert Bazár", "Halászbástya", "Matthias Church"],
+        "correct_answer": 0
+      },
+      {
+        "id": "302",
+        "question": "Who was the Hungarian-American actor known for his role in 'The Good, the Bad and the Ugly'?",
+        "options": ["Charles Bronson", "Clint Eastwood", "Lee Van Cleef", "Eli Wallach"],
+        "correct_answer": 2
+      },
+      {
+        "id": "303",
+        "question": "Which Hungarian city is famous for its baroque-style architecture and wine production?",
+        "options": ["Eger", "Pécs", "Debrecen", "Szeged"],
+        "correct_answer": 0
+      },
+      {
+        "id": "304",
+        "question": "Who was the Hungarian composer known for his 'Hungarian Rhapsodies'?",
+        "options": ["Zoltán Kodály", "Béla Bartók", "Franz Liszt", "Ferenc Erkel"],
+        "correct_answer": 2
+      },
+      {
+        "id": "305",
+        "question": "What is the name of the Hungarian cake made with a layer of nuts or poppy seeds between two layers of pastry?",
+        "options": ["Bejgli", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "306",
+        "question": "Who was the Hungarian-American actress known for her role in 'A Streetcar Named Desire'?",
+        "options": ["Vivien Leigh", "Greta Garbo", "Ingrid Bergman", "Lily Elsie"],
+        "correct_answer": 0
+      },
+      {
+        "id": "307",
+        "question": "Which river divides Budapest into two parts?",
+        "options": ["Danube", "Tisza", "Drava", "Sava"],
+        "correct_answer": 0
+      },
+      {
+        "id": "308",
+        "question": "What is the name of the Hungarian stew made with sauerkraut and pork?",
+        "options": ["Pörkölt", "Halászlé", "Lecsó", "Székelygulyás"],
+        "correct_answer": 3
+      },
+      {
+        "id": "309",
+        "question": "Who was the Hungarian mathematician known for his contributions to game theory and the theory of distributed computing?",
+        "options": ["Alfréd Rényi", "Paul Erdős", "John von Neumann", "László Lovász"],
+        "correct_answer": 2
+      },
+      {
+        "id": "310",
+        "question": "What is the name of the Hungarian dessert made from layers of sponge cake, chocolate cream, and apricot jam, topped with chocolate icing?",
+        "options": ["Dobos torte", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "311",
+        "question": "Who was the Hungarian-American actress known for her role in 'Casablanca'?",
+        "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gabor"],
+        "correct_answer": 2
+      },
+      {
+        "id": "312",
+        "question": "Which Hungarian city is known for its famous thermal baths, including Széchenyi and Gellért?",
+        "options": ["Debrecen", "Szeged", "Miskolc", "Budapest"],
+        "correct_answer": 3
+      },
+      {
+        "id": "313",
+        "question": "Who was the Hungarian inventor known for his invention of the ballpoint pen?",
+        "options": ["László Bíró", "Albert Szent-Györgyi", "Ignác Semmelweis", "Ernő Rubik"],
+        "correct_answer": 0
+      },
+      {
+        "id": "314",
+        "question": "Which Hungarian city is known as the 'City of Festivals'?",
+        "options": ["Eger", "Pécs", "Szeged", "Szentendre"],
+        "correct_answer": 1
+      },
+      {
+        "id": "315",
+        "question": "What is the name of the Hungarian folk dance characterized by lively music and fast-paced movements?",
+        "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+        "correct_answer": 0
+      },
+      {
+        "id": "316",
+        "question": "Who was the Hungarian-American illusionist known for his escape acts and stunts?",
+        "options": ["Harry Houdini", "David Copperfield", "Criss Angel", "Dynamo"],
+        "correct_answer": 0
+      },
+      {
+        "id": "317",
+        "question": "What is the name of the Hungarian dessert made from layers of sponge cake, chocolate cream, and apricot jam, topped with chocolate icing?",
+        "options": ["Dobos torte", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "318",
+        "question": "Who was the Hungarian-American actress known for her role as the vampire Countess in 'Dracula'?",
+        "options": ["Ingrid Bergman", "Bela Lugosi", "Lily Elsie", "Vivien Leigh"],
+        "correct_answer": 1
+      },
+      {
+        "id": "319",
+        "question": "What is the name of the Hungarian folk dance characterized by a slow, stately pace?",
+        "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+        "correct_answer": 3
+      },
+      {
+        "id": "320",
+        "question": "Who was the Hungarian composer known for his work 'Bluebeard's Castle'?",
+        "options": ["Franz Liszt", "Béla Bartók", "Zoltán Kodály", "Ferenc Erkel"],
+        "correct_answer": 1
+      },
+      {
+        "id": "321",
+        "question": "What is the name of the Hungarian dessert made from a sweet bread dough twisted into a spiral shape, then grilled and coated in sugar or other toppings?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 0
+      },
+      {
+        "id": "322",
+        "question": "Who was the Hungarian-American architect known for his work on the Guggenheim Museum in New York?",
+        "options": ["Frank Lloyd Wright", "Ludwig Mies van der Rohe", "Le Corbusier", "I. M. Pei"],
+        "correct_answer": 0
+      },
+      {
+        "id": "323",
+        "question": "What is the name of the Hungarian dish made from layers of sponge cake, chocolate cream, and apricot jam, topped with chocolate icing?",
+        "options": ["Dobos torte", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "324",
+        "question": "Who was the Hungarian-American actress known for her role in 'Casablanca'?",
+        "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gabor"],
+        "correct_answer": 2
+      },
+      {
+        "id": "325",
+        "question": "Which Hungarian city is known for its famous thermal baths, including Széchenyi and Gellért?",
+        "options": ["Debrecen", "Szeged", "Miskolc", "Budapest"],
+        "correct_answer": 3
+      },
+      {
+        "id": "326",
+        "question": "Who was the Hungarian inventor known for his invention of the ballpoint pen?",
+        "options": ["László Bíró", "Albert Szent-Györgyi", "Ignác Semmelweis", "Ernő Rubik"],
+        "correct_answer": 0
+      },
+      {
+        "id": "327",
+        "question": "Which Hungarian city is known as the 'City of Festivals'?",
+        "options": ["Eger", "Pécs", "Szeged", "Szentendre"],
+        "correct_answer": 1
+      },
+      {
+        "id": "328",
+        "question": "What is the name of the Hungarian folk dance characterized by lively music and fast-paced movements?",
+        "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+        "correct_answer": 0
+      },
+      {
+        "id": "329",
+        "question": "Who was the Hungarian-American illusionist known for his escape acts and stunts?",
+        "options": ["Harry Houdini", "David Copperfield", "Criss Angel", "Dynamo"],
+        "correct_answer": 0
+      },
+      {
+        "id": "330",
+        "question": "What is the name of the Hungarian dessert made from layers of sponge cake, chocolate cream, and apricot jam, topped with chocolate icing?",
+        "options": ["Dobos torte", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "331",
+        "question": "Who was the Hungarian-American actress known for her role as the vampire Countess in 'Dracula'?",
+        "options": ["Ingrid Bergman", "Bela Lugosi", "Lily Elsie", "Vivien Leigh"],
+        "correct_answer": 1
+      },
+      {
+        "id": "332",
+        "question": "What is the name of the Hungarian folk dance characterized by a slow, stately pace?",
+        "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+        "correct_answer": 3
+      },
+      {
+        "id": "333",
+        "question": "Who was the Hungarian composer known for his work 'Bluebeard's Castle'?",
+        "options": ["Franz Liszt", "Béla Bartók", "Zoltán Kodály", "Ferenc Erkel"],
+        "correct_answer": 1
+      },
+      {
+        "id": "334",
+        "question": "What is the name of the Hungarian dessert made from a sweet bread dough twisted into a spiral shape, then grilled and coated in sugar or other toppings?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 0
+      },
+      {
+        "id": "335",
+        "question": "Who was the Hungarian-American architect known for his work on the Guggenheim Museum in New York?",
+        "options": ["Frank Lloyd Wright", "Ludwig Mies van der Rohe", "Le Corbusier", "I. M. Pei"],
+        "correct_answer": 0
+      },
+      {
+        "id": "336",
+        "question": "What is the name of the Hungarian dish made from layers of sponge cake, chocolate cream, and apricot jam, topped with chocolate icing?",
+        "options": ["Dobos torte", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "337",
+        "question": "Who was the Hungarian-American actress known for her role in 'Casablanca'?",
+        "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gabor"],
+        "correct_answer": 2
+      },
+      {
+        "id": "338",
+        "question": "Which Hungarian city is known for its famous thermal baths, including Széchenyi and Gellért?",
+        "options": ["Debrecen", "Szeged", "Miskolc", "Budapest"],
+        "correct_answer": 3
+      },
+      {
+        "id": "339",
+        "question": "Who was the Hungarian inventor known for his invention of the ballpoint pen?",
+        "options": ["László Bíró", "Albert Szent-Györgyi", "Ignác Semmelweis", "Ernő Rubik"],
+        "correct_answer": 0
+      },
+      {
+        "id": "340",
+        "question": "Which Hungarian city is known as the 'City of Festivals'?",
+        "options": ["Eger", "Pécs", "Szeged", "Szentendre"],
+        "correct_answer": 1
+      },
+      {
+        "id": "341",
+        "question": "What is the name of the Hungarian folk dance characterized by lively music and fast-paced movements?",
+        "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+        "correct_answer": 0
+      },
+      {
+        "id": "342",
+        "question": "Who was the Hungarian-American illusionist known for his escape acts and stunts?",
+        "options": ["Harry Houdini", "David Copperfield", "Criss Angel", "Dynamo"],
+        "correct_answer": 0
+      },
+      {
+        "id": "343",
+        "question": "What is the name of the Hungarian dessert made from layers of sponge cake, chocolate cream, and apricot jam, topped with chocolate icing?",
+        "options": ["Dobos torte", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "344",
+        "question": "Who was the Hungarian-American actress known for her role as the vampire Countess in 'Dracula'?",
+        "options": ["Ingrid Bergman", "Bela Lugosi", "Lily Elsie", "Vivien Leigh"],
+        "correct_answer": 1
+      },
+      {
+        "id": "345",
+        "question": "What is the name of the Hungarian folk dance characterized by a slow, stately pace?",
+        "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+        "correct_answer": 3
+      },
+      {
+        "id": "346",
+        "question": "Who was the Hungarian composer known for his work 'Bluebeard's Castle'?",
+        "options": ["Franz Liszt", "Béla Bartók", "Zoltán Kodály", "Ferenc Erkel"],
+        "correct_answer": 1
+      },
+      {
+        "id": "347",
+        "question": "What is the name of the Hungarian dessert made from a sweet bread dough twisted into a spiral shape, then grilled and coated in sugar or other toppings?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 0
+      },
+      {
+        "id": "348",
+        "question": "Who was the Hungarian-American architect known for his work on the Guggenheim Museum in New York?",
+        "options": ["Frank Lloyd Wright", "Ludwig Mies van der Rohe", "Le Corbusier", "I. M. Pei"],
+        "correct_answer": 0
+      },
+      {
+        "id": "349",
+        "question": "What is the name of the Hungarian dish made from layers of sponge cake, chocolate cream, and apricot jam, topped with chocolate icing?",
+        "options": ["Dobos torte", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "350",
+        "question": "Who was the Hungarian-American actress known for her role in 'Casablanca'?",
+        "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gabor"],
+        "correct_answer": 2
+      }
+    ]
+  }
+  

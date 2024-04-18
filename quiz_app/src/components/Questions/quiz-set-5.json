@@ -1,0 +1,305 @@
+{
+    "questions": [
+      {
+        "id": "101",
+        "question": "Who is the Hungarian composer known for his composition 'Hungarian Rhapsodies'?",
+        "options": ["Franz Liszt", "Béla Bartók", "Zoltán Kodály", "Ferenc Erkel"],
+        "correct_answer": 0
+      },
+      {
+        "id": "102",
+        "question": "Which river runs through Budapest?",
+        "options": ["Tisza", "Sava", "Danube", "Drava"],
+        "correct_answer": 2
+      },
+      {
+        "id": "103",
+        "question": "What is the name of the Hungarian dish made from chicken paprika, sour cream, and paprika?",
+        "options": ["Gulyásleves", "Halászlé", "Töltött káposzta", "Paprikás csirke"],
+        "correct_answer": 3
+      },
+      {
+        "id": "104",
+        "question": "Who was the Hungarian mathematician known for the Erdős number in mathematics?",
+        "options": ["John von Neumann", "Paul Erdős", "János Bolyai", "Alfréd Rényi"],
+        "correct_answer": 1
+      },
+      {
+        "id": "105",
+        "question": "What is the name of the Hungarian wine region known for its sweet white wines?",
+        "options": ["Tokaj", "Eger", "Sopron", "Villány"],
+        "correct_answer": 0
+      },
+      {
+        "id": "106",
+        "question": "Who was the Hungarian-American physicist known for his work on the Manhattan Project?",
+        "options": ["Edward Teller", "John von Neumann", "Leó Szilárd", "Eugene Wigner"],
+        "correct_answer": 0
+      },
+      {
+        "id": "107",
+        "question": "What is the name of the Hungarian dish made from a layered cake with walnut or poppy seed filling?",
+        "options": ["Bejgli", "Kürtőskalács", "Pogácsa", "Rétes"],
+        "correct_answer": 0
+      },
+      {
+        "id": "108",
+        "question": "Who was the Hungarian-American actor known for his role as Bela Lugosi's nemesis in horror films?",
+        "options": ["Vincent Price", "Peter Lorre", "Boris Karloff", "Lon Chaney"],
+        "correct_answer": 0
+      },
+      {
+        "id": "109",
+        "question": "What is the name of the Hungarian dish made from a sweet bread dough twisted into a spiral shape, then grilled and coated in sugar or other toppings?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 0
+      },
+      {
+        "id": "110",
+        "question": "Who was the Hungarian physicist known for his invention of the Rubik's Cube?",
+        "options": ["Albert Szent-Györgyi", "Dennis Gábor", "Ernő Rubik", "Gábor Bojár"],
+        "correct_answer": 2
+      },
+      {
+        "id": "111",
+        "question": "What is the name of the Hungarian dish made from a sweet pastry roll filled with walnut or poppy seed paste?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 3
+      },
+      {
+        "id": "112",
+        "question": "Who was the Hungarian-American businessman and philanthropist known for founding the Central European University?",
+        "options": ["George Soros", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+        "correct_answer": 0
+      },
+      {
+        "id": "113",
+        "question": "What is the name of the Hungarian dish made from a sweet bread dough twisted into a spiral shape, then grilled and coated in sugar or other toppings?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 0
+      },
+      {
+        "id": "114",
+        "question": "Who was the Hungarian poet known for his work 'Poems of Mihály Vörösmarty'?",
+        "options": ["Endre Ady", "Sándor Petőfi", "János Arany", "Mihály Vörösmarty"],
+        "correct_answer": 3
+      },
+      {
+        "id": "115",
+        "question": "What is the name of the Hungarian dish made from a sweet pastry roll filled with walnut or poppy seed paste?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 3
+      },
+      {
+        "id": "116",
+        "question": "Who was the Hungarian poet known for his epic poem 'Toldi'?",
+        "options": ["Mihály Babits", "Sándor Petőfi", "Endre Ady", "János Arany"],
+        "correct_answer": 3
+      },
+      {
+        "id": "117",
+        "question": "What is the name of the Hungarian dish made from layers of sponge cake, chocolate cream, and apricot jam, topped with chocolate icing?",
+        "options": ["Dobos torte", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "118",
+        "question": "Who was the Hungarian physicist known for his work on wave mechanics, developing the Wigner–Seitz cell in solid-state physics?",
+        "options": ["Edward Teller", "John von Neumann", "Leó Szilárd", "Eugene Wigner"],
+        "correct_answer": 3
+      },
+      {
+        "id": "119",
+        "question": "What is the name of the Hungarian dish made from a sweet bread dough twisted into a spiral shape, then grilled and coated in sugar or other toppings?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 0
+      },
+      {
+        "id": "120",
+        "question": "Who was the Hungarian-American actor known for his role as Bela Lugosi's nemesis in horror films?",
+        "options": ["Vincent Price", "Peter Lorre", "Boris Karloff", "Lon Chaney"],
+        "correct_answer": 0
+      },
+      {
+        "id": "121",
+        "question": "What is the name of the Hungarian dish made from a layered cake with walnut or poppy seed filling?",
+        "options": ["Bejgli", "Kürtőskalács", "Pogácsa", "Rétes"],
+        "correct_answer": 0
+      },
+      {
+        "id": "122",
+        "question": "Who was the Hungarian physicist known for his invention of the Rubik's Cube?",
+        "options": ["Albert Szent-Györgyi", "Dennis Gábor", "Ernő Rubik", "Gábor Bojár"],
+        "correct_answer": 2
+      },
+      {
+        "id": "123",
+        "question": "What is the name of the Hungarian dish made from a sweet pastry roll filled with walnut or poppy seed paste?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 3
+      },
+      {
+        "id": "124",
+        "question": "Who was the Hungarian-American businessman and philanthropist known for founding the Central European University?",
+        "options": ["George Soros", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+        "correct_answer": 0
+      },
+      {
+        "id": "125",
+        "question": "What is the name of the Hungarian dish made from a sweet bread dough twisted into a spiral shape, then grilled and coated in sugar or other toppings?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 0
+      },
+      {
+        "id": "126",
+        "question": "Who was the Hungarian poet known for his work 'Poems of Mihály Vörösmarty'?",
+        "options": ["Endre Ady", "Sándor Petőfi", "János Arany", "Mihály Vörösmarty"],
+        "correct_answer": 3
+      },
+      {
+        "id": "127",
+        "question": "What is the name of the Hungarian dish made from a sweet pastry roll filled with walnut or poppy seed paste?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 3
+      },
+      {
+        "id": "128",
+        "question": "Who was the Hungarian poet known for his epic poem 'Toldi'?",
+        "options": ["Mihály Babits", "Sándor Petőfi", "Endre Ady", "János Arany"],
+        "correct_answer": 3
+      },
+      {
+        "id": "129",
+        "question": "What is the name of the Hungarian dish made from layers of sponge cake, chocolate cream, and apricot jam, topped with chocolate icing?",
+        "options": ["Dobos torte", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "130",
+        "question": "Who was the Hungarian physicist known for his work on wave mechanics, developing the Wigner–Seitz cell in solid-state physics?",
+        "options": ["Edward Teller", "John von Neumann", "Leó Szilárd", "Eugene Wigner"],
+        "correct_answer": 3
+      },
+      {
+        "id": "131",
+        "question": "What is the name of the Hungarian dish made from a sweet bread dough twisted into a spiral shape, then grilled and coated in sugar or other toppings?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 0
+      },
+      {
+        "id": "132",
+        "question": "Who was the Hungarian-American actor known for his role as Bela Lugosi's nemesis in horror films?",
+        "options": ["Vincent Price", "Peter Lorre", "Boris Karloff", "Lon Chaney"],
+        "correct_answer": 0
+      },
+      {
+        "id": "133",
+        "question": "What is the name of the Hungarian dish made from a layered cake with walnut or poppy seed filling?",
+        "options": ["Bejgli", "Kürtőskalács", "Pogácsa", "Rétes"],
+        "correct_answer": 0
+      },
+      {
+        "id": "134",
+        "question": "Who was the Hungarian physicist known for his invention of the Rubik's Cube?",
+        "options": ["Albert Szent-Györgyi", "Dennis Gábor", "Ernő Rubik", "Gábor Bojár"],
+        "correct_answer": 2
+      },
+      {
+        "id": "135",
+        "question": "What is the name of the Hungarian dish made from a sweet pastry roll filled with walnut or poppy seed paste?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 3
+      },
+      {
+        "id": "136",
+        "question": "Who was the Hungarian-American businessman and philanthropist known for founding the Central European University?",
+        "options": ["George Soros", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+        "correct_answer": 0
+      },
+      {
+        "id": "137",
+        "question": "What is the name of the Hungarian dish made from a sweet bread dough twisted into a spiral shape, then grilled and coated in sugar or other toppings?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 0
+      },
+      {
+        "id": "138",
+        "question": "Who was the Hungarian poet known for his work 'Poems of Mihály Vörösmarty'?",
+        "options": ["Endre Ady", "Sándor Petőfi", "János Arany", "Mihály Vörösmarty"],
+        "correct_answer": 3
+      },
+      {
+        "id": "139",
+        "question": "What is the name of the Hungarian dish made from a sweet pastry roll filled with walnut or poppy seed paste?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 3
+      },
+      {
+        "id": "140",
+        "question": "Who was the Hungarian poet known for his epic poem 'Toldi'?",
+        "options": ["Mihály Babits", "Sándor Petőfi", "Endre Ady", "János Arany"],
+        "correct_answer": 3
+      },
+      {
+        "id": "141",
+        "question": "What is the name of the Hungarian dish made from layers of sponge cake, chocolate cream, and apricot jam, topped with chocolate icing?",
+        "options": ["Dobos torte", "Esterházy torte", "Rigó Jancsi", "Somlói galuska"],
+        "correct_answer": 0
+      },
+      {
+        "id": "142",
+        "question": "Who was the Hungarian physicist known for his work on wave mechanics, developing the Wigner–Seitz cell in solid-state physics?",
+        "options": ["Edward Teller", "John von Neumann", "Leó Szilárd", "Eugene Wigner"],
+        "correct_answer": 3
+      },
+      {
+        "id": "143",
+        "question": "What is the name of the Hungarian dish made from a sweet bread dough twisted into a spiral shape, then grilled and coated in sugar or other toppings?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 0
+      },
+      {
+        "id": "144",
+        "question": "Who was the Hungarian-American actor known for his role as Bela Lugosi's nemesis in horror films?",
+        "options": ["Vincent Price", "Peter Lorre", "Boris Karloff", "Lon Chaney"],
+        "correct_answer": 0
+      },
+      {
+        "id": "145",
+        "question": "What is the name of the Hungarian dish made from a layered cake with walnut or poppy seed filling?",
+        "options": ["Bejgli", "Kürtőskalács", "Pogácsa", "Rétes"],
+        "correct_answer": 0
+      },
+      {
+        "id": "146",
+        "question": "Who was the Hungarian physicist known for his invention of the Rubik's Cube?",
+        "options": ["Albert Szent-Györgyi", "Dennis Gábor", "Ernő Rubik", "Gábor Bojár"],
+        "correct_answer": 2
+      },
+      {
+        "id": "147",
+        "question": "What is the name of the Hungarian dish made from a sweet pastry roll filled with walnut or poppy seed paste?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 3
+      },
+      {
+        "id": "148",
+        "question": "Who was the Hungarian-American businessman and philanthropist known for founding the Central European University?",
+        "options": ["George Soros", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+        "correct_answer": 0
+      },
+      {
+        "id": "149",
+        "question": "What is the name of the Hungarian dish made from a sweet bread dough twisted into a spiral shape, then grilled and coated in sugar or other toppings?",
+        "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+        "correct_answer": 0
+      },
+      {
+        "id": "150",
+        "question": "Who was the Hungarian poet known for his work 'Poems of Mihály Vörösmarty'?",
+        "options": ["Endre Ady", "Sándor Petőfi", "János Arany", "Mihály Vörösmarty"],
+        "correct_answer": 3
+      }
+    ]
+  }
+  
