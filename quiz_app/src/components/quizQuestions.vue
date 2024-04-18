@@ -1,6 +1,14 @@
 <template>
   <div>
       <h2 class="text-4xl p-3">Quiz questions</h2>
+      <div v-if="questionsAnswered === true"
+           class="bg-green-500 flex justify-center items-center h-10 "
+      >
+            Congratulations! {{ correctAnswersCount }}/50 questions were correct!
+      </div>
+      <div v-else-if="questionsAnswered === false">
+            All questions must be answered!!
+      </div>
       <div v-if="questions.length">
           <div v-for="(question,index) in questions" 
                :key="index"
@@ -36,7 +44,13 @@
                     :disabled="currentIndex === 0"
             >
             </button>
-            <button class="mx-6 px-3 py-2 border-slate-600 border-2 hover:bg-slate-400 hover:text-white hover:border-black">Submit Quiz</button>
+            <button class="mx-6 px-3 py-2 border-slate-600 border-2 hover:bg-slate-400 hover:text-white hover:border-black"
+                    :disabled="!allQuestionsAnswered"
+                    @click="submitQuiz"
+                    :class="{'cursor-not-allowed': !allQuestionsAnswered}"
+            >
+                    Submit Quiz
+            </button>
             <button class="fa fa-arrow-right cursor-pointer text-4xl hover:text-slate-400"
                     @click="nextQuestion"
                     :disabled="currentIndex === questions.length-1"
@@ -48,7 +62,7 @@
                :key="index"
                @click="jumptToQuestion(index)"
                class="cursor-pointer mx-3 my-1 border-black border px-2 text-center hover:border-cyan-400"
-               :class="{ 'border-green-500': correctAnswers[index] === true, 'border-red-500': correctAnswers[index] === false }"
+               :class="{ 'border-green-500': correctAnswers[index] === true, 'border-red-500': correctAnswers[index] === false , 'border-cyan-500': currentIndex===index}"
           >
                 {{ index+1 }}
           </div>
@@ -57,8 +71,8 @@
 </template>
 
 <script setup>
-  import { ref, onMounted,onBeforeUnmount } from 'vue';
-  import { useRoute } from 'vue-router';
+  import { ref, onMounted,onBeforeUnmount,computed } from 'vue';
+  import { useRoute, useRouter } from 'vue-router';
   import { useTimerStore } from '@/store/timerStore';
   import { useQuizStore } from '@/store/score'
   const correctAnswersCount = ref(0);
@@ -70,7 +84,9 @@
   const selectedAnswers=ref([]);
   const currentIndex=ref(0);
   const correctAnswers = ref([]);
+  const questionsAnswered=ref();
 
+  const router= useRouter();
   const route = useRoute();
   const quizSetName = route.params.quizSetName;
 
@@ -160,7 +176,7 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
   //go automativally to the next question after an option was selected
   const nextQuestionDelayed = (questionIndex, optionIndex) => {
       if(currentIndex.value < questions.value.length - 1){
-        
+          currentIndex.value++;
           checkIfCorrect(questionIndex,optionIndex);
           
       }else if(currentIndex.value === questions.value.length - 1){
@@ -168,7 +184,6 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
           checkIfCorrect(questionIndex,optionIndex);
       }
       setTimeout(() => {
-              currentIndex.value++;
               saveQuizState();
           }, 200);
       
@@ -178,20 +193,35 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
       currentIndex.value=index;
   }
 
-  const sumbmitQuiz=()=>{
-      const allCorrect=selectedAnswers.value.every((answer,index)=>
-          answer===questions.value[index].correct_answer);
-      
-      if(allCorrect){
-          //message with Congrats all answers correct
+  const allQuestionsAnswered = computed(() => {
+      return selectedAnswers.value.every(answer => answer !== null);
+});
+
+  const submitQuiz=()=>{
+      const allAnswered= selectedAnswers.value.every(answer => answer !== null);
+      if(allAnswered){
+            questionsAnswered.value=true;
+           setTimeout(() => {
+                router.push('/quizContent/tasks');
+           }, 7000);
       }else{
-          //message : check your answers again and correct them
+            questionsAnswered.value=false;
       }
   }
 
   const hasAnswerSelected = (questionIndex) => {
         return selectedAnswers.value[questionIndex] !== null;
 }
+
+
+const quizMoving=function(event){
+        if(event.key==="ArrowLeft"){
+            prevQuestion();
+        }else if(event.key==="ArrowRight"){
+            nextQuestion();
+        }
+    }
+    document.addEventListener('keydown', quizMoving);
 
   //onMounted fetch the data 
   onMounted(()=>{
@@ -202,8 +232,7 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
 
   onBeforeUnmount(()=>{
       timerStore.stopTimer();
+      document.removeEventListener('keydown', quizMoving);
   })
 
-
-  //should also implement the divs of the question to turn red if incorrect, idk yet after whole quiz submit and that's it or after every question
 </script>

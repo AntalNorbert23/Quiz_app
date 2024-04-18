@@ -27,7 +27,7 @@
                 <p>50</p>
             </div>
             <div class="flex justify-center pt-2 hover:cursor-pointer"
-                @click="markQuiz(row.id)"
+                @click="markQuiz(row.id,row.name)"
             >
                     <p class="hover:text-slate-600" >Mark quiz</p>
             </div>
@@ -46,14 +46,17 @@
   const rows = authStore.rows;
 
   const quizSetNames = ['quiz-set-1', 'quiz-set-2', 'quiz-set-3'];
-  const randomQuizSetName = quizSetNames[Math.floor(Math.random() * quizSetNames.length)];
+  const quizSetNamesHu=['quiz-set-4', 'quiz-set-5', 'quiz-set-6'];
 
- const markQuiz = (rowId) => {
+
+ const markQuiz = (rowId,name) => {
     let randomQuizSetName = localStorage.getItem(`randomQuizSetName_${rowId}`); 
+
+    const chosenQuizSetNames = name == "Hungarian knowledge" ? quizSetNamesHu : quizSetNames;
    
     if (!randomQuizSetName) {
     
-      randomQuizSetName = quizSetNames[Math.floor(Math.random() * quizSetNames.length)];
+      randomQuizSetName = chosenQuizSetNames[Math.floor(Math.random() * chosenQuizSetNames.length)];
       
       localStorage.setItem(`randomQuizSetName_${rowId}`, randomQuizSetName);
     }
