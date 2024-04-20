@@ -1,6 +1,18 @@
 <template>
     <div class="text-lg w-full">
-        <h1 class="p-3 text-2xl">Tasks to be done</h1>
+        <h1 class="p-3 text-2xl ms-8 mb-6 mt-3">Tasks to be done</h1>
+        <div class="flex mb-10">
+            <div class="ms-16 me-5 p-3 border border-slate-600 w-32 flex justify-center hover:cursor-pointer bg-slate-200 hover:bg-slate-400  hover:border-white"
+                 @click="goToTasks"
+            >
+                <p>Processing</p>
+            </div>
+            <div class="p-3 border border-slate-600 w-32 flex justify-center hover:cursor-pointer bg-slate-200 hover:bg-slate-400 hover:border-white"
+                 @click="goToTasksDone"
+            >
+                <p>Done</p>
+            </div>
+        </div>
      
         <div v-for="(row, index) in rows" :key="index"
             class="grid grid-cols-4 grid-rows-2 border border-black mx-auto w-[90%] mt-6 py-2"
@@ -60,9 +72,16 @@
       
       localStorage.setItem(`randomQuizSetName_${rowId}`, randomQuizSetName);
     }
-    router.push({ name: 'quizQuestions', params: { quizSetName: randomQuizSetName } });
+    router.push({ name: 'quizQuestions', params: { quizSetName: randomQuizSetName, rowId:rowId } });
   }
 
+  const goToTasks = () => {
+    router.push({ name: 'tasks' });
+ };
+
+  const goToTasksDone = () => {
+    router.push({ name: 'tasksDone' });
+  };
 
   onMounted(() => {
  

@@ -5,6 +5,7 @@ import quizContent from '@/components/quizContent.vue';
 import tasks from '@/components/tasks.vue';
 import claimTask from '@/components/claimTask.vue';
 import quizQuestions from '@/components/quizQuestions.vue';
+import tasksDone from '@/components/tasksDone.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -36,10 +37,15 @@ const router = createRouter({
           component: claimTask
         },
         {
-          path: 'quizQuestions/:quizSetName',
+          path: 'quizQuestions/:quizSetName/:rowId',
           name: 'quizQuestions',
           component: quizQuestions
-        }
+        },
+        {
+          path: 'tasksDone',
+          name: 'tasksDone',
+          component: tasksDone
+      }
       ]
     }
   ]

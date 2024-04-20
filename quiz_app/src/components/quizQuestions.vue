@@ -46,7 +46,7 @@
             </button>
             <button class="mx-6 px-3 py-2 border-slate-600 border-2 hover:bg-slate-400 hover:text-white hover:border-black"
                     :disabled="!allQuestionsAnswered"
-                    @click="submitQuiz"
+                    @click="submitQuiz(currentRowId)"
                     :class="{'cursor-not-allowed': !allQuestionsAnswered}"
             >
                     Submit Quiz
@@ -75,10 +75,12 @@
   import { useRoute, useRouter } from 'vue-router';
   import { useTimerStore } from '@/store/timerStore';
   import { useQuizStore } from '@/store/score'
+  import { useAuthStore } from '@/store';
   const correctAnswersCount = ref(0);
 
   const timerStore = useTimerStore();
   const score= useQuizStore();
+  const authStore=useAuthStore()
 
   const questions=ref([]);
   const selectedAnswers=ref([]);
@@ -89,6 +91,7 @@
   const router= useRouter();
   const route = useRoute();
   const quizSetName = route.params.quizSetName;
+  const currentRowId = route.params.rowId;
 
 
 
@@ -197,13 +200,28 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
       return selectedAnswers.value.every(answer => answer !== null);
 });
 
-  const submitQuiz=()=>{
+  const submitQuiz=(currentRowId)=>{
       const allAnswered= selectedAnswers.value.every(answer => answer !== null);
       if(allAnswered){
             questionsAnswered.value=true;
+
+            const rowIndex = authStore.rows.findIndex(row => row.id === currentRowId);
+            const row = authStore.rows.find(row => row.id === parseInt(currentRowId));
+    
+
+            const finishedRow = {
+                id: currentRowId,
+                name:row.name
+        };
+       
+        authStore.addQuizDone(finishedRow);
+    
+        authStore.rows.splice(rowIndex, 1);
+        authStore.saveRows();
+
            setTimeout(() => {
                 router.push('/quizContent/tasks');
-           }, 7000);
+           }, 3000);
       }else{
             questionsAnswered.value=false;
       }

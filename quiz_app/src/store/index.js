@@ -6,6 +6,7 @@ export const useAuthStore = defineStore({
     user: JSON.parse(localStorage.getItem('user'))||null,
     selectedTaskComponent: 'tasks',
     rows: JSON.parse(localStorage.getItem('rows')) || [],
+    quizzesDone: JSON.parse(localStorage.getItem('quizzesDone')) || [],
   }),
   actions: {
     setUser(user) {
@@ -30,6 +31,19 @@ export const useAuthStore = defineStore({
       const savedRows = localStorage.getItem('rows');
       if (savedRows) {
         this.rows = JSON.parse(savedRows);
+      }
+    },
+    addQuizDone(rowData) {
+      this.quizzesDone.push(rowData);
+      this.saveQuizzesDone();
+    },
+    saveQuizzesDone() {
+        localStorage.setItem('quizzesDone', JSON.stringify(this.quizzesDone));
+     },
+    loadQuizzesDone() {
+      const savedQuizzesDone = localStorage.getItem('quizzesDone');
+      if (savedQuizzesDone) {
+          this.quizzesDone = JSON.parse(savedQuizzesDone);
       }
     },
   },
