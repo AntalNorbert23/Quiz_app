@@ -204,11 +204,11 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
       const allAnswered= selectedAnswers.value.every(answer => answer !== null);
       if(allAnswered){
             questionsAnswered.value=true;
-
-            const rowIndex = authStore.rows.findIndex(row => row.id === currentRowId);
+          
+            const currentRowIdTypeAdjusted = parseInt(currentRowId, 10)
+            const rowIndex = authStore.rows.findIndex(row => row.id ===  currentRowIdTypeAdjusted);
             const row = authStore.rows.find(row => row.id === parseInt(currentRowId));
-    
-
+            
             const finishedRow = {
                 id: currentRowId,
                 name:row.name
@@ -218,6 +218,11 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
     
         authStore.rows.splice(rowIndex, 1);
         authStore.saveRows();
+
+        authStore.decrementClaimedQuizzesCount();
+
+        localStorage.removeItem(`quizState_${quizSetName}`);
+        localStorage.removeItem(`randomQuizSetName_${currentRowId}`)
 
            setTimeout(() => {
                 router.push('/quizContent/tasks');

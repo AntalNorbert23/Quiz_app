@@ -41,24 +41,54 @@
                 <p class="hover:text-slate-600" >Claim quiz</p>
         </div>
    </div>
+   <div v-if="errorMsg" class="text-red-500 mt-4 flex justify-center">
+      {{ errorMsg }}
+    </div>
 </template>
 
 <script setup>
     import { useRouter } from 'vue-router';
     import { useAuthStore } from '@/store/index';
-    import { onMounted } from 'vue';
+    import { onMounted,ref } from 'vue';
 
     const authStore = useAuthStore();
 
     const router=useRouter();
+    const errorMsg = ref(null);
+
+    const generateUniqueRandomID = () => {
+        let uniqueID;
+        const claimedIDs = JSON.parse(localStorage.getItem('claimedIDs')) || [];
+        
+        // Generate random ID and check if it is already in the claimed IDs list
+        do {
+            uniqueID = Math.floor(Math.random() * 1000000); // Generate a random ID
+        } while (claimedIDs.includes(uniqueID));
+        
+        // Add the new unique ID to the claimed IDs list and save to local storage
+        claimedIDs.push(uniqueID);
+        localStorage.setItem('claimedIDs', JSON.stringify(claimedIDs));
+        
+        return uniqueID;
+    };
 
     const selectComponent=(name,quizSetName)=>{
-        
-        const newId = authStore.rows.length + 1;
+        const maxClaimedQuizzes = 3;
+
+        if (authStore.claimedQuizzesCount >= maxClaimedQuizzes) {
+            errorMsg.value = 'Please complete the claimed quizzes first.';
+            setTimeout(() => {
+                errorMsg.value=null
+            }, 3000);
+            return;
+        }
+
+        const newId = generateUniqueRandomID();
         const newRow = { id: newId, name: name, quizSetName: quizSetName};
         authStore.addRow(newRow);
         router.push({ name: 'tasks' });
         authStore.selectedTaskComponent='tasks';
+        authStore.incrementClaimedQuizzes();
     }
 
     //temporary refresh bug fixer 
