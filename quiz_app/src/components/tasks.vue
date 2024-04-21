@@ -4,6 +4,7 @@
         <div class="flex mb-10">
             <div class="ms-16 me-5 p-3 border border-slate-600 w-32 flex justify-center hover:cursor-pointer bg-slate-200 hover:bg-slate-400  hover:border-white"
                  @click="goToTasks"
+                 :class="{ 'bg-slate-600': processingOrDone }"
             >
                 <p>Processing</p>
             </div>
@@ -49,11 +50,12 @@
 
   <script setup>
   import { useAuthStore } from '@/store/index';
-  import { useRouter } from 'vue-router';
-  import { onMounted } from 'vue';
+  import { useRouter,useRoute } from 'vue-router';
+  import { onMounted,computed } from 'vue';
   
   const authStore = useAuthStore();
   const router=useRouter();
+  const route=useRoute();
 
   const rows = authStore.rows;
 
@@ -83,8 +85,11 @@
     router.push({ name: 'tasksDone' });
   };
 
+  const processingOrDone = computed(() => {
+    return route.name === 'tasks';
+});
+
   onMounted(() => {
- 
   authStore.loadRows();
 });
   </script>

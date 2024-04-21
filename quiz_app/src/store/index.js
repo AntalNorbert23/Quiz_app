@@ -7,6 +7,7 @@ export const useAuthStore = defineStore({
     selectedTaskComponent: 'tasks',
     rows: JSON.parse(localStorage.getItem('rows')) || [],
     quizzesDone: JSON.parse(localStorage.getItem('quizzesDone')) || [],
+    claimedQuizzesCount: JSON.parse(localStorage.getItem('claimedQuizzesCount')) || 0,
   }),
   actions: {
     setUser(user) {
@@ -46,7 +47,28 @@ export const useAuthStore = defineStore({
           this.quizzesDone = JSON.parse(savedQuizzesDone);
       }
     },
-  },
+    incrementClaimedQuizzes() {
+      this.claimedQuizzesCount++;
+      localStorage.setItem('claimedQuizzesCount', JSON.stringify(this.claimedQuizzesCount));
+    },
+    decrementClaimedQuizzesCount() {
+      if (this.claimedQuizzesCount > 0) {
+          this.claimedQuizzesCount -= 1;
+          this.saveClaimedQuizzesCount();
+      }
+    },
+    saveClaimedQuizzesCount() {
+        localStorage.setItem('claimedQuizzesCount', JSON.stringify(this.claimedQuizzesCount));
+    },
+    loadClaimedQuizzesCount() {
+      const savedClaimedQuizzesCount = localStorage.getItem('claimedQuizzesCount');
+      if (savedClaimedQuizzesCount) {
+          this.claimedQuizzesCount = JSON.parse(savedClaimedQuizzesCount);
+      } else {
+          this.claimedQuizzesCount = 0;
+      }
+    }
+    },
   getters: {
     getUsername() {
       return this.user ? this.user.username : '';

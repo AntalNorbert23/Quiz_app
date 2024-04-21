@@ -3,16 +3,17 @@
         <h1 class="p-3 text-2xl ms-8 mb-6 mt-3">Completed Tasks</h1>
         <div class="flex mb-10">
             <div
-                class="ms-16 me-5 p-3 bg-slate-600 w-32 flex justify-center hover:cursor-pointer hover:bg-slate-400"
+                class="ms-16 me-5 p-3 border border-slate-600 w-32 flex justify-center hover:cursor-pointer bg-slate-200 hover:bg-slate-400  hover:border-white"
                 @click="navigateToTasks"
             >
-                <p class="text-white">Processing</p>
+                <p>Processing</p>
             </div>
             <div
-                class="p-3 bg-slate-600 w-32 flex justify-center hover:cursor-pointer hover:bg-slate-400"
+                class="p-3 border border-slate-600 w-32 flex justify-center hover:cursor-pointer bg-slate-200 hover:bg-slate-400 hover:border-white"
                 @click="navigateToTasksDone"
+                :class="{ 'bg-slate-600': processingOrDone }"
             >
-                <p class="text-white">Done</p>
+                <p>Done</p>
             </div>
         </div>
         <div v-for="(row, index) in authStore.quizzesDone" :key="index"
@@ -48,14 +49,13 @@
 
 <script setup>
 import { useAuthStore } from '@/store/index';
-import { useRouter } from 'vue-router';
-import { onMounted } from 'vue';
-
+import { useRouter,useRoute } from 'vue-router';
+import { onMounted, computed } from 'vue';
 
 const authStore = useAuthStore();
 
 const router = useRouter();
-
+const route=useRoute();
 
 function navigateToTasks() {
   router.push({ name: 'tasks' });
@@ -65,6 +65,9 @@ function navigateToTasksDone() {
   router.push({ name: 'tasksDone' });
 }
 
+const processingOrDone = computed(() => {
+    return route.name === 'tasksDone';
+});
 
 onMounted(() => {
     authStore.loadQuizzesDone();
