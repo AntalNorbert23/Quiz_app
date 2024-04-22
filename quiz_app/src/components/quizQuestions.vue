@@ -2,7 +2,7 @@
   <div>
       <h2 class="text-4xl p-3">Quiz questions</h2>
       <div v-if="questionsAnswered === true"
-           class="bg-green-500 flex justify-center items-center h-10 "
+           class="flex justify-center items-center h-10 bg-green-500"
       >
             Congratulations! {{ correctAnswersCount }}/50 questions were correct!
       </div>
@@ -13,7 +13,7 @@
           <div v-for="(question,index) in questions" 
                :key="index"
                v-show="currentIndex === index"
-               class="text-2xl flex flex-col items-center justify-center pt-3" 
+               class="flex flex-col items-center justify-center pt-3 text-2xl" 
           >
               <h3 class="text-center px-6">{{ question.question }}</h3>
               <div class="flex">
@@ -31,7 +31,7 @@
                                  @click="nextQuestionDelayed(index, optionIndex)"
                                  :checked="isSelected(index, optionIndex)"
                                  :disabled="hasAnswerSelected(index)"
-                                 class="pe-6 me-3 focus:outline-slate-600 focus-within:outline-slate-600 cursor-pointer"
+                                 class="pe-6 me-3 cursor-pointer focus:outline-slate-600 focus-within:outline-slate-600"
                                  :class="{'cursor-not-allowed': hasAnswerSelected(index) === true}"
                           >
                           <label :for="'option_' + optionIndex">{{ option }}</label>
@@ -66,7 +66,7 @@
           <div v-for="(question,index) in questions"
                :key="index"
                @click="jumptToQuestion(index)"
-               class="cursor-pointer mx-3 my-1 border-black border px-2 text-center hover:border-cyan-400"
+               class=" px-2 text-center cursor-pointer mx-3 my-1 border-black border hover:border-cyan-400"
                :class="{ 'border-green-500': correctAnswers[index] === true, 'border-red-500': correctAnswers[index] === false , 'border-cyan-500': currentIndex===index}"
           >
                 {{ index+1 }}
@@ -76,111 +76,112 @@
 </template>
 
 <script setup>
-  import { ref, onMounted,onBeforeUnmount,computed } from 'vue';
-  import { useRoute, useRouter } from 'vue-router';
-  import { useTimerStore } from '@/store/timerStore';
-  import { useQuizStore } from '@/store/score'
-  import { useAuthStore } from '@/store';
-  const correctAnswersCount = ref(0);
-
-  const timerStore = useTimerStore();
-  const score= useQuizStore();
-  const authStore=useAuthStore()
-
-  const questions=ref([]);
-  const selectedAnswers=ref([]);
-  const currentIndex=ref(0);
-  const correctAnswers = ref([]);
-  const questionsAnswered=ref();
-  const shortcutLetters = ['(A)','(S)','(D)','(F)'];
-
-  const router= useRouter();
-  const route = useRoute();
-  const quizSetName = route.params.quizSetName;
-  const currentRowId = route.params.rowId;
-
-
-
-  //check if an option is selected for a question
-  const isSelected = (questionIndex, optionIndex) => {
-      return selectedAnswers.value[questionIndex] === optionIndex;
-  }
-
-  //fetch the random json quiz sets
-  const fetchQuizQuestions = async () =>{
-      try{
-          const quizSet=await import(`./Questions/${quizSetName}.json`)
-          const data= quizSet.default;
-          questions.value=data.questions;
-
-          //get the selectedAnswers array with the saved selections
-          const savedQuizState = localStorage.getItem(`quizState_${quizSetName}`);
+    //imports
+    import { ref, onMounted,onBeforeUnmount,computed } from 'vue';
+    import { useRoute, useRouter } from 'vue-router';
+    import { useTimerStore } from '@/store/timerStore';
+    import { useQuizStore } from '@/store/score'
+    import { useAuthStore } from '@/store';
     
-          if (savedQuizState) {
-              const quizState = JSON.parse(savedQuizState);
-              selectedAnswers.value = quizState.selectedAnswers;
-          } else {
-          // if there were no previous selections found, fill selectedAnswers with null 
-              selectedAnswers.value = Array(data.questions.length).fill(null);
-        }
-  }catch(error){
-          console.error(error);
-      }
-  } 
+    //stores and routers 
+    const timerStore = useTimerStore();
+    const score= useQuizStore();
+    const authStore=useAuthStore();
+    const router= useRouter();
+    const route = useRoute();
+    const quizSetName = route.params.quizSetName;
+    const currentRowId = route.params.rowId;
 
-  //function to load the quiz from localstorage
-  const loadQuizState = () => {
-      const savedQuizState = localStorage.getItem(`quizState_${quizSetName}`);
+    //variables
+    const questions=ref([]);
+    const selectedAnswers=ref([]);
+    const currentIndex=ref(0);
+    const correctAnswersCount = ref(0);
+    const correctAnswers = ref([]);
+    const questionsAnswered=ref();
+    const shortcutLetters = ['(A)','(S)','(D)','(F)'];
 
-      if (savedQuizState) {
-          const quizState = JSON.parse(savedQuizState);
-          selectedAnswers.value = quizState.selectedAnswers;
-          correctAnswers.value = quizState.correctAnswers;
-          correctAnswersCount.value = quizState.correctAnswersCount;
-      }
-  }
-
-  //function to save quiz to localstorage
-
-  const saveQuizState = () => {
-      const quizState = {
-          selectedAnswers: selectedAnswers.value,
-          correctAnswers: correctAnswers.value,
-          correctAnswersCount: correctAnswersCount.value
-      };
-      setTimeout(() => {
-            localStorage.setItem(`quizState_${quizSetName}`, JSON.stringify(quizState));
-      }, 200);
-      
-}
-
-  //function to go to the next question
-  const nextQuestion= ()=>{
-      if(currentIndex.value<questions.value.length-1){
-          currentIndex.value++;
-          saveQuizState();
-      }
-  }
-
-  //function to go to the previous question 
-  const prevQuestion= ()=>{
-      if(currentIndex.value>0){
-          currentIndex.value--;
-          saveQuizState();
-      }
-  }
-
-const checkIfCorrect=(questionIndex,optionIndex)=>{
-    setTimeout(() => {
-              selectedAnswers.value[questionIndex] = optionIndex;
-              correctAnswers.value[questionIndex] = optionIndex === questions.value[questionIndex].correct_answer;
-          }, 400);
-    const correctOptionIndex = questions.value[questionIndex].correct_answer;
-    if (optionIndex === correctOptionIndex) {
-        correctAnswersCount.value++; 
-        score.setCorrectAnswersCount(score.correctAnswersCount + 1)
+  
+    //check if an option is selected for a question
+    const isSelected = (questionIndex, optionIndex) => {
+        return selectedAnswers.value[questionIndex] === optionIndex;
     }
-}
+
+    //fetch the random json quiz sets
+    const fetchQuizQuestions = async () =>{
+        try{
+            const quizSet=await import(`./Questions/${quizSetName}.json`)
+            const data= quizSet.default;
+            questions.value=data.questions;
+
+            //get the selectedAnswers array with the saved selections
+            const savedQuizState = localStorage.getItem(`quizState_${quizSetName}`);
+        
+            if (savedQuizState) {
+                const quizState = JSON.parse(savedQuizState);
+                selectedAnswers.value = quizState.selectedAnswers;
+            } else {
+            // if there were no previous selections found, fill selectedAnswers with null 
+                selectedAnswers.value = Array(data.questions.length).fill(null);
+            }
+    }catch(error){
+            console.error(error);
+        }
+    } 
+
+    //function to load the quiz from localstorage
+    const loadQuizState = () => {
+        const savedQuizState = localStorage.getItem(`quizState_${quizSetName}`);
+
+        if (savedQuizState) {
+            const quizState = JSON.parse(savedQuizState);
+            selectedAnswers.value = quizState.selectedAnswers;
+            correctAnswers.value = quizState.correctAnswers;
+            correctAnswersCount.value = quizState.correctAnswersCount;
+        }
+    }
+
+    //function to save quiz to localstorage
+    const saveQuizState = () => {
+        const quizState = {
+            selectedAnswers: selectedAnswers.value,
+            correctAnswers: correctAnswers.value,
+            correctAnswersCount: correctAnswersCount.value
+        };
+        setTimeout(() => {
+                localStorage.setItem(`quizState_${quizSetName}`, JSON.stringify(quizState));
+        }, 200);
+        
+    }
+
+    //function to go to the next question
+    const nextQuestion= ()=>{
+        if(currentIndex.value<questions.value.length-1){
+            currentIndex.value++;
+            saveQuizState();
+        }
+    }
+
+    //function to go to the previous question 
+    const prevQuestion= ()=>{
+        if(currentIndex.value>0){
+            currentIndex.value--;
+            saveQuizState();
+        }
+    }
+
+    //function for check if the selected answer was correct if so then increment the correctAnswercount value and set it in the score storage
+    const checkIfCorrect=(questionIndex,optionIndex)=>{
+        setTimeout(() => {
+                selectedAnswers.value[questionIndex] = optionIndex;
+                correctAnswers.value[questionIndex] = optionIndex === questions.value[questionIndex].correct_answer;
+            }, 400);
+        const correctOptionIndex = questions.value[questionIndex].correct_answer;
+        if (optionIndex === correctOptionIndex) {
+            correctAnswersCount.value++; 
+            score.setCorrectAnswersCount(score.correctAnswersCount + 1)
+        }
+    }
 
   //go automativally to the next question after an option was selected
   const nextQuestionDelayed = (questionIndex, optionIndex) => {
@@ -198,60 +199,73 @@ const checkIfCorrect=(questionIndex,optionIndex)=>{
       
   }
 
-  const jumptToQuestion= (index)=>{
-      currentIndex.value=index;
-  }
+    //function to jump to a specific question at a given index (if the user clicks on a question nr)
+    const jumptToQuestion= (index)=>{
+        currentIndex.value=index;
+    }
 
-  const allQuestionsAnswered = computed(() => {
-      return selectedAnswers.value.every(answer => answer !== null);
-});
-
-  const submitQuiz=(currentRowId)=>{
-      const allAnswered= selectedAnswers.value.every(answer => answer !== null);
-      if(allAnswered){
-            questionsAnswered.value=true;
-          
-            const currentRowIdTypeAdjusted = parseInt(currentRowId, 10)
-            const rowIndex = authStore.rows.findIndex(row => row.id ===  currentRowIdTypeAdjusted);
-            const row = authStore.rows.find(row => row.id === parseInt(currentRowId));
-            
-            const finishedRow = {
-                id: currentRowId,
-                name:row.name
-        };
-       
-        authStore.addQuizDone(finishedRow);
+    //check if all questions are answered
+    const allQuestionsAnswered = computed(() => {
+        return selectedAnswers.value.every(answer => answer !== null);
+    });
     
-        authStore.rows.splice(rowIndex, 1);
-        authStore.saveRows();
+    //logic/function for submitting quiz 
+    const submitQuiz=(currentRowId)=>{
+        const allAnswered= selectedAnswers.value.every(answer => answer !== null);
 
-        authStore.decrementClaimedQuizzesCount();
+        //check if all of the questions was answered
+        if(allAnswered){
+                questionsAnswered.value=true;
 
-        localStorage.removeItem(`quizState_${quizSetName}`);
-        localStorage.removeItem(`randomQuizSetName_${currentRowId}`)
+                //get the current quiz set that has been submitted (the row from the tasks component)
+                const currentRowIdTypeAdjusted = parseInt(currentRowId, 10)
+                const rowIndex = authStore.rows.findIndex(row => row.id ===  currentRowIdTypeAdjusted);
+                const row = authStore.rows.find(row => row.id === parseInt(currentRowId));
+                
+                const finishedRow = {
+                    id: currentRowId,
+                    name:row.name
+            };
+            
+            //add to the store the finished row
+            authStore.addQuizDone(finishedRow);
+            
+            //splice the correct row (by getting it's index -rowIndex) from rows (so from the tasks component practically) and save the state
+            authStore.rows.splice(rowIndex, 1);
+            authStore.saveRows();
 
-           setTimeout(() => {
-                router.push('/quizContent/tasks');
-           }, 3000);
-      }else{
-            questionsAnswered.value=false;
-      }
-  }
+            //decrement the claimed quizes number
+            authStore.decrementClaimedQuizzesCount();
 
-  const hasAnswerSelected = (questionIndex) => {
-        return selectedAnswers.value[questionIndex] !== null;
-}
+            //remove the states and names of the quizsets
+            localStorage.removeItem(`quizState_${quizSetName}`);
+            localStorage.removeItem(`randomQuizSetName_${currentRowId}`)
 
-
-const quizMoving=function(event){
-        if(event.key==="ArrowLeft"){
-            prevQuestion();
-        }else if(event.key==="ArrowRight"){
-            nextQuestion();
+            setTimeout(() => {
+                    router.push('/quizContent/tasks');
+            }, 3000);
+        }else{
+                questionsAnswered.value=false;
         }
     }
-    document.addEventListener('keydown', quizMoving);
 
+    // check if the quiz question was already marked
+    const hasAnswerSelected = (questionIndex) => {
+        return selectedAnswers.value[questionIndex] !== null;
+    }
+
+    //move between questions with arrows from keypad
+    const quizMoving=function(event){
+            if(event.key==="ArrowLeft"){
+                prevQuestion();
+            }else if(event.key==="ArrowRight"){
+                nextQuestion();
+            }
+        }
+
+    document.addEventListener('keydown', quizMoving);
+    
+    //shortcuts for selecting options for the questions
     const selectShortcut = (event) => {
         const keysToOptions = {
             'A': 0, 
@@ -260,7 +274,6 @@ const quizMoving=function(event){
             'F': 3 
         };
 
-    
         const optionIndex = keysToOptions[event.key.toUpperCase()];
         if (optionIndex !== undefined) {
             nextQuestionDelayed(currentIndex.value, optionIndex);
@@ -270,17 +283,17 @@ const quizMoving=function(event){
     document.addEventListener('keydown',selectShortcut);
 
 
-  //onMounted fetch the data 
-  onMounted(()=>{
-      fetchQuizQuestions();
-      loadQuizState();
-      timerStore.startTimer();
-  })
+    //onMounted fetch the data 
+    onMounted(()=>{
+        fetchQuizQuestions();
+        loadQuizState();
+        timerStore.startTimer();
+    })
 
-  onBeforeUnmount(()=>{
-      timerStore.stopTimer();
-      document.removeEventListener('keydown', quizMoving);
-      document.removeEventListener('keydown',selectShortcut);
-  })
+    onBeforeUnmount(()=>{
+        timerStore.stopTimer();
+        document.removeEventListener('keydown', quizMoving);
+        document.removeEventListener('keydown',selectShortcut);
+    })
 
 </script>

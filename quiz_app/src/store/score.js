@@ -6,6 +6,7 @@ export const useQuizStore = defineStore({
   state: () => ({
     correctAnswersCount: 0
   }),
+  //handling correct answers nr count
   actions: {
     setCorrectAnswersCount(count) {
       this.correctAnswersCount = count;

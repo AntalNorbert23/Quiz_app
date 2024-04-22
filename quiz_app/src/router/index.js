@@ -51,6 +51,7 @@ const router = createRouter({
   ]
 })
 
+//route guard- check if the user is logged in 
 router.beforeEach((to, from, next) => {
   if (to.meta.requiresAuth) { 
     const user = JSON.parse(localStorage.getItem('user'));
