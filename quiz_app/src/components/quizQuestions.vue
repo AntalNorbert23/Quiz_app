@@ -15,24 +15,29 @@
                v-show="currentIndex === index"
                class="text-2xl flex flex-col items-center justify-center pt-3" 
           >
-              <h3>{{ question.question }}</h3>
-              <ul class="pt-3 pb-4">
-                  <li v-for="(option,optionIndex) in question.options"
-                      :key="optionIndex"
-                      class="flex items-center"
-                  >
-                      <input type="radio" :id="'option-'+ optionIndex"
-                             :value="optionIndex"
-                             v-model="selectedAnswers[index]"
-                             @click="nextQuestionDelayed(index, optionIndex)"
-                             :checked="isSelected(index, optionIndex)" 
-                             :disabled="hasAnswerSelected(index)"
-                             class="pe-6 me-3 focus:outline-slate-600 focus-within:outline-slate-600 cursor-pointer"
-                             :class="{'cursor-not-allowed': hasAnswerSelected(index) === true}"
+              <h3 class="text-center px-6">{{ question.question }}</h3>
+              <div class="flex">
+                  <div class="flex flex-col items-center justify-center pe-6">
+                      <p v-for="(option,optionIndex) in question.options">{{ shortcutLetters[optionIndex] }}</p>
+                  </div>
+                  <ul class="pt-3 pb-4">
+                      <li v-for="(option,optionIndex) in question.options"
+                          :key="optionIndex"
+                          class="flex items-center"
                       >
-                      <label :for="'option_' + optionIndex">{{ option }}</label>
-                </li>
-              </ul>
+                          <input type="radio" :id="'option-'+ optionIndex"
+                                 :value="optionIndex"
+                                 v-model="selectedAnswers[index]"
+                                 @click="nextQuestionDelayed(index, optionIndex)"
+                                 :checked="isSelected(index, optionIndex)"
+                                 :disabled="hasAnswerSelected(index)"
+                                 class="pe-6 me-3 focus:outline-slate-600 focus-within:outline-slate-600 cursor-pointer"
+                                 :class="{'cursor-not-allowed': hasAnswerSelected(index) === true}"
+                          >
+                          <label :for="'option_' + optionIndex">{{ option }}</label>
+                    </li>
+                  </ul>
+              </div>
           </div>
       </div>
       <div v-else>
@@ -87,6 +92,7 @@
   const currentIndex=ref(0);
   const correctAnswers = ref([]);
   const questionsAnswered=ref();
+  const shortcutLetters = ['(A)','(S)','(D)','(F)'];
 
   const router= useRouter();
   const route = useRoute();
@@ -246,6 +252,24 @@ const quizMoving=function(event){
     }
     document.addEventListener('keydown', quizMoving);
 
+    const selectShortcut = (event) => {
+        const keysToOptions = {
+            'A': 0, 
+            'S': 1, 
+            'D': 2, 
+            'F': 3 
+        };
+
+    
+        const optionIndex = keysToOptions[event.key.toUpperCase()];
+        if (optionIndex !== undefined) {
+            nextQuestionDelayed(currentIndex.value, optionIndex);
+        }
+    };
+
+    document.addEventListener('keydown',selectShortcut);
+
+
   //onMounted fetch the data 
   onMounted(()=>{
       fetchQuizQuestions();
@@ -256,6 +280,7 @@ const quizMoving=function(event){
   onBeforeUnmount(()=>{
       timerStore.stopTimer();
       document.removeEventListener('keydown', quizMoving);
+      document.removeEventListener('keydown',selectShortcut);
   })
 
 </script>
