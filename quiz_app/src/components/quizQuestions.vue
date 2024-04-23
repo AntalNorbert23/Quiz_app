@@ -208,6 +208,25 @@
     const allQuestionsAnswered = computed(() => {
         return selectedAnswers.value.every(answer => answer !== null);
     });
+
+    function removeClaimedIDFromLocalStorage() {
+        //retrieve the list of claimed IDs from local storage
+        const claimedIDs = JSON.parse(localStorage.getItem('claimedIDs')) || [];
+        
+        // find the index of the ID to be removed
+        const index = claimedIDs.indexOf(Number(currentRowId));
+        
+        // check if the ID is found and remove it from the array then save back to localstorage
+        if (index !== -1) {
+            claimedIDs.splice(index, 1);
+            
+            const updatedClaimedIDs = JSON.stringify(claimedIDs);
+            
+            localStorage.setItem('claimedIDs', updatedClaimedIDs);
+        }else{
+            console.log("not found")
+        }
+    }
     
     //logic/function for submitting quiz 
     const submitQuiz=(currentRowId)=>{
@@ -222,9 +241,13 @@
                 const rowIndex = authStore.rows.findIndex(row => row.id ===  currentRowIdTypeAdjusted);
                 const row = authStore.rows.find(row => row.id === parseInt(currentRowId));
                 
+                const savedQuizState=localStorage.getItem(`quizState_${quizSetName}`);
+                const quizStateObj = JSON.parse(savedQuizState);
+                
                 const finishedRow = {
                     id: currentRowId,
-                    name:row.name
+                    name:row.name,
+                    correctAnswersCount: quizStateObj.correctAnswersCount
             };
             
             //add to the store the finished row
@@ -238,8 +261,12 @@
             authStore.decrementClaimedQuizzesCount();
 
             //remove the states and names of the quizsets
-            localStorage.removeItem(`quizState_${quizSetName}`);
-            localStorage.removeItem(`randomQuizSetName_${currentRowId}`)
+            setTimeout(() => {
+                localStorage.removeItem(`quizState_${quizSetName}`);
+                localStorage.removeItem(`randomQuizSetName_${currentRowId}`)
+                removeClaimedIDFromLocalStorage();
+            }, 100);
+          
 
             setTimeout(() => {
                     router.push('/quizContent/tasks');
@@ -276,11 +303,16 @@
 
         const optionIndex = keysToOptions[event.key.toUpperCase()];
         if (optionIndex !== undefined) {
+
+            //logic for not letting modify the answer for the question once it has been already answered
+            if(hasAnswerSelected(currentIndex.value)){
+                return;
+            }
             nextQuestionDelayed(currentIndex.value, optionIndex);
         }
     };
 
-    document.addEventListener('keydown',selectShortcut);
+    document.addEventListener('keyup',selectShortcut);
 
 
     //onMounted fetch the data 
@@ -293,7 +325,7 @@
     onBeforeUnmount(()=>{
         timerStore.stopTimer();
         document.removeEventListener('keydown', quizMoving);
-        document.removeEventListener('keydown',selectShortcut);
+        document.removeEventListener('keyup',selectShortcut);
     })
 
 </script>
