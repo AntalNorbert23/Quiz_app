@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full text-lg">
+    <div class="w-full text-lg pb-10">
         <h1 class="p-3 ms-8 mb-6 mt-3 text-2xl">Completed Tasks</h1>
         <div class="flex mb-10">
             <div
@@ -29,7 +29,7 @@
                 <p>Task Nr</p>
             </div>
             <div class="flex justify-center">
-                <p>Quizes done</p>
+                <p>Correct</p>
             </div>
             <div class="flex justify-center">
                 <p>{{ row.id }}</p>
@@ -41,7 +41,7 @@
                 <p>50</p>
             </div>
             <div class="flex justify-center pt-2 hover:cursor-pointer">
-                <p class="hover:text-slate-600" >DONE</p>
+                <p class="hover:text-slate-600" >{{ row.correctAnswersCount }}/50</p>
             </div>
         </div>
     </div>
