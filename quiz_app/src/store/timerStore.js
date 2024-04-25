@@ -1,6 +1,8 @@
 // timerStore.js
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
+import { useAuthStore } from '.';
+
 
 export const useTimerStore = defineStore({
   id: 'timer',
@@ -34,16 +36,19 @@ export const useTimerStore = defineStore({
     },
     //saving timer to localstorage
     saveTimeToLocalStorage() {
-      localStorage.setItem('quizTime', this.totalTime.toString());
+      const authStore = useAuthStore(); 
+      localStorage.setItem(`${authStore.getUsername}-quizTime`, this.totalTime.toString());
     },
     //loading timer from localstorage
     loadTimeFromLocalStorage() {
-      const savedTime = localStorage.getItem('quizTime');
+      const authStore = useAuthStore(); 
+      const savedTime = localStorage.getItem(`${authStore.getUsername}-quizTime`);
       return savedTime !== null ? parseInt(savedTime) : null;
     },
     //removing timer from localstorage
     clearTimeFromLocalStorage() {
-      localStorage.removeItem('quizTime');
+      const authStore = useAuthStore(); 
+      localStorage.removeItem(`${authStore.getUsername}-quizTime`);
     },
   },
 });

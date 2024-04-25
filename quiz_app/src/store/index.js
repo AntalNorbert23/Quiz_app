@@ -2,13 +2,22 @@ import { defineStore } from 'pinia';
 
 export const useAuthStore = defineStore({
   id: 'auth',
-  state: () => ({
-    user: JSON.parse(localStorage.getItem('user'))||null,
-    selectedTaskComponent: 'tasks',
-    rows: JSON.parse(localStorage.getItem('rows')) || [],
-    quizzesDone: JSON.parse(localStorage.getItem('quizzesDone')) || [],
-    claimedQuizzesCount: JSON.parse(localStorage.getItem('claimedQuizzesCount')) || 0,
-  }),
+  state: () => {
+
+    //load the user from the localstorage
+    const user = JSON.parse(localStorage.getItem('user')) || null;
+    
+    //get the username if an user is logged in 
+    const username = user ? user.username : '';
+    
+    return {
+      user,
+      selectedTaskComponent: 'tasks',
+      rows: JSON.parse(localStorage.getItem(`${username}-rows`)) || [],
+      quizzesDone: JSON.parse(localStorage.getItem(`${username}-quizzesDone`)) || [],
+      claimedQuizzesCount: JSON.parse(localStorage.getItem(`${username}-claimedQuizzesCount`)) || 0,
+    };
+  },
   actions: {
     //action for setting the user in the localstorage
     setUser(user) {
@@ -31,11 +40,11 @@ export const useAuthStore = defineStore({
     },
     //action for saving these rows
     saveRows() {
-      localStorage.setItem('rows', JSON.stringify(this.rows));
+      localStorage.setItem(`${this.getUsername}-rows`, JSON.stringify(this.rows));
     },
     //action for loading the rows
     loadRows() {
-      const savedRows = localStorage.getItem('rows');
+      const savedRows = localStorage.getItem(`${this.getUsername}-rows`);
       if (savedRows) {
         this.rows = JSON.parse(savedRows);
       }
@@ -47,11 +56,11 @@ export const useAuthStore = defineStore({
     },
     //action for saving it in the localstorage
     saveQuizzesDone() {
-        localStorage.setItem('quizzesDone', JSON.stringify(this.quizzesDone));
+        localStorage.setItem(`${this.getUsername}-quizzesDone`, JSON.stringify(this.quizzesDone));
      },
      //action for loading the quizzes done
     loadQuizzesDone() {
-      const savedQuizzesDone = localStorage.getItem('quizzesDone');
+      const savedQuizzesDone = localStorage.getItem(`${this.getUsername}-quizzesDone`);
       if (savedQuizzesDone) {
           this.quizzesDone = JSON.parse(savedQuizzesDone);
       }
@@ -59,7 +68,7 @@ export const useAuthStore = defineStore({
     //action to increment the claimedquizzescount 
     incrementClaimedQuizzes() {
       this.claimedQuizzesCount++;
-      localStorage.setItem('claimedQuizzesCount', JSON.stringify(this.claimedQuizzesCount));
+      localStorage.setItem(`${this.getUsername}-claimedQuizzesCount`, JSON.stringify(this.claimedQuizzesCount));
     },
     //action to decremebt the calimedquizzescount 
     decrementClaimedQuizzesCount() {
@@ -70,11 +79,11 @@ export const useAuthStore = defineStore({
     },
     //save the claimedquizzes nr 
     saveClaimedQuizzesCount() {
-        localStorage.setItem('claimedQuizzesCount', JSON.stringify(this.claimedQuizzesCount));
+        localStorage.setItem(`${this.getUsername}-claimedQuizzesCount`, JSON.stringify(this.claimedQuizzesCount));
     },
     //load the claimed quizzes  nr 
     loadClaimedQuizzesCount() {
-      const savedClaimedQuizzesCount = localStorage.getItem('claimedQuizzesCount');
+      const savedClaimedQuizzesCount = localStorage.getItem(`${this.getUsername}-claimedQuizzesCount`);
       if (savedClaimedQuizzesCount) {
           this.claimedQuizzesCount = JSON.parse(savedClaimedQuizzesCount);
       } else {

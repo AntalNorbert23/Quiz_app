@@ -41,9 +41,14 @@
                 <p class="hover:text-slate-600" >Claim quiz</p>
         </div>
    </div>
-   <div v-if="errorMsg" class="flex justify-center mt-4 text-red-500">
-      {{ errorMsg }}
-    </div>
+   <transition
+                enter-active-class="animate__animated animate__fadeIn"
+                leave-active-class="animate__animated animate__fadeOut"
+   >
+       <div v-if="errorMsg" class="flex justify-center mt-4 text-red-500">
+          {{ errorMsg }}
+        </div>
+   </transition>
 </template>
 
 <script setup>
@@ -59,7 +64,7 @@
     //generate random ID and save to localstorage
     const generateUniqueRandomID = () => {
         let uniqueID;
-        const claimedIDs = JSON.parse(localStorage.getItem('claimedIDs')) || [];
+        const claimedIDs = JSON.parse(localStorage.getItem(`${authStore.getUsername}-claimedIDs`)) || [];
         
         // generate random ID and check if it is already in the claimed IDs list
         do {
@@ -67,7 +72,7 @@
         } while (claimedIDs.includes(uniqueID));
         
         claimedIDs.push(uniqueID);
-        localStorage.setItem('claimedIDs', JSON.stringify(claimedIDs));
+        localStorage.setItem(`${authStore.getUsername}-claimedIDs`, JSON.stringify(claimedIDs));
         
         return uniqueID;
     };

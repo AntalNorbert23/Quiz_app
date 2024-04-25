@@ -68,7 +68,7 @@
     const markQuiz = (rowId,name) => {
 
         //get the quizsetname from localstorage
-        let randomQuizSetName = localStorage.getItem(`randomQuizSetName_${rowId}`); 
+        let randomQuizSetName = localStorage.getItem(`${authStore.getUsername}-randomQuizSetName_${rowId}`); 
 
         //logic for hungarian/general knowledge selection
         const chosenQuizSetNames = name == "Hungarian knowledge" ? quizSetNamesHu : quizSetNames;
@@ -79,7 +79,7 @@
         
         randomQuizSetName = chosenQuizSetNames[Math.floor(Math.random() * chosenQuizSetNames.length)];
         
-        localStorage.setItem(`randomQuizSetName_${rowId}`, randomQuizSetName);
+        localStorage.setItem(`${authStore.getUsername}-randomQuizSetName_${rowId}`, randomQuizSetName);
         }
         router.push({ name: 'quizQuestions', params: { quizSetName: randomQuizSetName, rowId:rowId } });
     }

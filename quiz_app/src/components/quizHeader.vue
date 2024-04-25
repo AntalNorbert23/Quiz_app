@@ -115,7 +115,7 @@
     //function for loading the correct answers nr saved in localstorage
     const loadCorrectAnswersCount = () => {
         if (quizSetName.value) {
-            const savedQuizState = localStorage.getItem(`quizState_${quizSetName.value}`);
+            const savedQuizState = localStorage.getItem(`${authStore.getUsername}-quizState_${quizSetName.value}`);
             if (savedQuizState) {
                 const quizState = JSON.parse(savedQuizState);
                 score.setCorrectAnswersCount(quizState.correctAnswersCount);

@@ -25,7 +25,7 @@
                           :key="optionIndex"
                           class="flex items-center"
                       >
-                          <input type="radio" :id="'option-'+ optionIndex"
+                            <input type="radio" :id="'option-' + index + '-' + optionIndex"
                                  :value="optionIndex"
                                  v-model="selectedAnswers[index]"
                                  @click="nextQuestionDelayed(index, optionIndex)"
@@ -33,8 +33,8 @@
                                  :disabled="hasAnswerSelected(index)"
                                  class="pe-6 me-3 cursor-pointer focus:outline-slate-600 focus-within:outline-slate-600"
                                  :class="{'cursor-not-allowed': hasAnswerSelected(index) === true}"
-                          >
-                          <label :for="'option_' + optionIndex">{{ option }}</label>
+                            >
+                            <label :for="'option-' + index + '-' + optionIndex">{{ option }}</label>
                     </li>
                   </ul>
               </div>
@@ -115,7 +115,7 @@
             questions.value=data.questions;
 
             //get the selectedAnswers array with the saved selections
-            const savedQuizState = localStorage.getItem(`quizState_${quizSetName}`);
+            const savedQuizState = localStorage.getItem(`${authStore.getUsername}-quizState_${quizSetName}`);
         
             if (savedQuizState) {
                 const quizState = JSON.parse(savedQuizState);
@@ -131,7 +131,7 @@
 
     //function to load the quiz from localstorage
     const loadQuizState = () => {
-        const savedQuizState = localStorage.getItem(`quizState_${quizSetName}`);
+        const savedQuizState = localStorage.getItem(`${authStore.getUsername}-quizState_${quizSetName}`);
 
         if (savedQuizState) {
             const quizState = JSON.parse(savedQuizState);
@@ -149,7 +149,7 @@
             correctAnswersCount: correctAnswersCount.value
         };
         setTimeout(() => {
-                localStorage.setItem(`quizState_${quizSetName}`, JSON.stringify(quizState));
+                localStorage.setItem(`${authStore.getUsername}-quizState_${quizSetName}`, JSON.stringify(quizState));
         }, 200);
         
     }
@@ -211,7 +211,7 @@
 
     function removeClaimedIDFromLocalStorage() {
         //retrieve the list of claimed IDs from local storage
-        const claimedIDs = JSON.parse(localStorage.getItem('claimedIDs')) || [];
+        const claimedIDs = JSON.parse(localStorage.getItem(`${authStore.getUsername}-claimedIDs`)) || [];
         
         // find the index of the ID to be removed
         const index = claimedIDs.indexOf(Number(currentRowId));
@@ -222,7 +222,7 @@
             
             const updatedClaimedIDs = JSON.stringify(claimedIDs);
             
-            localStorage.setItem('claimedIDs', updatedClaimedIDs);
+            localStorage.setItem(`${authStore.getUsername}-claimedIDs`, updatedClaimedIDs);
         }else{
             console.log("not found")
         }
@@ -241,7 +241,7 @@
                 const rowIndex = authStore.rows.findIndex(row => row.id ===  currentRowIdTypeAdjusted);
                 const row = authStore.rows.find(row => row.id === parseInt(currentRowId));
                 
-                const savedQuizState=localStorage.getItem(`quizState_${quizSetName}`);
+                const savedQuizState=localStorage.getItem(`${authStore.getUsername}-quizState_${quizSetName}`);
                 const quizStateObj = JSON.parse(savedQuizState);
                 
                 const finishedRow = {
@@ -262,8 +262,8 @@
 
             //remove the states and names of the quizsets
             setTimeout(() => {
-                localStorage.removeItem(`quizState_${quizSetName}`);
-                localStorage.removeItem(`randomQuizSetName_${currentRowId}`)
+                localStorage.removeItem(`${authStore.getUsername}-quizState_${quizSetName}`);
+                localStorage.removeItem(`${authStore.getUsername}-randomQuizSetName_${currentRowId}`)
                 removeClaimedIDFromLocalStorage();
             }, 100);
           
