@@ -1,9 +1,39 @@
 <template>
      <header class="flex justify-center items-center h-20 bg-slate-600">
-         <div class="flex-1 ps-8 text-3xl hover:cursor-pointer" @click="pushToQuiz">Quizes application</div>
-         <div class="flex justify-center items-center h-full">
+         <div class="flex-1 ps-6 md:ps-8 text-xl md:text-3xl hover:cursor-pointer" @click="pushToQuiz">Quizes application</div>
+
+         <div class="block md:hidden">
+            <button @click="toggleMenu" class="p-2 text-white">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+
+         
+        <div v-if="menuVisible" class="absolute top-20 right-0 bg-white shadow-lg rounded-md p-2 md:hidden border border-slate-500">
+            <button class='px-[11px] py-2 mx-1 text-sm text-black hover:bg-slate-200 border border-slate-300 rounded-lg' @click="showPersonalData">
+                Personal data
+            </button>
+            <transition  enter-active-class="animate__animated animate__zoomIn"
+                         leave-active-class="animate__animated animate__zoomOut"
+               >
+                 <div class="absolute bottom-[-52px] left-3 w-[106px] p-2 rounded-b-lg bg-slate-400"
+                      v-if="showPersData"
+                 >
+                      <p class="m-0 text-xs text-white">Correct: <span>{{ correctAnswersCount }}</span> / 50</p>
+                      <p class="m-0 pt-1 text-xs text-white">Time: {{ getTime(timerStore.totalTime) }} </p>
+                 </div>
+               </transition>
+            <button class='px-[11px] py-2 text-sm text-black hover:bg-slate-200 border border-slate-300 rounded-lg' @click="changeLanguage">
+                Language
+            </button>
+            <button class='px-[11px] py-2 mx-1 text-sm text-black hover:bg-slate-200 border border-slate-300 rounded-lg' @click="logOff">
+                Log Off
+            </button>
+        </div>
+
+         <div class="hidden md:flex justify-center items-center h-full">
              <div class="relative h-full flex items-center ">
-               <button class=' me-4 px-4 py-2 rounded-md bg-header text-white border border-white hover:text-black hover:cursor-pointer hover:bg-white'
+               <button class=' me-4 px-4 py-2 rounded-md bg-header text-sm md:text-base text-white border border-white hover:text-black hover:cursor-pointer hover:bg-white'
                        @click="showPersonalData"
                >
                   Personal data
@@ -64,6 +94,7 @@
     const isArrowRotated = ref(false);
     const showPersData=ref(false);
     const quizSetName = ref(null); 
+    const menuVisible=ref(false)
 
     // on logoff push user to login page (main)
     const logOff=()=>{
@@ -72,6 +103,11 @@
             authStore.logout();
         }, 1000);
     }
+
+    //toggle Menu
+    const toggleMenu=()=> {
+            menuVisible.value = !menuVisible.value;
+        }
 
     //toggle logoff (to be seen or not on click)
     const toggleLogOff=()=>{

@@ -1,6 +1,6 @@
 <template>
-   <div class="grid grid-cols-4 grid-rows-3 mx-auto w-[90%] mt-6 py-2 border border-black ">
-        <div class="flex justify-center items-center">
+   <div class="grid grid-cols-4 grid-rows-3 mx-auto w-[90%] mt-6 py-2 border border-black">
+        <div class="flex justify-center">
             <p>ID</p>
         </div>
         <div class="flex justify-center">
@@ -16,7 +16,7 @@
             <p>1</p>
         </div>
         <div class="flex justify-center pt-2">
-            <p>General knowledge</p>
+            <p class="text-center text-sm md:text-base">General knowledge</p>
         </div>
         <div class="flex justify-center pt-2">
             <p>50</p>
@@ -24,13 +24,13 @@
         <div class="flex justify-center pt-2 hover:cursor-pointer"
              @click="selectComponent('General knowledge')"
         >
-                <p class="hover:text-slate-600" >Claim quiz</p>
+                <p class="hover:text-slate-600 text-center text-sm md:text-base" >Claim quiz</p>
         </div>
         <div class="flex justify-center pt-2">
             <p>2</p>
         </div>
         <div class="flex justify-center pt-2">
-            <p>Hungarian knowledge</p>
+            <p class="text-center text-sm md:text-base">Hungarian knowledge</p>
         </div>
         <div class="flex justify-center pt-2">
             <p>50</p>
@@ -38,7 +38,7 @@
         <div class="flex justify-center pt-2 hover:cursor-pointer"
              @click="selectComponent('Hungarian knowledge')"
         >
-                <p class="hover:text-slate-600" >Claim quiz</p>
+                <p class="hover:text-slate-600 text-center text-sm md:text-base" >Claim quiz</p>
         </div>
    </div>
    <transition

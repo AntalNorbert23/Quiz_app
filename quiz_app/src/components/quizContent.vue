@@ -1,10 +1,10 @@
 <template>
     <quizHeader/>
-    <main class="flex min-h-screen">
+    <main class="flex flex-col md:flex-row min-h-screen">
         <div>
             <sideNav/>
         </div>
-        <div class="flex-1">
+        <div class="md:flex-1">
             <router-view/>  
          </div>
     </main>

@@ -1,6 +1,6 @@
 <template>
     <div class="w-full text-lg">
-        <h1 class="p-3 ms-8 mb-6 mt-3 text-2xl">Tasks to be done</h1>
+        <h1 class="p-3 ms-8 mb-6 mt-3 md:text-2xl">Tasks to be done</h1>
         <div class="flex mb-10">
             <div class="flex justify-center ms-16 me-5 p-3 w-32 border border-slate-600 hover:cursor-pointer bg-slate-200 hover:bg-slate-400 hover:border-white"
                  @click="goToTasks"
