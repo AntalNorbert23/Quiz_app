@@ -1,46 +1,46 @@
 <template>
     <div class="w-full text-lg pb-10">
-        <h1 class="p-3 ms-8 mb-6 mt-3 text-2xl">Completed Tasks</h1>
+        <h1 class=" ps-3 md:p-3 md:ms-8 mb-6 mt-3 text-base md:text-2xl">Completed Tasks</h1>
         <div class="flex mb-10">
             <div
-                class="flex justify-center ms-16 me-5 p-3 w-32 border border-slate-600 hover:cursor-pointer bg-slate-200 hover:bg-slate-400 hover:border-white"
+                class="flex justify-center ms-16 me-5 p-3 w-20 md:w-32 border border-slate-600 hover:cursor-pointer bg-slate-200 hover:bg-slate-400 hover:border-white"
                 @click="navigateToTasks"
             >
-                <p>Processing</p>
+                <p class="text-sm md:text-base">Processing</p>
             </div>
             <div
-                class="flex justify-center p-3 w-32 border border-slate-600 hover:cursor-pointer bg-slate-200 hover:bg-slate-400 hover:border-white"
+                class="flex justify-center p-3 w-20 md:w-32 border border-slate-600 hover:cursor-pointer bg-slate-200 hover:bg-slate-400 hover:border-white"
                 @click="navigateToTasksDone"
                 :class="{ 'bg-slate-600': processingOrDone }"
             >
-                <p>Done</p>
+                <p class="text-sm md:text-base">Done</p>
             </div>
         </div>
         <div v-for="(row, index) in authStore.quizzesDone" :key="index"
             class="grid grid-cols-4 grid-rows-2 mx-auto w-[90%] mt-6 py-2 border border-black"
         >
             <div class="flex justify-center items-center">
-                <p>ID</p>
+                <p class="text-sm md:text-base">ID</p>
+            </div>
+            <div class="flex justify-center items-center">
+                <p class="text-sm md:text-base">NAME</p>
+            </div>
+            <div class="flex justify-center items-center">
+                <p class="text-sm md:text-base">Task Nr</p>
+            </div>
+            <div class="flex justify-center items-center">
+                <p class="text-sm md:text-base">Correct</p>
             </div>
             <div class="flex justify-center">
-                <p>NAME</p>
-            </div>
-            <div class="flex justify-center">
-                <p>Task Nr</p>
-            </div>
-            <div class="flex justify-center">
-                <p>Correct</p>
-            </div>
-            <div class="flex justify-center">
-                <p>{{ row.id }}</p>
+                <p class="text-sm md:text-base">{{ row.id }}</p>
             </div>
             <div class="flex justify-center pt-2">
-                <p>{{ row.name }}</p>
+                <p class="text-sm md:text-base">{{ row.name }}</p>
             </div>
             <div class="flex justify-center pt-2">
-                <p>50</p>
+                <p class="text-sm md:text-base">50</p>
             </div>
-            <div class="flex justify-center pt-2 hover:cursor-pointer">
+            <div class="flex justify-center pt-2 hover:cursor-pointer text-sm md:text-base">
                 <p class="hover:text-slate-600" >{{ row.correctAnswersCount }}/50</p>
             </div>
         </div>

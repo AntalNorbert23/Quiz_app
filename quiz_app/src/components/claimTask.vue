@@ -1,44 +1,44 @@
 <template>
-   <div class="grid grid-cols-4 grid-rows-3 mx-auto w-[90%] mt-6 py-2 border border-black">
+   <div class="grid grid-cols-4 grid-rows-3 mx-auto w-[95%] md:w-[90%] mt-6 py-2 border border-black">
         <div class="flex justify-center">
-            <p>ID</p>
+            <p class="text-sm md:text-base">ID</p>
         </div>
         <div class="flex justify-center">
-            <p>NAME</p>
+            <p class="text-sm md:text-base">NAME</p>
         </div>
         <div class="flex justify-center">
-            <p>Task Nr</p>
+            <p class="text-sm md:text-base">Task Nr</p>
         </div>
         <div class="flex justify-center">
-            <p>Claim</p>
+            <p class="text-sm md:text-base">Claim</p>
         </div>
         <div class="flex justify-center pt-2">
-            <p>1</p>
+            <p class="text-sm md:text-base">1</p>
         </div>
         <div class="flex justify-center pt-2">
             <p class="text-center text-sm md:text-base">General knowledge</p>
         </div>
         <div class="flex justify-center pt-2">
-            <p>50</p>
+            <p class="text-sm md:text-base">50</p>
         </div>
         <div class="flex justify-center pt-2 hover:cursor-pointer"
              @click="selectComponent('General knowledge')"
         >
-                <p class="hover:text-slate-600 text-center text-sm md:text-base" >Claim quiz</p>
+                <p class="hover:text-slate-600 text-center text-sm md:text-base pe-1" >Claim quiz</p>
         </div>
         <div class="flex justify-center pt-2">
-            <p>2</p>
+            <p class="text-sm md:text-base">2</p>
         </div>
         <div class="flex justify-center pt-2">
             <p class="text-center text-sm md:text-base">Hungarian knowledge</p>
         </div>
         <div class="flex justify-center pt-2">
-            <p>50</p>
+            <p class="text-sm md:text-base">50</p>
         </div>
         <div class="flex justify-center pt-2 hover:cursor-pointer"
              @click="selectComponent('Hungarian knowledge')"
         >
-                <p class="hover:text-slate-600 text-center text-sm md:text-base" >Claim quiz</p>
+                <p class="hover:text-slate-600 text-center text-sm md:text-base pe-1" >Claim quiz</p>
         </div>
    </div>
    <transition
