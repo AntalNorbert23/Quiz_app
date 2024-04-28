@@ -3,7 +3,7 @@
         <h1 class=" ps-3 md:p-3 md:ms-8 mb-6 mt-3 text-base md:text-2xl">Completed Tasks</h1>
         <div class="flex mb-10">
             <div
-                class="flex justify-center ms-16 me-5 p-3 w-20 md:w-32 border border-slate-600 hover:cursor-pointer bg-slate-200 hover:bg-slate-400 hover:border-white"
+                class="flex justify-center ms-10 md:ms-16 me-5 p-3 w-20 md:w-32 border border-slate-600 hover:cursor-pointer bg-slate-200 hover:bg-slate-400 hover:border-white"
                 @click="navigateToTasks"
             >
                 <p class="text-sm md:text-base">Processing</p>
@@ -35,7 +35,7 @@
                 <p class="text-sm md:text-base">{{ row.id }}</p>
             </div>
             <div class="flex justify-center pt-2">
-                <p class="text-sm md:text-base">{{ row.name }}</p>
+                <p class="text-sm md:text-base text-center">{{ row.name }}</p>
             </div>
             <div class="flex justify-center pt-2">
                 <p class="text-sm md:text-base">50</p>

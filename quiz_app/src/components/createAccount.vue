@@ -16,13 +16,13 @@
         </transition>
     </div>
 <div id="outerlogincontainer" class="absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%] m-0 select-none"> 
-    <div id="logincontainer" class="flex flex-col justify-between h-[400px] w-[400px] border-2 border-black rounded-lg"> 
+    <div id="logincontainer" class="flex flex-col justify-between h-[400px] w-[275px] md:w-[400px] border-2 border-black rounded-lg"> 
         <div class="flex justify-normal">
             <label for="username" class="mt-6 mx-4" >Username</label>
         </div>
         <input type="text" 
                placeholder="Enter your username" 
-               class="w-11/12 h-12 mx-4 text-left ps-4 border border-black focus:text-center focus:ps-0"
+               class="w-11/12 h-12 mx-3 md:mx-4 text-left ps-2 md:ps-4 border border-black focus:text-center focus:ps-0"
                v-model="username"
                id="username"
                @keydown.enter="createAccount"
@@ -32,7 +32,7 @@
         </div>
         <input type="password"
                placeholder="Enter your password" 
-               class="w-11/12 h-12 mt-px mx-4 text-left ps-4 border border-black focus:text-center focus:ps-0"
+               class="w-11/12 h-12 mt-px mx-3 md:mx-4 text-left ps-2 md:ps-4 border border-black focus:text-center focus:ps-0"
                v-model="password"
                id="password"
                @keydown.enter="createAccount"
@@ -42,13 +42,13 @@
         </div>
         <input type="password"
                placeholder="Confirm your password" 
-               class="w-11/12 h-12 mt-px mx-4 text-left ps-4 border border-black focus:text-center focus:ps-0"
+               class="w-11/12 h-12 mt-px mx-3 md:mx-4 text-left ps-2 md:ps-4 border border-black focus:text-center focus:ps-0"
                v-model="verifyPassword"
                id="verifyPassword"
                @keydown.enter="createAccount"
         >
 
-        <button class="loginbutton w-11/12 mx-4 p-4 mb-6 mt-4 tracking-widest bg-blue-500 border-2 border-blue-500 hover:bg-white hover:text-blue-900"
+        <button class="loginbutton w-11/12 mx-3 md:mx-4 p-4 mb-6 mt-4 tracking-widest bg-blue-500 border-2 border-blue-500 hover:bg-white hover:text-blue-900"
                 @click="createAccount"
         >
                 CREATE ACCOUNT

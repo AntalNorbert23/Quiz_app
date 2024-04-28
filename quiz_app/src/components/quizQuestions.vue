@@ -1,8 +1,8 @@
 <template>
   <div>
-      <h2 class="text-4xl p-3">Quiz questions</h2>
+      <h2 class="text-sm md:text-2xl p-3">Quiz questions</h2>
       <div v-if="questionsAnswered === true"
-           class="flex justify-center items-center h-10 bg-green-500"
+           class="flex  text-sm md:text-base justify-center items-center h-10 bg-green-500"
       >
             Congratulations! {{ correctAnswersCount }}/50 questions were correct!
       </div>
@@ -13,11 +13,11 @@
           <div v-for="(question,index) in questions" 
                :key="index"
                v-show="currentIndex === index"
-               class="flex flex-col items-center justify-center pt-3 text-2xl" 
+               class="flex flex-col items-center justify-center pt-3 text-base md:text-2xl" 
           >
               <h3 class="text-center px-6">{{ question.question }}</h3>
               <div class="flex">
-                  <div class="flex flex-col items-center justify-center pe-6">
+                  <div class="hidden md:flex flex-col items-center justify-center pe-6">
                       <p v-for="(option,optionIndex) in question.options">{{ shortcutLetters[optionIndex] }}</p>
                   </div>
                   <ul class="pt-3 pb-4">
@@ -34,7 +34,12 @@
                                  class="pe-6 me-3 cursor-pointer focus:outline-slate-600 focus-within:outline-slate-600"
                                  :class="{'cursor-not-allowed': hasAnswerSelected(index) === true}"
                             >
-                            <label :for="'option-' + index + '-' + optionIndex">{{ option }}</label>
+                            <label :for="'option-' + index + '-' + optionIndex"
+                                   @click="if (!hasAnswerSelected(index)) { selectedAnswers[index] = optionIndex; nextQuestionDelayed(index, optionIndex); }"
+                                   class="hover:cursor-pointer"
+                            >
+                                    {{ option }}
+                            </label>
                     </li>
                   </ul>
               </div>
@@ -44,29 +49,29 @@
           <p>No questions available</p>
       </div>
       <div class="flex justify-center pt-3">
-            <button class="fa fa-arrow-left cursor-pointer text-4xl hover:text-slate-400"
+            <button class="fa fa-arrow-left cursor-pointer text-2xl md:text-4xl hover:text-slate-400"
                     @click="prevQuestion"
                     :disabled="currentIndex === 0"
             >
             </button>
-            <button class="mx-6 px-3 py-2 border-slate-600 border-2 hover:bg-slate-400 hover:text-white hover:border-black"
+            <button class="mx-6 px-3 py-2 text-sm md:text-base border-slate-600 border-2 hover:bg-slate-400 hover:text-white hover:border-black"
                     :disabled="!allQuestionsAnswered"
                     @click="submitQuiz(currentRowId)"
                     :class="{'cursor-not-allowed': !allQuestionsAnswered}"
             >
                     Submit Quiz
             </button>
-            <button class="fa fa-arrow-right cursor-pointer text-4xl hover:text-slate-400"
+            <button class="fa fa-arrow-right cursor-pointer text-2xl md:text-4xl hover:text-slate-400"
                     @click="nextQuestion"
                     :disabled="currentIndex === questions.length-1"
             >
             </button>
       </div>
-      <div class="grid grid-cols-10 grid-rows-5 pt-8">
+      <div class="grid grid-rows-10 grid-cols-5 md:grid-cols-10 md:grid-rows-5 pt-8 pb-3">
           <div v-for="(question,index) in questions"
                :key="index"
                @click="jumptToQuestion(index)"
-               class=" px-2 text-center cursor-pointer mx-3 my-1 border-black border hover:border-cyan-400"
+               class=" px-3 md:px-2 text-sm md:text-base text-center cursor-pointer mx-2 md:mx-3 my-1 border-black border hover:border-cyan-400"
                :class="{ 'border-green-500': correctAnswers[index] === true, 'border-red-500': correctAnswers[index] === false , 'border-cyan-500': currentIndex===index}"
           >
                 {{ index+1 }}
