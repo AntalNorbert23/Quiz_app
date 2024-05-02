@@ -4,8 +4,6 @@
         <transition name="fade"
                     enter-active-class="animate__animated animate__fadeIn"
                     leave-active-class="animate__animated animate__fadeOut"
-                    @before-enter="onBeforeEnter"
-                    @after-leave="onAfterLeave"
         >
             <p :class="{'bg-green-400':createdAccount.userCreated, 'bg-red-400':!createdAccount.userCreated}"
                 class="absolute top-0 left-1/2 translate-x-[-50%] px-6 py-6 select-none rounded-b-lg text-center"

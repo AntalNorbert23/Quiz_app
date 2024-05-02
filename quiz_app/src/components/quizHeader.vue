@@ -49,9 +49,23 @@
                  </div>
                </transition>
              </div>
-             <button class='me-4 px-4 py-2 rounded-md bg-header text-white border border-white hover:text-black hover:cursor-pointer hover:bg-white'>
+             <button class='me-4 px-4 py-2 rounded-md bg-header text-white border border-white hover:text-black hover:cursor-pointer hover:bg-white'
+                     @click="showDropdown = !showDropdown"
+             >
                 Language <span class="fa fa-chevron-circle-down text-center ms-1"></span>
              </button>
+
+             <div
+                v-if="showDropdown"
+                class="absolute right-26 top-[72px] mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+            >
+                <div class="py-1">
+                    <a @click="changeLanguage('en')" class="block px-4 py-2 text-sm text-center text-gray-700 hover:bg-gray-100 hover:cursor-pointer">English</a>
+                    <a @click="changeLanguage('hu')" class="block px-4 py-2 text-sm text-center text-gray-700 hover:bg-gray-100 hover:cursor-pointer">Magyar</a>
+                    <a @click="changeLanguage('ro')" class="block px-4 py-2 text-sm text-center text-gray-700 hover:bg-gray-100 hover:cursor-pointer">Română</a>
+                </div>
+            </div>
+
              <div class="relative h-full flex items-center" @click="toggleLogOff">
                <button class="me-4 px-4 py-2 text-white">
                  {{authStore.getUsername}} <span :class="{ 'rotate-180': isArrowRotated, 'rotate-back': !isArrowRotated }" class="fa fa-chevron-circle-down text-center ms-1"></span>
@@ -81,6 +95,7 @@
     import { useTimerStore } from '@/store/timerStore';
     import { useRoute } from 'vue-router';
     import { useQuizStore } from '@/store/score';
+    import { useLocaleStore } from './Locales/locales';
 
     //stores and routers
     const timerStore = useTimerStore();
@@ -88,13 +103,15 @@
     const score=useQuizStore();
     const router=useRouter();
     const route = useRoute();
+    const localeStore = useLocaleStore();
 
     //variables
     const showLogOff=ref(false);
     const isArrowRotated = ref(false);
     const showPersData=ref(false);
     const quizSetName = ref(null); 
-    const menuVisible=ref(false)
+    const menuVisible=ref(false);
+    const showDropdown=ref(false);
 
     // on logoff push user to login page (main)
     const logOff=()=>{
@@ -142,6 +159,7 @@
     //watch for the quizSet if changes so it can manage the state separately for each quizSet ( here the nr of the correct answers)
     watch(() => route.params.quizSetName, (newQuizSetName) => {
         quizSetName.value = newQuizSetName;
+        score.setCorrectAnswersCount(0);
         loadCorrectAnswersCount();
     });
 
@@ -157,6 +175,11 @@
                 score.setCorrectAnswersCount(quizState.correctAnswersCount);
             }
         }
+    };
+
+    const changeLanguage = (newLocale) => {
+        localeStore.setLocale(newLocale);
+        showDropdown.value = false; 
     };
 
     </script>

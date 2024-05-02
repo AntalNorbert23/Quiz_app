@@ -82,11 +82,12 @@
 
 <script setup>
     //imports
-    import { ref, onMounted,onBeforeUnmount,computed } from 'vue';
+    import { ref, onMounted,onBeforeUnmount,computed,watch } from 'vue';
     import { useRoute, useRouter } from 'vue-router';
     import { useTimerStore } from '@/store/timerStore';
     import { useQuizStore } from '@/store/score'
     import { useAuthStore } from '@/store';
+    import { useLocaleStore } from './Locales/locales';
     
     //stores and routers 
     const timerStore = useTimerStore();
@@ -94,6 +95,7 @@
     const authStore=useAuthStore();
     const router= useRouter();
     const route = useRoute();
+    const localeStore=useLocaleStore();
     const quizSetName = route.params.quizSetName;
     const currentRowId = route.params.rowId;
 
@@ -105,6 +107,7 @@
     const correctAnswers = ref([]);
     const questionsAnswered=ref();
     const shortcutLetters = ['(A)','(S)','(D)','(F)'];
+    const locale = computed(() => localeStore.currentLocale);
 
   
     //check if an option is selected for a question
@@ -117,7 +120,12 @@
         try{
             const quizSet=await import(`./Questions/${quizSetName}.json`)
             const data= quizSet.default;
-            questions.value=data.questions;
+
+            if (data[locale.value] && data[locale.value].questions) {
+                questions.value = data[locale.value].questions;
+            } else {
+                throw new Error(`Locale "${locale.value}" not found in the quiz set.`);
+            }
 
             //get the selectedAnswers array with the saved selections
             const savedQuizState = localStorage.getItem(`${authStore.getUsername}-quizState_${quizSetName}`);
@@ -319,12 +327,16 @@
 
     document.addEventListener('keyup',selectShortcut);
 
+    watch(locale, () => {
+        fetchQuizQuestions();
+    });
 
     //onMounted fetch the data 
     onMounted(()=>{
-        fetchQuizQuestions();
+        fetchQuizQuestions(locale.value);
         loadQuizState();
         timerStore.startTimer();
+        localeStore.loadLocale();
     })
 
     onBeforeUnmount(()=>{

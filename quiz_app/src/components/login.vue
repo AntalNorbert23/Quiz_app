@@ -3,6 +3,8 @@
             <transition name="fade"
                         enter-active-class="animate__animated animate__fadeIn"
                         leave-active-class="animate__animated animate__hinge"
+                        @before-enter="onBeforeEnter"
+                        @after-leave="onAfterLeave"
             >
                 <p :class="{'bg-green-400':login.loginSuccess, 'bg-red-400':!login.loginSuccess}"
                     class="absolute top-0 left-1/2 translate-x-[-50%] px-6 py-6 md:w-52 select-none rounded-b-lg text-center"
@@ -15,17 +17,17 @@
     <div id="outerlogincontainer" class="absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%] m-0 select-none"> 
         <div id="logincontainer" class="relative flex flex-col justify-between h-[350px] w-[275px] md:w-[400px] border-2 border-black rounded-lg"> 
             <div class="flex justify-normal">
-                <label for="username" class="mt-6 mx-4" >Username</label>
+                <label for="username" class="mt-6 mx-4" >{{ translationStore.translate("username") }}</label>
             </div>
             <input type="text" 
-                   placeholder="Enter your username" 
+                   :placeholder="placeholdertext" 
                    class="w-11/12 h-12 mx-3 md:mx-4 ps-2 text-left md:pe-0 md:ps-4 border border-black focus:text-center focus:ps-0"
                    v-model="username"
                    id="username"
                    @keydown.enter="loginAction"
             > 
             <div class="flex justify-normal">
-                <label for="password" class="mx-4 mt-4">Password</label>
+                <label for="password" class="mx-4 mt-4">{{translationStore.translate("password")}}</label>
             </div>
             <input :type="passwordInputType"
                    placeholder="Enter your password" 
@@ -57,10 +59,11 @@
 
 <script setup>
     //imports
-    import { ref, computed  } from 'vue';
+    import { ref, computed } from 'vue';
     import { useRouter } from 'vue-router';
     import { useAuthStore } from '@/store/index';
     import  loginFallback  from './loginFallback.vue';
+    import { useLocaleStore } from './Locales/locales';
 
 
     //create ref instances of username and password
@@ -113,6 +116,11 @@
     const togglePasswordVisibility = () => {
         showPassword.value = !showPassword.value;
     };
+
+
+    const translationStore = useLocaleStore();
+
+    const placeholdertext=translationStore.translate("enterUsername");
 
     //correct animation so the Hinge animation does not induce Y scrollbar
     const onBeforeEnter = () => {
