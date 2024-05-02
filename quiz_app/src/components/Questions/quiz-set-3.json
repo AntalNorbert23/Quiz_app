@@ -1,4 +1,5 @@
 {
+  "en":{
     "questions": [
       {
         "id": "101",
@@ -301,5 +302,310 @@
         "correct_answer": 0
       }
     ]
+  },
+  "hu":{
+    "questions": [
+      {
+          "id": "101",
+          "question": "Ki festette a 'Guernica'-t?",
+          "options": ["Pablo Picasso", "Vincent van Gogh", "Salvador Dalí", "Claude Monet"],
+          "correct_answer": 0
+      },
+      {
+          "id": "102",
+          "question": "Mi a hélium vegyjele?",
+          "options": ["H", "He", "Hee", "Hm"],
+          "correct_answer": 1
+      },
+      {
+          "id": "103",
+          "question": "Mi a legkisebb csont az emberi testben?",
+          "options": ["Üstökcsont", "Combcsont", "Sípcsont", "Orsócsont"],
+          "correct_answer": 0
+      },
+      {
+          "id": "104",
+          "question": "Ki írta az 'Éhezők viadala' trilógiát?",
+          "options": ["Suzanne Collins", "J.K. Rowling", "Stephenie Meyer", "Veronica Roth"],
+          "correct_answer": 0
+      },
+      {
+          "id": "105",
+          "question": "Mi az urán vegyjele?",
+          "options": ["Un", "Ur", "U", "Ul"],
+          "correct_answer": 2
+      },
+      {
+          "id": "106",
+          "question": "Melyik országot hívják a mosolyok országának?",
+          "options": ["Thaiföld", "Vietnam", "Kambodzsa", "Laosz"],
+          "correct_answer": 0
+      },
+      {
+          "id": "107",
+          "question": "Ki írta a 'Érik a gyümölcs' című regényt?",
+          "options": ["John Steinbeck", "Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain"],
+          "correct_answer": 0
+      },
+      {
+          "id": "108",
+          "question": "Mi a hélium vegyjele?",
+          "options": ["H", "He", "Hee", "Hm"],
+          "correct_answer": 1
+      },
+      {
+          "id": "109",
+          "question": "Mi Európa leghosszabb folyója?",
+          "options": ["Volga", "Duna", "Rajna", "Szajna"],
+          "correct_answer": 0
+      },
+      {
+          "id": "110",
+          "question": "Ki festette 'Az emlékezet állandósága' festményt?",
+          "options": ["Salvador Dalí", "Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci"],
+          "correct_answer": 0
+      },
+      {
+          "id": "111",
+          "question": "Mi a rádium vegyjele?",
+          "options": ["Rd", "Ra", "R", "Rm"],
+          "correct_answer": 1
+      },
+      {
+          "id": "112",
+          "question": "Melyik bolygót nevezik a Hajnalcsillagnak és Esthajnalcsillagnak?",
+          "options": ["Vénusz", "Mars", "Merkúr", "Jupiter"],
+          "correct_answer": 0
+      },
+      {
+          "id": "113",
+          "question": "Ki írta 'A háború művészete' című könyvet?",
+          "options": ["Szun Ce", "Machiavelli", "Plató", "Napóleon Bonaparte"],
+          "correct_answer": 0
+      },
+      {
+          "id": "114",
+          "question": "Mi a platina vegyjele?",
+          "options": ["P", "Pl", "Pt", "Pm"],
+          "correct_answer": 2
+      },
+      {
+          "id": "115",
+          "question": "Mi Törökország fővárosa?",
+          "options": ["Isztambul", "Ankara", "Izmir", "Antalya"],
+          "correct_answer": 1
+      },
+      {
+          "id": "116",
+          "question": "Ki komponálta a 'Holdfény szonátát'?",
+          "options": ["Ludwig van Beethoven", "Johann Sebastian Bach", "Wolfgang Amadeus Mozart", "Franz Schubert"],
+          "correct_answer": 0
+      },
+      {
+          "id": "117",
+          "question": "Mi az ozmium vegyjele?",
+          "options": ["O", "Os", "Om", "Ol"],
+          "correct_answer": 1
+      },
+      {
+          "id": "118",
+          "question": "Mi a legnagyobb sziget a Földközi-tengeren?",
+          "options": ["Szicília", "Szardínia", "Ciprus", "Kréta"],
+          "correct_answer": 0
+      },
+      {
+          "id": "119",
+          "question": "Ki írta 'A három testőr'-t?",
+          "options": ["Alexandre Dumas", "Victor Hugo", "Gustave Flaubert", "Émile Zola"],
+          "correct_answer": 0
+      },
+      {
+          "id": "120",
+          "question": "Mi a francium vegyjele?",
+          "options": ["F", "Fa", "Fr", "Fn"],
+          "correct_answer": 2
+      },
+      {
+          "id": "121",
+          "question": "Mi Görögország fővárosa?",
+          "options": ["Athén", "Thesszaloniki", "Patras", "Heraklion"],
+          "correct_answer": 0
+      },
+      {
+          "id": "122",
+          "question": "Ki írta 'Az Isteni Színjáték'-ot?",
+          "options": ["Dante Alighieri", "Geoffrey Chaucer", "John Milton", "Homer"],
+          "correct_answer": 0
+      },
+      {
+          "id": "123",
+          "question": "Mi az arany vegyjele?",
+          "options": ["Au", "Go", "G", "Ag"],
+          "correct_answer": 0
+      },
+      {
+          "id": "124",
+          "question": "Mi Ázsia legnagyobb sivataga?",
+          "options": ["Góbi sivatag", "Arab sivatag", "Thar sivatag", "Karakum sivatag"],
+          "correct_answer": 0
+      },
+      {
+          "id": "125",
+          "question": "Ki komponálta 'A Figaro házassága'-t?",
+          "options": ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Johann Sebastian Bach", "Franz Schubert"],
+          "correct_answer": 0
+      },
+      {
+          "id": "126",
+          "question": "Mi az ezüst vegyjele?",
+          "options": ["S", "Si", "Ag", "Au"],
+          "correct_answer": 2
+      },
+      {
+          "id": "127",
+          "question": "Mi a naprendszer legnagyobb bolygója?",
+          "options": ["Föld", "Jupiter", "Mars", "Szaturnusz"],
+          "correct_answer": 1
+      },
+      {
+          "id": "128",
+          "question": "Ki írta 'A zabhegyező'-t?",
+          "options": ["J.D. Salinger", "Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain"],
+          "correct_answer": 0
+      },
+      {
+          "id": "129",
+          "question": "Mi az argon vegyjele?",
+          "options": ["Ar", "Ag", "An", "Ao"],
+          "correct_answer": 0
+      },
+      {
+          "id": "130",
+          "question": "Mi az óceán legmélyebb pontja?",
+          "options": ["Mariana-árok", "Puerto Rico-árok", "Jáva-árok", "Szunda-árok"],
+          "correct_answer": 0
+      },
+      {
+          "id": "131",
+          "question": "Ki komponálta 'Az 5. szimfóniát'?",
+          "options": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Johann Sebastian Bach", "Franz Schubert"],
+          "correct_answer": 0
+      },
+      {
+          "id": "132",
+          "question": "Mi a nitrogén vegyjele?",
+          "options": ["Ni", "N", "Ng", "No"],
+          "correct_answer": 1
+      },
+      {
+          "id": "133",
+          "question": "Mi a világ legmagasabb fája?",
+          "options": ["Parti mamutfenyő", "Óriás mamutfenyő", "Sitka lucfenyő", "Douglasfenyő"],
+          "correct_answer": 0
+      },
+      {
+          "id": "134",
+          "question": "Ki komponálta 'A 9. szimfóniát'?",
+          "options": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Johann Sebastian Bach", "Franz Schubert"],
+          "correct_answer": 0
+      },
+      {
+          "id": "135",
+          "question": "Mi a kálium vegyjele?",
+          "options": ["Pt", "Po", "K", "P"],
+          "correct_answer": 2
+      },
+      {
+          "id": "136",
+          "question": "Mi a világ legnagyobb kanyonja?",
+          "options": ["Grand Canyon", "Fish River Canyon", "Cotahuasi Canyon", "Tiger Leaping Gorge"],
+          "correct_answer": 0
+      },
+      {
+          "id": "137",
+          "question": "Ki komponálta 'A varázsfuvola'-t?",
+          "options": ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Johann Sebastian Bach", "Franz Schubert"],
+          "correct_answer": 0
+      },
+      {
+          "id": "138",
+          "question": "Mi a volfrám vegyjele?",
+          "options": ["T", "Tu", "Tw", "W"],
+          "correct_answer": 3
+      },
+      {
+          "id": "139",
+          "question": "Mi a világ leggyakrabban beszélt nyelve?",
+          "options": ["Mandarin kínai", "Angol", "Spanyol", "Hindi"],
+          "correct_answer": 0
+      },
+      {
+          "id": "140",
+          "question": "Ki írta 'A Gyűrűk Ura' trilógiát?",
+          "options": ["J.R.R. Tolkien", "George R.R. Martin", "J.K. Rowling", "C.S. Lewis"],
+          "correct_answer": 0
+      },
+      {
+          "id": "141",
+          "question": "Mi a szilícium vegyjele?",
+          "options": ["Si", "S", "Sl", "Sn"],
+          "correct_answer": 0
+      },
+      {
+          "id": "142",
+          "question": "Mi Argentína fővárosa?",
+          "options": ["Buenos Aires", "Cordoba", "Rosario", "Mendoza"],
+          "correct_answer": 0
+      },
+      {
+          "id": "143",
+          "question": "Ki festette 'A sikoly'-t?",
+          "options": ["Edvard Munch", "Pablo Picasso", "Vincent van Gogh", "Salvador Dalí"],
+          "correct_answer": 0
+      },
+      {
+          "id": "144",
+          "question": "Mi a kobalt vegyjele?",
+          "options": ["Cb", "Co", "Cl", "Cr"],
+          "correct_answer": 1
+      },
+      {
+          "id": "145",
+          "question": "Mi Afrika legnagyobb tava?",
+          "options": ["Viktória-tó", "Tanganyika-tó", "Malawi-tó", "Turkana-tó"],
+          "correct_answer": 0
+      },
+      {
+          "id": "146",
+          "question": "Ki írta 'Bűn és bűnhődés'-t?",
+          "options": ["Dosztojevszkij", "Lev Tolsztoj", "Anton Csehov", "Ivan Turgenyev"],
+          "correct_answer": 0
+      },
+      {
+          "id": "147",
+          "question": "Mi az ólom vegyjele?",
+          "options": ["P", "L", "Pb", "Pl"],
+          "correct_answer": 2
+      },
+      {
+          "id": "148",
+          "question": "Mi a legnagyobb óceán a Földön?",
+          "options": ["Atlanti-óceán", "Indiai-óceán", "Jeges-tenger", "Csendes-óceán"],
+          "correct_answer": 3
+      },
+      {
+          "id": "149",
+          "question": "Ki komponálta 'A diótörő'-t?",
+          "options": ["Csajkovszkij", "Ludwig van Beethoven", "Johann Sebastian Bach", "Franz Schubert"],
+          "correct_answer": 0
+      },
+      {
+          "id": "150",
+          "question": "Mi a neon vegyjele?",
+          "options": ["Ne", "No", "Na", "Ni"],
+          "correct_answer": 0
+      }
+  ]
   }
+}
   

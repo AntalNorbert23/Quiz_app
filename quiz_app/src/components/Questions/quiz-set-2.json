@@ -1,4 +1,5 @@
 {
+  "en":{
     "questions": [
       {
         "id": "51",
@@ -301,5 +302,310 @@
         "correct_answer": 0
       }
     ]
+    },
+    "hu":{
+      "questions": [
+        {
+            "id": "51",
+            "question": "Ki írta a 'Narnia krónikái' sorozatot?",
+            "options": ["J.R.R. Tolkien", "C.S. Lewis", "J.K. Rowling", "J.D. Salinger"],
+            "correct_answer": 1
+        },
+        {
+            "id": "52",
+            "question": "Mi a kálium vegyjele?",
+            "options": ["Pt", "Po", "K", "P"],
+            "correct_answer": 2
+        },
+        {
+            "id": "53",
+            "question": "Mi a legnagyobb hold a naprendszerben?",
+            "options": ["Ganymedes", "Titán", "Callisto", "Io"],
+            "correct_answer": 0
+        },
+        {
+            "id": "54",
+            "question": "Ki festette 'Az emlékezet állandósága' című festményt?",
+            "options": ["Salvador Dalí", "Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci"],
+            "correct_answer": 0
+        },
+        {
+            "id": "55",
+            "question": "Mi az ón vegyjele?",
+            "options": ["Tn", "Ti", "Sn", "Ta"],
+            "correct_answer": 2
+        },
+        {
+            "id": "56",
+            "question": "Mi az óceán legmélyebb része?",
+            "options": ["Challenger Deep", "Puerto Rico-árok", "Mariana-árok", "Tonga-árok"],
+            "correct_answer": 0
+        },
+        {
+            "id": "57",
+            "question": "Ki írta az 'Odüsszeia' című eposzt?",
+            "options": ["Hésziodosz", "Vergilius", "Szophoklész", "Euripidész"],
+            "correct_answer": 0
+        },
+        {
+            "id": "58",
+            "question": "Mi a kalcium vegyjele?",
+            "options": ["Ca", "Co", "Cl", "Ce"],
+            "correct_answer": 0
+        },
+        {
+            "id": "59",
+            "question": "Melyik várost hívják a szerelem városának?",
+            "options": ["Párizs", "Velence", "Róma", "Prága"],
+            "correct_answer": 0
+        },
+        {
+            "id": "60",
+            "question": "Ki a főszereplője a 'Zabhegyező'-nek?",
+            "options": ["Holden Caulfield", "Jay Gatsby", "Atticus Finch", "Huckleberry Finn"],
+            "correct_answer": 0
+        },
+        {
+            "id": "61",
+            "question": "Mi a nitrogén vegyjele?",
+            "options": ["Ni", "Nt", "N", "Na"],
+            "correct_answer": 2
+        },
+        {
+            "id": "62",
+            "question": "Mi Észak-Amerika legnagyobb sivataga?",
+            "options": ["Saharái sivatag", "Mojave-sivatag", "Great Basin-sivatag", "Chihuahuan-sivatag"],
+            "correct_answer": 2
+        },
+        {
+            "id": "63",
+            "question": "Ki írta 'A canterburyi mesék' című művet?",
+            "options": ["Geoffrey Chaucer", "William Shakespeare", "John Milton", "Dante Alighieri"],
+            "correct_answer": 0
+        },
+        {
+            "id": "64",
+            "question": "Mi a higany vegyjele?",
+            "options": ["Hg", "Me", "Mr", "Mg"],
+            "correct_answer": 0
+        },
+        {
+            "id": "65",
+            "question": "Melyik országot hívják az Éjféli Nap Országának?",
+            "options": ["Norvégia", "Svédország", "Finnország", "Izland"],
+            "correct_answer": 0
+        },
+        {
+            "id": "66",
+            "question": "Ki a főszereplője a 'Gyűrűk Ura' sorozatnak?",
+            "options": ["Frodo Baggins", "Harry Potter", "Bilbo Baggins", "Aragorn"],
+            "correct_answer": 0
+        },
+        {
+            "id": "67",
+            "question": "Mi az alumínium vegyjele?",
+            "options": ["Al", "Au", "Am", "Ag"],
+            "correct_answer": 0
+        },
+        {
+            "id": "68",
+            "question": "Mi a legnagyobb bolygó tömeg szerint a naprendszerben?",
+            "options": ["Jupiter", "Szaturnusz", "Uránusz", "Neptunusz"],
+            "correct_answer": 0
+        },
+        {
+            "id": "69",
+            "question": "Ki festette a 'Sikoly' című festményt?",
+            "options": ["Edvard Munch", "Pablo Picasso", "Vincent van Gogh", "Claude Monet"],
+            "correct_answer": 0
+        },
+        {
+            "id": "70",
+            "question": "Mi a nátrium vegyjele?",
+            "options": ["S", "Na", "N", "So"],
+            "correct_answer": 1
+        },
+        {
+            "id": "71",
+            "question": "Mi Argentína fővárosa?",
+            "options": ["Buenos Aires", "Santiago", "Montevideo", "Lima"],
+            "correct_answer": 0
+        },
+        {
+            "id": "72",
+            "question": "Ki írta az 'Iliász' című eposzt?",
+            "options": ["Hómérosz", "Vergilius", "Szophoklész", "Euripidész"],
+            "correct_answer": 0
+        },
+        {
+            "id": "73",
+            "question": "Mi a neon vegyjele?",
+            "options": ["Ne", "No", "Ni", "Na"],
+            "correct_answer": 0
+        },
+        {
+            "id": "74",
+            "question": "Mi a világ legmagasabb vízesése?",
+            "options": ["Angel-vízesés", "Niagara-vízesés", "Victoria-vízesés", "Iguazu-vízesés"],
+            "correct_answer": 0
+        },
+        {
+            "id": "75",
+            "question": "Ki festette az 'Utolsó vacsora' című festményt?",
+            "options": ["Leonardo da Vinci", "Michelangelo", "Raphael", "Donatello"],
+            "correct_answer": 0
+        },
+        {
+            "id": "76",
+            "question": "Mi a foszfor vegyjele?",
+            "options": ["P", "Po", "Ph", "Ps"],
+            "correct_answer": 0
+        },
+        {
+            "id": "77",
+            "question": "Ki írta a 'Háború és béke' című regényt?",
+            "options": ["Lev Tolsztoj", "Fjodor Dosztojevszkij", "Ivan Turgenev", "Anton Csehov"],
+            "correct_answer": 0
+        },
+        {
+            "id": "78",
+            "question": "Mi a wolfram vegyjele?",
+            "options": ["T", "Tu", "Tw", "W"],
+            "correct_answer": 3
+        },
+        {
+            "id": "79",
+            "question": "Mi a legnagyobb húsevő dinoszaurusz?",
+            "options": ["Tyrannosaurus rex", "Spinosaurus", "Allosaurus", "Velociraptor"],
+            "correct_answer": 0
+        },
+        {
+            "id": "80",
+            "question": "Ki komponálta a 'Négy évszak' című művet?",
+            "options": ["Antonio Vivaldi", "Ludwig van Beethoven", "Johann Sebastian Bach", "Wolfgang Amadeus Mozart"],
+            "correct_answer": 0
+        },
+        {
+            "id": "81",
+            "question": "Mi a kén vegyjele?",
+            "options": ["Su", "Sf", "S", "Sl"],
+            "correct_answer": 2
+        },
+        {
+            "id": "82",
+            "question": "Mi Spanyolország fővárosa?",
+            "options": ["Madrid", "Barcelona", "Sevilla", "Valencia"],
+            "correct_answer": 0
+        },
+        {
+            "id": "83",
+            "question": "Ki írta a 'Dorian Gray arcképe' című regényt?",
+            "options": ["Oscar Wilde", "Edgar Allan Poe", "F. Scott Fitzgerald", "Virginia Woolf"],
+            "correct_answer": 0
+        },
+        {
+            "id": "84",
+            "question": "Mi a kobalt vegyjele?",
+            "options": ["Cb", "Co", "Cl", "Cr"],
+            "correct_answer": 1
+        },
+        {
+            "id": "85",
+            "question": "Mi a világ legnagyobb hala?",
+            "options": ["Cápacápa", "Fehér cápa", "Kék bálna", "Gyilkos cápa"],
+            "correct_answer": 0
+        },
+        {
+            "id": "86",
+            "question": "Ki komponálta a 'Canon in D' című művet?",
+            "options": ["Johann Pachelbel", "Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Johann Sebastian Bach"],
+            "correct_answer": 0
+        },
+        {
+            "id": "87",
+            "question": "Mi a rádium vegyjele?",
+            "options": ["Rd", "Ra", "R", "Rm"],
+            "correct_answer": 1
+        },
+        {
+            "id": "88",
+            "question": "Mi Olaszország fővárosa?",
+            "options": ["Róma", "Milánó", "Firenze", "Velence"],
+            "correct_answer": 0
+        },
+        {
+            "id": "89",
+            "question": "Ki írta a 'Moby-Dick' című regényt?",
+            "options": ["Herman Melville", "Mark Twain", "Nathaniel Hawthorne", "Edgar Allan Poe"],
+            "correct_answer": 0
+        },
+        {
+            "id": "90",
+            "question": "Mi a cink vegyjele?",
+            "options": ["Zn", "Zi", "Ze", "Z"],
+            "correct_answer": 0
+        },
+        {
+            "id": "91",
+            "question": "Mi Oroszország fővárosa?",
+            "options": ["Moszkva", "Szentpétervár", "Kijev", "Minszk"],
+            "correct_answer": 0
+        },
+        {
+            "id": "92",
+            "question": "Ki írta a 'A skarlát betű' című regényt?",
+            "options": ["Nathaniel Hawthorne", "Herman Melville", "Edgar Allan Poe", "Ralph Waldo Emerson"],
+            "correct_answer": 0
+        },
+        {
+            "id": "93",
+            "question": "Mi a mangán vegyjele?",
+            "options": ["M", "Mn", "Ma", "Mg"],
+            "correct_answer": 1
+        },
+        {
+            "id": "94",
+            "question": "Mi a világ legnagyobb gyíkja?",
+            "options": ["Komodói sárkány", "Nílusi varánusz", "Argentin fekete-fehér tégla", "Sivatagi szörny"],
+            "correct_answer": 0
+        },
+        {
+            "id": "95",
+            "question": "Ki komponálta a 'IX. szimfónia' című művet?",
+            "options": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Johann Sebastian Bach", "Franz Schubert"],
+            "correct_answer": 0
+        },
+        {
+            "id": "96",
+            "question": "Mi a bárium vegyjele?",
+            "options": ["B", "Ba", "Br", "Bl"],
+            "correct_answer": 1
+        },
+        {
+            "id": "97",
+            "question": "Mi Kína fővárosa?",
+            "options": ["Peking", "Sanghaj", "Hongkong", "Kanton"],
+            "correct_answer": 0
+        },
+        {
+            "id": "98",
+            "question": "Ki írta 'Az éhezők viadala' című regényt?",
+            "options": ["John Steinbeck", "Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain"],
+            "correct_answer": 0
+        },
+        {
+            "id": "99",
+            "question": "Mi az arzén vegyjele?",
+            "options": ["As", "Ar", "Ai", "Ac"],
+            "correct_answer": 0
+        },
+        {
+            "id": "100",
+            "question": "Mi a legnagyobb pók lábspannal?",
+            "options": ["Góliát madárpók", "Brazíliai vándorpók", "Huntsman pók", "Fekete özvegy"],
+            "correct_answer": 0
+        }
+    ]
+    }
   }
   

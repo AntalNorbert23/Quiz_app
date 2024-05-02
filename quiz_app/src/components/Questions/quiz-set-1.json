@@ -1,4 +1,5 @@
 {
+  "en":{
     "questions": [
       { 
         "id":"1",
@@ -300,4 +301,309 @@
         "correct_answer": 0
       }
     ]
+  },
+  "hu":{
+    "questions": [
+      {
+          "id": "1",
+          "question": "Mi Franciaország fővárosa?",
+          "options": ["London", "Párizs", "Berlin", "Madrid"],
+          "correct_answer": 1
+      },
+      {
+          "id": "2",
+          "question": "Mi a legnagyobb bolygó a naprendszerünkben?",
+          "options": ["Föld", "Jupiter", "Mars", "Szaturnusz"],
+          "correct_answer": 1
+      },
+      {
+          "id": "3",
+          "question": "Ki írta a 'Ne bántsátok a feketerigót!' című könyvet?",
+          "options": ["Harper Lee", "J.K. Rowling", "Ernest Hemingway", "Mark Twain"],
+          "correct_answer": 0
+      },
+      {
+          "id": "4",
+          "question": "Mi a víz vegyjele?",
+          "options": ["H", "W", "O", "H2O"],
+          "correct_answer": 3
+      },
+      {
+          "id": "5",
+          "question": "Mi a Föld legnagyobb óceánja?",
+          "options": ["Atlanti-óceán", "Indiai-óceán", "Jeges-tenger", "Csendes-óceán"],
+          "correct_answer": 3
+      },
+      {
+          "id": "6",
+          "question": "Melyik országot hívják a Felkelő Nap Országának?",
+          "options": ["Kína", "Japán", "Dél-Korea", "India"],
+          "correct_answer": 1
+      },
+      {
+          "id": "7",
+          "question": "Ki festette a Mona Lisát?",
+          "options": ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet"],
+          "correct_answer": 1
+      },
+      {
+          "id": "8",
+          "question": "Mi az arany vegyjele?",
+          "options": ["Au", "Go", "G", "Ag"],
+          "correct_answer": 0
+      },
+      {
+          "id": "9",
+          "question": "Mi a világ legnagyobb emlőse?",
+          "options": ["Elefánt", "Kék bálna", "Zsiráf", "Víziló"],
+          "correct_answer": 1
+      },
+      {
+          "id": "10",
+          "question": "Melyik bolygót hívják Vörös bolygónak?",
+          "options": ["Mars", "Jupiter", "Szaturnusz", "Vénusz"],
+          "correct_answer": 0
+      },
+      {
+          "id": "11",
+          "question": "Ki írta a 'Rómeó és Júlia' című drámát?",
+          "options": ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+          "correct_answer": 0
+      },
+      {
+          "id": "12",
+          "question": "Mi a világ legmagasabb hegye?",
+          "options": ["Mount Everest", "K2", "Kangchenjunga", "Makalu"],
+          "correct_answer": 0
+      },
+      {
+          "id": "13",
+          "question": "Mi Kanada fővárosa?",
+          "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+          "correct_answer": 2
+      },
+      {
+          "id": "14",
+          "question": "Melyik gáz található legnagyobb mennyiségben a Föld légkörében?",
+          "options": ["Oxigén", "Nitrogén", "Szén-dioxid", "Hélium"],
+          "correct_answer": 1
+      },
+      {
+          "id": "15",
+          "question": "Ki ismert a modern fizika atyjának?",
+          "options": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Niels Bohr"],
+          "correct_answer": 0
+      },
+      {
+          "id": "16",
+          "question": "Mi az oxigén vegyjele?",
+          "options": ["O", "Ox", "Og", "O2"],
+          "correct_answer": 3
+      },
+      {
+          "id": "17",
+          "question": "Mi Japán fővárosa?",
+          "options": ["Peking", "Seoul", "Tokió", "Kiotó"],
+          "correct_answer": 2
+      },
+      {
+          "id": "18",
+          "question": "Ki fedezte fel a penicillint?",
+          "options": ["Alexander Fleming", "Marie Curie", "Louis Pasteur", "Jonas Salk"],
+          "correct_answer": 0
+      },
+      {
+          "id": "19",
+          "question": "Melyik bolygót hívják Kék bolygónak?",
+          "options": ["Föld", "Jupiter", "Neptunusz", "Uránusz"],
+          "correct_answer": 0
+      },
+      {
+          "id": "20",
+          "question": "Mi a szén vegyjele?",
+          "options": ["C", "Ca", "Co", "Cr"],
+          "correct_answer": 0
+      },
+      {
+          "id": "21",
+          "question": "Mi a világ leghosszabb folyója?",
+          "options": ["Nílus", "Amazon", "Jangce", "Mississippi"],
+          "correct_answer": 0
+      },
+      {
+          "id": "22",
+          "question": "Ki volt az első nő, aki Nobel-díjat nyert?",
+          "options": ["Marie Curie", "Rosalind Franklin", "Ada Lovelace", "Jane Goodall"],
+          "correct_answer": 0
+      },
+      {
+          "id": "23",
+          "question": "Mi a világ legnagyobb sivataga?",
+          "options": ["Szahara", "Gobi", "Arab-sivatag", "Kalahári-sivatag"],
+          "correct_answer": 0
+      },
+      {
+          "id": "24",
+          "question": "Ki írta az '1984' című könyvet?",
+          "options": ["George Orwell", "J.R.R. Tolkien", "Aldous Huxley", "Ray Bradbury"],
+          "correct_answer": 0
+      },
+      {
+          "id": "25",
+          "question": "Mi az ezüst vegyjele?",
+          "options": ["S", "Si", "Ag", "Au"],
+          "correct_answer": 2
+      },
+      {
+          "id": "26",
+          "question": "Melyik országot hívják az Ezer tó Országának?",
+          "options": ["Svédország", "Finnország", "Norvégia", "Kanada"],
+          "correct_answer": 1
+      },
+      {
+          "id": "27",
+          "question": "Ki volt az első ember, aki a Holdra lépett?",
+          "options": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "John Glenn"],
+          "correct_answer": 0
+      },
+      {
+          "id": "28",
+          "question": "Mi a nátrium vegyjele?",
+          "options": ["S", "Na", "N", "So"],
+          "correct_answer": 1
+      },
+      {
+          "id": "29",
+          "question": "Mi a legnagyobb kontinens terület szerint?",
+          "options": ["Afrika", "Észak-Amerika", "Ázsia", "Európa"],
+          "correct_answer": 2
+      },
+      {
+          "id": "30",
+          "question": "Ki festette a 'Csillagos éj' című képet?",
+          "options": ["Vincent van Gogh", "Pablo Picasso", "Claude Monet", "Leonardo da Vinci"],
+          "correct_answer": 0
+      },
+      {
+          "id": "31",
+          "question": "Mi a vas vegyjele?",
+          "options": ["Fe", "I", "Ir", "In"],
+          "correct_answer": 0
+      },
+      {
+          "id": "32",
+          "question": "Mi Ausztrália fővárosa?",
+          "options": ["Sydney", "Melbourne", "Perth", "Canberra"],
+          "correct_answer": 3
+      },
+      {
+          "id": "33",
+          "question": "Mi a világ legkisebb országa?",
+          "options": ["Monaco", "Vatikánváros", "San Marino", "Nauru"],
+          "correct_answer": 1
+      },
+      {
+          "id": "34",
+          "question": "Ki írta a 'Büszkeség és balítélet' című könyvet?",
+          "options": ["Jane Austen", "Charlotte Brontë", "Emily Dickinson", "Louisa May Alcott"],
+          "correct_answer": 0
+      },
+      {
+          "id": "35",
+          "question": "Mi a hidrogén vegyjele?",
+          "options": ["Hg", "He", "Hy", "H"],
+          "correct_answer": 3
+      },
+      {
+          "id": "36",
+          "question": "Mi a legnagyobb medvefaj?",
+          "options": ["Fekete medve", "Jeges medve", "Grizzly medve", "Kodiak medve"],
+          "correct_answer": 1
+      },
+      {
+          "id": "37",
+          "question": "Ki komponálta a 'Für Elise' című darabot?",
+          "options": ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Johann Sebastian Bach", "Franz Schubert"],
+          "correct_answer": 1
+      },
+      {
+          "id": "38",
+          "question": "Mi az ólom vegyjele?",
+          "options": ["P", "L", "Pb", "Pl"],
+          "correct_answer": 2
+      },
+      {
+          "id": "39",
+          "question": "Mi Brazília fővárosa?",
+          "options": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+          "correct_answer": 2
+      },
+      {
+          "id": "40",
+          "question": "Melyik országot hívják a Tűz és Jég Országának?",
+          "options": ["Izland", "Grönland", "Új-Zéland", "Írország"],
+          "correct_answer": 0
+      },
+      {
+          "id": "41",
+          "question": "Ki írta a 'A nagy Gatsby' című könyvet?",
+          "options": ["F. Scott Fitzgerald", "Ernest Hemingway", "Mark Twain", "John Steinbeck"],
+          "correct_answer": 0
+      },
+      {
+          "id": "42",
+          "question": "Mi a kálium vegyjele?",
+          "options": ["Pt", "Po", "K", "P"],
+          "correct_answer": 2
+      },
+      {
+          "id": "43",
+          "question": "Mi a leggyorsabb szárazföldi állat?",
+          "options": ["Gepárd", "Oroszlán", "Gazella", "Leopárd"],
+          "correct_answer": 0
+      },
+      {
+          "id": "44",
+          "question": "Ki a 'Harry Potter' sorozat szerzője?",
+          "options": ["J.K. Rowling", "Stephen King", "George R.R. Martin", "J.R.R. Tolkien"],
+          "correct_answer": 0
+      },
+      {
+          "id": "45",
+          "question": "Mi az urán vegyjele?",
+          "options": ["Un", "Ur", "U", "Ul"],
+          "correct_answer": 2
+      },
+      {
+          "id": "46",
+          "question": "Mi Dél-Afrika fővárosa?",
+          "options": ["Fokváros", "Johannesburg", "Durban", "Pretória"],
+          "correct_answer": 3
+      },
+      {
+          "id": "47",
+          "question": "Melyik bolygót hívják Gyűrűs bolygónak?",
+          "options": ["Jupiter", "Mars", "Szaturnusz", "Uránusz"],
+          "correct_answer": 2
+      },
+      {
+          "id": "48",
+          "question": "Ki írta a 'Zabhegyező' című könyvet?",
+          "options": ["J.D. Salinger", "Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain"],
+          "correct_answer": 0
+      },
+      {
+          "id": "49",
+          "question": "Mi a hélium vegyjele?",
+          "options": ["H", "He", "Hee", "Hm"],
+          "correct_answer": 1
+      },
+      {
+          "id": "50",
+          "question": "Mi a világ legnagyobb madara?",
+          "options": ["Strucc", "Sas", "Kondor", "Emu"],
+          "correct_answer": 0
+      }
+  ]
+  }
 }
