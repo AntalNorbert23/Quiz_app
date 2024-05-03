@@ -1,6 +1,6 @@
 <template>
      <header class="flex justify-center items-center h-20 bg-slate-600">
-         <div class="flex-1 ps-6 md:ps-8 text-xl md:text-3xl hover:cursor-pointer" @click="pushToQuiz">Quizes application</div>
+         <div class="flex-1 ps-6 md:ps-8 text-xl md:text-3xl hover:cursor-pointer" @click="pushToQuiz">{{localeStore.translate("quizapptext")}}</div>
 
          <div class="block md:hidden">
             <button @click="toggleMenu" class="p-2 text-white">
@@ -36,7 +36,7 @@
                <button class=' me-4 px-4 py-2 rounded-md bg-header text-sm md:text-base text-white border border-white hover:text-black hover:cursor-pointer hover:bg-white'
                        @click="showPersonalData"
                >
-                  Personal data
+                 {{localeStore.translate("personaldata")}}
                </button>
                <transition  enter-active-class="animate__animated animate__zoomIn"
                             leave-active-class="animate__animated animate__zoomOut"
@@ -44,15 +44,15 @@
                  <div class="absolute bottom-[-40px] w-32 p-2 rounded-b-lg bg-slate-600"
                       v-if="showPersData"
                  >
-                      <p class="m-0 text-xs text-white">Correct: <span>{{ correctAnswersCount }}</span> / 50</p>
-                      <p class="m-0 pt-1 text-xs text-white">Total time: {{ getTime(timerStore.totalTime) }} </p>
+                      <p class="m-0 text-xs text-white">{{localeStore.translate("correct")}} <span>{{ correctAnswersCount }}</span> / 50</p>
+                      <p class="m-0 pt-1 text-xs text-white">{{localeStore.translate("time")}} {{ getTime(timerStore.totalTime) }} </p>
                  </div>
                </transition>
              </div>
              <button class='me-4 px-4 py-2 rounded-md bg-header text-white border border-white hover:text-black hover:cursor-pointer hover:bg-white'
                      @click="showDropdown = !showDropdown"
              >
-                Language <span class="fa fa-chevron-circle-down text-center ms-1"></span>
+             {{localeStore.translate("language")}} <span class="fa fa-chevron-circle-down text-center ms-1"></span>
              </button>
 
              <div
@@ -78,7 +78,7 @@
                  <div class="absolute top-full left-5 -ml-2 flex items-start rounded-b-lg bg-slate-600"
                       v-if="showLogOff"
                  >
-                      <button class="pb-3 pt-1 px-3 text-sm text-white z-10 hover:text-slate-300" @click="logOff">LOG OFF</button>
+                      <button class="pb-3 pt-1 px-3 text-sm text-white z-10 hover:text-slate-300" @click="logOff">{{localeStore.translate("logoff")}}</button>
                  </div>
                </transition>
              </div>
@@ -91,7 +91,7 @@
     //imports
     import { useAuthStore } from '@/store/index';
     import { useRouter } from 'vue-router';
-    import { ref, computed,watch} from 'vue';
+    import { ref, computed,watch, onMounted} from 'vue';
     import { useTimerStore } from '@/store/timerStore';
     import { useRoute } from 'vue-router';
     import { useQuizStore } from '@/store/score';
@@ -181,6 +181,10 @@
         localeStore.setLocale(newLocale);
         showDropdown.value = false; 
     };
+
+    onMounted(()=>{
+      localeStore.loadLocale();
+    })
 
     </script>
 
