@@ -9,7 +9,7 @@
                 class="absolute top-0 left-1/2 translate-x-[-50%] px-6 py-6 select-none rounded-b-lg text-center"
                 v-if="createdAccount.userCreatedTextShowed"
             >
-                {{ createdAccount.userCreated ? "Account successfully created" : createdAccount.errorMessage }}
+                {{ createdAccount.userCreated ? localeStore.translate("accsuccessfull") : createdAccount.errorMessage }}
             </p>
         </transition>
     </div>
@@ -143,16 +143,16 @@
             const alreadyExists=existingAccounts.some(account=>account.username===username.value);
             if(password.value!==verifyPassword.value){
                 createdAccount.value.userCreatedTextShowed=true;
-                    createdAccount.value.errorMessage="Passwords don't match!";
+                    createdAccount.value.errorMessage=localeStore.translate("accpassnotmatch");
             }else if(/\s/.test(username.value)){
                     createdAccount.value.userCreatedTextShowed=true;
-                    createdAccount.value.errorMessage="Username cannot contain whitespace!";
+                    createdAccount.value.errorMessage=localeStore.translate("accnowhitespace");
             }else if(!passwordRegex.test(password.value)){
                     createdAccount.value.userCreatedTextShowed=true;
-                    createdAccount.value.errorMessage = "Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character.";
+                    createdAccount.value.errorMessage = localeStore.translate("passwordstrength");
             }else if(alreadyExists){
                     createdAccount.value.userCreatedTextShowed=true;
-                    createdAccount.value.errorMessage="The username already exists!";
+                    createdAccount.value.errorMessage=localeStore.translate("usernameexists");
             }else{
                 isLoading.value = true;
                 createdAccount.value.userCreated=true;
@@ -180,7 +180,7 @@
             } 
         }else{
             createdAccount.value.userCreatedTextShowed=true;
-            createdAccount.value.errorMessage="The fields can't be empty!" ;
+            createdAccount.value.errorMessage=localeStore.translate("fieldsempty") ;
         }     
     }
 

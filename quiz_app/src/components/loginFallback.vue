@@ -5,8 +5,19 @@
           <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
           <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V2.83a1 1 0 112 0V4a8 8 0 01-8 8z"></path>
         </svg>
-        <span class="text-white">Loading...</span>
+        <span class="text-white">{{ localeStore.translate("loading") }}</span>
       </div>
     </div>
   </template>
+
+  <script setup>
+    import { onMounted } from 'vue';
+    import { useLocaleStore } from './Locales/locales';
+
+    const localeStore=useLocaleStore();
+
+    onMounted(()=>{
+      localeStore.loadLocale();
+    })
+  </script>
 

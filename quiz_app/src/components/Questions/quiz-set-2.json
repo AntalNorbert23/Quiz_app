@@ -606,6 +606,311 @@
             "correct_answer": 0
         }
     ]
-    }
+    },
+    "ro": {
+      "questions": [
+          {
+              "id": "51",
+              "question": "Cine este autorul seriei 'Cronicile din Narnia'?",
+              "options": ["J.R.R. Tolkien", "C.S. Lewis", "J.K. Rowling", "J.D. Salinger"],
+              "correct_answer": 1
+          },
+          {
+              "id": "52",
+              "question": "Care este simbolul chimic pentru potasiu?",
+              "options": ["Pt", "Po", "K", "P"],
+              "correct_answer": 2
+          },
+          {
+              "id": "53",
+              "question": "Care este cel mai mare satelit natural din sistemul solar?",
+              "options": ["Ganymede", "Titan", "Callisto", "Io"],
+              "correct_answer": 0
+          },
+          {
+              "id": "54",
+              "question": "Cine a pictat 'Persistența memoriei'?",
+              "options": ["Salvador Dalí", "Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci"],
+              "correct_answer": 0
+          },
+          {
+              "id": "55",
+              "question": "Care este simbolul chimic pentru staniu?",
+              "options": ["Tn", "Ti", "Sn", "Ta"],
+              "correct_answer": 2
+          },
+          {
+              "id": "56",
+              "question": "Care este cel mai adânc loc din ocean?",
+              "options": ["Challenger Deep", "Fosa Puerto Rico", "Fosa Marianelor", "Fosa Tonga"],
+              "correct_answer": 0
+          },
+          {
+              "id": "57",
+              "question": "Cine a scris 'Odiseea'?",
+              "options": ["Homer", "Virgil", "Sofocle", "Euripide"],
+              "correct_answer": 0
+          },
+          {
+              "id": "58",
+              "question": "Care este simbolul chimic pentru calciu?",
+              "options": ["Ca", "Co", "Cl", "Ce"],
+              "correct_answer": 0
+          },
+          {
+              "id": "59",
+              "question": "Ce oraș este cunoscut ca Orașul Dragostei?",
+              "options": ["Paris", "Veneția", "Roma", "Praga"],
+              "correct_answer": 0
+          },
+          {
+              "id": "60",
+              "question": "Cine este protagonistul din 'De veghe în lanul de secară'?",
+              "options": ["Holden Caulfield", "Jay Gatsby", "Atticus Finch", "Huckleberry Finn"],
+              "correct_answer": 0
+          },
+          {
+              "id": "61",
+              "question": "Care este simbolul chimic pentru azot?",
+              "options": ["Ni", "Nt", "N", "Na"],
+              "correct_answer": 2
+          },
+          {
+              "id": "62",
+              "question": "Care este cel mai mare deșert din America de Nord?",
+              "options": ["Deșertul Sahara", "Deșertul Mojave", "Deșertul Marelui Bazin", "Deșertul Chihuahuan"],
+              "correct_answer": 2
+          },
+          {
+              "id": "63",
+              "question": "Cine a scris 'Poveștile din Canterbury'?",
+              "options": ["Geoffrey Chaucer", "William Shakespeare", "John Milton", "Dante Alighieri"],
+              "correct_answer": 0
+          },
+          {
+              "id": "64",
+              "question": "Care este simbolul chimic pentru mercur?",
+              "options": ["Hg", "Me", "Mr", "Mg"],
+              "correct_answer": 0
+          },
+          {
+              "id": "65",
+              "question": "Care țară este cunoscută drept Țara Soarelui de la Miezul Nopții?",
+              "options": ["Norvegia", "Suedia", "Finlanda", "Islanda"],
+              "correct_answer": 0
+          },
+          {
+              "id": "66",
+              "question": "Cine este personajul principal din seria 'Stăpânul Inelelor'?",
+              "options": ["Frodo Baggins", "Harry Potter", "Bilbo Baggins", "Aragorn"],
+              "correct_answer": 0
+          },
+          {
+              "id": "67",
+              "question": "Care este simbolul chimic pentru aluminiu?",
+              "options": ["Al", "Au", "Am", "Ag"],
+              "correct_answer": 0
+          },
+          {
+              "id": "68",
+              "question": "Care este cea mai mare planetă ca masă din sistemul solar?",
+              "options": ["Jupiter", "Saturn", "Uranus", "Neptun"],
+              "correct_answer": 0
+          },
+          {
+              "id": "69",
+              "question": "Cine a pictat 'Strigătul'?",
+              "options": ["Edvard Munch", "Pablo Picasso", "Vincent van Gogh", "Claude Monet"],
+              "correct_answer": 0
+          },
+          {
+              "id": "70",
+              "question": "Care este simbolul chimic pentru sodiu?",
+              "options": ["S", "Na", "N", "So"],
+              "correct_answer": 1
+          },
+          {
+              "id": "71",
+              "question": "Care este capitala Argentinei?",
+              "options": ["Buenos Aires", "Santiago", "Montevideo", "Lima"],
+              "correct_answer": 0
+          },
+          {
+              "id": "72",
+              "question": "Cine a scris 'Iliada'?",
+              "options": ["Homer", "Virgil", "Sofocle", "Euripide"],
+              "correct_answer": 0
+          },
+          {
+              "id": "73",
+              "question": "Care este simbolul chimic pentru neon?",
+              "options": ["Ne", "No", "Ni", "Na"],
+              "correct_answer": 0
+          },
+          {
+              "id": "74",
+              "question": "Care este cea mai înaltă cascadă din lume?",
+              "options": ["Cascada Angel", "Cascada Niagara", "Cascada Victoria", "Cascada Iguazu"],
+              "correct_answer": 0
+          },
+          {
+              "id": "75",
+              "question": "Cine a pictat 'Cina cea de taină'?",
+              "options": ["Leonardo da Vinci", "Michelangelo", "Raphael", "Donatello"],
+              "correct_answer": 0
+          },
+          {
+              "id": "76",
+              "question": "Care este simbolul chimic pentru fosfor?",
+              "options": ["P", "Po", "Ph", "Ps"],
+              "correct_answer": 0
+          },
+          {
+              "id": "77",
+              "question": "Cine a scris 'Război și pace'?",
+              "options": ["Lev Tolstoi", "Fyodor Dostoevsky", "Ivan Turgheniev", "Anton Cehov"],
+              "correct_answer": 0
+          },
+          {
+              "id": "78",
+              "question": "Care este simbolul chimic pentru tungsten?",
+              "options": ["T", "Tu", "Tw", "W"],
+              "correct_answer": 3
+          },
+          {
+              "id": "79",
+              "question": "Care este cel mai mare dinozaur carnivor?",
+              "options": ["Tyrannosaurus rex", "Spinosaurus", "Allosaurus", "Velociraptor"],
+              "correct_answer": 0
+          },
+          {
+              "id": "80",
+              "question": "Cine a compus 'Anotimpurile'?",
+              "options": ["Antonio Vivaldi", "Ludwig van Beethoven", "Johann Sebastian Bach", "Wolfgang Amadeus Mozart"],
+              "correct_answer": 0
+          },
+          {
+              "id": "81",
+              "question": "Care este simbolul chimic pentru sulf?",
+              "options": ["Su", "Sf", "S", "Sl"],
+              "correct_answer": 2
+          },
+          {
+              "id": "82",
+              "question": "Care este capitala Spaniei?",
+              "options": ["Madrid", "Barcelona", "Sevilla", "Valencia"],
+              "correct_answer": 0
+          },
+          {
+              "id": "83",
+              "question": "Cine a scris 'Portretul lui Dorian Gray'?",
+              "options": ["Oscar Wilde", "Edgar Allan Poe", "F. Scott Fitzgerald", "Virginia Woolf"],
+              "correct_answer": 0
+          },
+          {
+              "id": "84",
+              "question": "Care este simbolul chimic pentru cobalt?",
+              "options": ["Cb", "Co", "Cl", "Cr"],
+              "correct_answer": 1
+          },
+          {
+              "id": "85",
+              "question": "Care este cel mai mare pește din lume?",
+              "options": ["Rechinul balenă", "Rechinul alb", "Balena albastră", "Orca"],
+              "correct_answer": 0
+          },
+          {
+              "id": "86",
+              "question": "Cine a compus 'Canonul în D'?",
+              "options": ["Johann Pachelbel", "Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Johann Sebastian Bach"],
+              "correct_answer": 0
+          },
+          {
+              "id": "87",
+              "question": "Care este simbolul chimic pentru radiu?",
+              "options": ["Rd", "Ra", "R", "Rm"],
+              "correct_answer": 1
+          },
+          {
+              "id": "88",
+              "question": "Care este capitala Italiei?",
+              "options": ["Roma", "Milano", "Florența", "Veneția"],
+              "correct_answer": 0
+          },
+          {
+              "id": "89",
+              "question": "Cine a scris 'Moby-Dick'?",
+              "options": ["Herman Melville", "Mark Twain", "Nathaniel Hawthorne", "Edgar Allan Poe"],
+              "correct_answer": 0
+          },
+          {
+              "id": "90",
+              "question": "Care este simbolul chimic pentru zinc?",
+              "options": ["Zn", "Zi", "Ze", "Z"],
+              "correct_answer": 0
+          },
+          {
+              "id": "91",
+              "question": "Care este capitala Rusiei?",
+              "options": ["Moscova", "Sankt Petersburg", "Kiev", "Minsk"],
+              "correct_answer": 0
+          },
+          {
+              "id": "92",
+              "question": "Cine a scris 'Litera stacojie'?",
+              "options": ["Nathaniel Hawthorne", "Herman Melville", "Edgar Allan Poe", "Ralph Waldo Emerson"],
+              "correct_answer": 0
+          },
+          {
+              "id": "93",
+              "question": "Care este simbolul chimic pentru mangan?",
+              "options": ["M", "Mn", "Ma", "Mg"],
+              "correct_answer": 1
+          },
+          {
+              "id": "94",
+              "question": "Care este cel mai mare șopârlă din lume?",
+              "options": ["Dragonul Komodo", "Monitorul Nilului", "Tegu argentinian alb-negru", "Monstrul Gila"],
+              "correct_answer": 0
+          },
+          {
+              "id": "95",
+              "question": "Cine a compus 'Simfonia Nr. 9'?",
+              "options": ["Ludwig van Beethoven", "Wolfgang Amadeus Mozart", "Johann Sebastian Bach", "Franz Schubert"],
+              "correct_answer": 0
+          },
+          {
+              "id": "96",
+              "question": "Care este simbolul chimic pentru bariu?",
+              "options": ["B", "Ba", "Br", "Bl"],
+              "correct_answer": 1
+          },
+          {
+              "id": "97",
+              "question": "Care este capitala Chinei?",
+              "options": ["Beijing", "Shanghai", "Hong Kong", "Guangzhou"],
+              "correct_answer": 0
+          },
+          {
+              "id": "98",
+              "question": "Cine a scris 'Strugurii mâniei'?",
+              "options": ["John Steinbeck", "Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain"],
+              "correct_answer": 0
+          },
+          {
+              "id": "99",
+              "question": "Care este simbolul chimic pentru arsen?",
+              "options": ["As", "Ar", "Ai", "Ac"],
+              "correct_answer": 0
+          },
+          {
+              "id": "100",
+              "question": "Care este cel mai mare păianjen după întinderea picioarelor?",
+              "options": ["Mâncătorul de păsări Goliat", "Păianjenul rătăcitor brazilian", "Păianjenul vânător", "Văduva neagră"],
+              "correct_answer": 0
+          }
+      ]
+  }
+  
   }
   

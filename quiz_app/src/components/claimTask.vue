@@ -4,19 +4,19 @@
             <p class="text-sm md:text-base">ID</p>
         </div>
         <div class="flex justify-center">
-            <p class="text-sm md:text-base">NAME</p>
+            <p class="text-sm md:text-base">{{localeStore.translate("name")}}</p>
         </div>
         <div class="flex justify-center">
-            <p class="text-sm md:text-base">Task Nr</p>
+            <p class="text-sm md:text-base">{{localeStore.translate("tasknr")}}</p>
         </div>
         <div class="flex justify-center">
-            <p class="text-sm md:text-base">Claim</p>
+            <p class="text-sm md:text-base">{{ localeStore.translate("claim") }}</p>
         </div>
         <div class="flex justify-center pt-2">
             <p class="text-sm md:text-base">1</p>
         </div>
         <div class="flex justify-center pt-2">
-            <p class="text-center text-sm md:text-base">General knowledge</p>
+            <p class="text-center text-sm md:text-base">{{ localeStore.translate("generalknowledge") }}</p>
         </div>
         <div class="flex justify-center pt-2">
             <p class="text-sm md:text-base">50</p>
@@ -24,13 +24,13 @@
         <div class="flex justify-center pt-2 hover:cursor-pointer"
              @click="selectComponent('General knowledge')"
         >
-                <p class="hover:text-slate-600 text-center text-sm md:text-base pe-1" >Claim quiz</p>
+                <p class="hover:text-slate-600 text-center text-sm md:text-base pe-1" >{{ localeStore.translate("claimquiz") }}</p>
         </div>
         <div class="flex justify-center pt-2">
             <p class="text-sm md:text-base">2</p>
         </div>
         <div class="flex justify-center pt-2">
-            <p class="text-center text-sm md:text-base">Hungarian knowledge</p>
+            <p class="text-center text-sm md:text-base">{{ localeStore.translate("hungarianknowledge") }}</p>
         </div>
         <div class="flex justify-center pt-2">
             <p class="text-sm md:text-base">50</p>
@@ -38,7 +38,7 @@
         <div class="flex justify-center pt-2 hover:cursor-pointer"
              @click="selectComponent('Hungarian knowledge')"
         >
-                <p class="hover:text-slate-600 text-center text-sm md:text-base pe-1" >Claim quiz</p>
+                <p class="hover:text-slate-600 text-center text-sm md:text-base pe-1" >{{ localeStore.translate("claimquiz") }}</p>
         </div>
    </div>
    <transition
@@ -55,10 +55,12 @@
     import { useRouter } from 'vue-router';
     import { useAuthStore } from '@/store/index';
     import { onMounted,ref } from 'vue';
+    import { useLocaleStore } from './Locales/locales';
 
     const authStore = useAuthStore();
 
     const router=useRouter();
+    const localeStore=useLocaleStore();
     const errorMsg = ref(null);
 
     //generate random ID and save to localstorage
@@ -83,7 +85,7 @@
 
         //check if there are already 3 quizzes claimed
         if (authStore.claimedQuizzesCount >= maxClaimedQuizzes) {
-            errorMsg.value = 'Please complete the claimed quizzes first.';
+            errorMsg.value = localeStore.translate("errormsg");
             setTimeout(() => {
                 errorMsg.value=null
             }, 3000);
@@ -107,5 +109,6 @@
 
     onMounted(() => {
         saveRoute();
+        localeStore.loadLocale();
     });
 </script>

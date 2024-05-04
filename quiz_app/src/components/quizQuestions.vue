@@ -135,7 +135,7 @@
                 selectedAnswers.value = quizState.selectedAnswers;
             } else {
             // if there were no previous selections found, fill selectedAnswers with null 
-                selectedAnswers.value = Array(data.questions.length).fill(null);
+                selectedAnswers.value = Array(data[locale.value].questions.length).fill(null);
             }
     }catch(error){
             console.error(error);

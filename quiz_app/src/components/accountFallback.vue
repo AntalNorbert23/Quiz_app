@@ -1,9 +1,21 @@
 <template>
     <div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 p-8 rounded-lg text-white text-center">
       <div class="w-full h-2 bg-white animate-loading"></div>
-      <p class="mt-4">Creating account...</p>
+      <p class="mt-4">{{ localeStore.translate("creatingaccount") }}</p>
     </div>
   </template>
+  
+
+  <script setup>
+    import { onMounted } from 'vue';
+    import { useLocaleStore } from './Locales/locales';
+
+    const localeStore=useLocaleStore();
+
+    onMounted(()=>{
+      localeStore.loadLocale();
+    })
+  </script>
   
   <style scoped>
   @keyframes loading {

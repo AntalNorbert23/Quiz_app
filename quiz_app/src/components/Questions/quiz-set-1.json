@@ -605,5 +605,310 @@
           "correct_answer": 0
       }
   ]
-  }
+  },
+  "ro": {
+    "questions": [
+        {
+            "id": "1",
+            "question": "Care este capitala Franței?",
+            "options": ["Londra", "Paris", "Berlin", "Madrid"],
+            "correct_answer": 1
+        },
+        {
+            "id": "2",
+            "question": "Care este cea mai mare planetă din sistemul nostru solar?",
+            "options": ["Pământ", "Jupiter", "Marte", "Saturn"],
+            "correct_answer": 1
+        },
+        {
+            "id": "3",
+            "question": "Cine a scris 'Să ucizi o pasăre cântătoare'?",
+            "options": ["Harper Lee", "J.K. Rowling", "Ernest Hemingway", "Mark Twain"],
+            "correct_answer": 0
+        },
+        {
+            "id": "4",
+            "question": "Care este simbolul chimic al apei?",
+            "options": ["H", "W", "O", "H2O"],
+            "correct_answer": 3
+        },
+        {
+            "id": "5",
+            "question": "Care este cel mai mare ocean de pe Pământ?",
+            "options": ["Oceanul Atlantic", "Oceanul Indian", "Oceanul Arctic", "Oceanul Pacific"],
+            "correct_answer": 3
+        },
+        {
+            "id": "6",
+            "question": "Care țară este cunoscută drept Țara Soarelui Răsare?",
+            "options": ["China", "Japonia", "Coreea de Sud", "India"],
+            "correct_answer": 1
+        },
+        {
+            "id": "7",
+            "question": "Cine a pictat Mona Lisa?",
+            "options": ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet"],
+            "correct_answer": 1
+        },
+        {
+            "id": "8",
+            "question": "Care este simbolul chimic pentru aur?",
+            "options": ["Au", "Go", "G", "Ag"],
+            "correct_answer": 0
+        },
+        {
+            "id": "9",
+            "question": "Care este cel mai mare mamifer din lume?",
+            "options": ["Elefant", "Balena albastră", "Girafă", "Hippopotam"],
+            "correct_answer": 1
+        },
+        {
+            "id": "10",
+            "question": "Care planetă este cunoscută drept Planeta Roșie?",
+            "options": ["Marte", "Jupiter", "Saturn", "Venus"],
+            "correct_answer": 0
+        },
+        {
+            "id": "11",
+            "question": "Cine a scris 'Romeo și Julieta'?",
+            "options": ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+            "correct_answer": 0
+        },
+        {
+            "id": "12",
+            "question": "Care este cel mai înalt munte din lume?",
+            "options": ["Muntele Everest", "K2", "Kangchenjunga", "Makalu"],
+            "correct_answer": 0
+        },
+        {
+            "id": "13",
+            "question": "Care este capitala Canadei?",
+            "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+            "correct_answer": 2
+        },
+        {
+            "id": "14",
+            "question": "Care este gazul cel mai abundent în atmosfera Pământului?",
+            "options": ["Oxigen", "Azot", "Dioxid de carbon", "Heliu"],
+            "correct_answer": 1
+        },
+        {
+            "id": "15",
+            "question": "Cine este cunoscut ca părintele fizicii moderne?",
+            "options": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Niels Bohr"],
+            "correct_answer": 0
+        },
+        {
+            "id": "16",
+            "question": "Care este simbolul chimic pentru oxigen?",
+            "options": ["O", "Ox", "Og", "O2"],
+            "correct_answer": 3
+        },
+        {
+            "id": "17",
+            "question": "Care este capitala Japoniei?",
+            "options": ["Beijing", "Seoul", "Tokyo", "Kyoto"],
+            "correct_answer": 2
+        },
+        {
+            "id": "18",
+            "question": "Cine a descoperit penicilina?",
+            "options": ["Alexander Fleming", "Marie Curie", "Louis Pasteur", "Jonas Salk"],
+            "correct_answer": 0
+        },
+        {
+            "id": "19",
+            "question": "Care planetă este cunoscută ca Planeta Albastră?",
+            "options": ["Pământ", "Jupiter", "Neptun", "Uranus"],
+            "correct_answer": 0
+        },
+        {
+            "id": "20",
+            "question": "Care este simbolul chimic pentru carbon?",
+            "options": ["C", "Ca", "Co", "Cr"],
+            "correct_answer": 0
+        },
+        {
+            "id": "21",
+            "question": "Care este cel mai lung râu din lume?",
+            "options": ["Râul Nil", "Râul Amazon", "Râul Yangtze", "Râul Mississippi"],
+            "correct_answer": 0
+        },
+        {
+            "id": "22",
+            "question": "Cine a fost prima femeie care a câștigat un Premiu Nobel?",
+            "options": ["Marie Curie", "Rosalind Franklin", "Ada Lovelace", "Jane Goodall"],
+            "correct_answer": 0
+        },
+        {
+            "id": "23",
+            "question": "Care este cel mai mare deșert din lume?",
+            "options": ["Deșertul Sahara", "Deșertul Gobi", "Deșertul Arabiei", "Deșertul Kalahari"],
+            "correct_answer": 0
+        },
+        {
+            "id": "24",
+            "question": "Cine a scris '1984'?",
+            "options": ["George Orwell", "J.R.R. Tolkien", "Aldous Huxley", "Ray Bradbury"],
+            "correct_answer": 0
+        },
+        {
+            "id": "25",
+            "question": "Care este simbolul chimic pentru argint?",
+            "options": ["S", "Si", "Ag", "Au"],
+            "correct_answer": 2
+        },
+        {
+            "id": "26",
+            "question": "Care țară este cunoscută ca Țara celor o mie de lacuri?",
+            "options": ["Suedia", "Finlanda", "Norvegia", "Canada"],
+            "correct_answer": 1
+        },
+        {
+            "id": "27",
+            "question": "Cine a fost primul om care a pășit pe Lună?",
+            "options": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "John Glenn"],
+            "correct_answer": 0
+        },
+        {
+            "id": "28",
+            "question": "Care este simbolul chimic pentru sodiu?",
+            "options": ["S", "Na", "N", "So"],
+            "correct_answer": 1
+        },
+        {
+            "id": "29",
+            "question": "Care este cel mai mare continent ca suprafață?",
+            "options": ["Africa", "America de Nord", "Asia", "Europa"],
+            "correct_answer": 2
+        },
+        {
+            "id": "30",
+            "question": "Cine a pictat 'Noaptea înstelată'?",
+            "options": ["Vincent van Gogh", "Pablo Picasso", "Claude Monet", "Leonardo da Vinci"],
+            "correct_answer": 0
+        },
+        {
+            "id": "31",
+            "question": "Care este simbolul chimic pentru fier?",
+            "options": ["Fe", "I", "Ir", "In"],
+            "correct_answer": 0
+        },
+        {
+            "id": "32",
+            "question": "Care este capitala Australiei?",
+            "options": ["Sydney", "Melbourne", "Perth", "Canberra"],
+            "correct_answer": 3
+        },
+        {
+            "id": "33",
+            "question": "Care este cea mai mică țară din lume?",
+            "options": ["Monaco", "Orașul Vatican", "San Marino", "Nauru"],
+            "correct_answer": 1
+        },
+        {
+            "id": "34",
+            "question": "Cine a scris 'Mândrie și prejudecată'?",
+            "options": ["Jane Austen", "Charlotte Brontë", "Emily Dickinson", "Louisa May Alcott"],
+            "correct_answer": 0
+        },
+        {
+            "id": "35",
+            "question": "Care este simbolul chimic pentru hidrogen?",
+            "options": ["Hg", "He", "Hy", "H"],
+            "correct_answer": 3
+        },
+        {
+            "id": "36",
+            "question": "Care este cea mai mare specie de urs?",
+            "options": ["Ursul negru", "Ursul polar", "Ursul grizzly", "Ursul kodiak"],
+            "correct_answer": 1
+        },
+        {
+            "id": "37",
+            "question": "Cine a compus 'Für Elise'?",
+            "options": ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Johann Sebastian Bach", "Franz Schubert"],
+            "correct_answer": 1
+        },
+        {
+            "id": "38",
+            "question": "Care este simbolul chimic pentru plumb?",
+            "options": ["P", "L", "Pb", "Pl"],
+            "correct_answer": 2
+        },
+        {
+            "id": "39",
+            "question": "Care este capitala Braziliei?",
+            "options": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+            "correct_answer": 2
+        },
+        {
+            "id": "40",
+            "question": "Care țară este cunoscută drept Țara Focului și Gheții?",
+            "options": ["Islanda", "Groenlanda", "Noua Zeelandă", "Irlanda"],
+            "correct_answer": 0
+        },
+        {
+            "id": "41",
+            "question": "Cine a scris 'Marele Gatsby'?",
+            "options": ["F. Scott Fitzgerald", "Ernest Hemingway", "Mark Twain", "John Steinbeck"],
+            "correct_answer": 0
+        },
+        {
+            "id": "42",
+            "question": "Care este simbolul chimic pentru potasiu?",
+            "options": ["Pt", "Po", "K", "P"],
+            "correct_answer": 2
+        },
+        {
+            "id": "43",
+            "question": "Care este cel mai rapid animal terestru?",
+            "options": ["Ghepard", "Leu", "Gazelă", "Leopard"],
+            "correct_answer": 0
+        },
+        {
+            "id": "44",
+            "question": "Cine este autorul seriei 'Harry Potter'?",
+            "options": ["J.K. Rowling", "Stephen King", "George R.R. Martin", "J.R.R. Tolkien"],
+            "correct_answer": 0
+        },
+        {
+            "id": "45",
+            "question": "Care este simbolul chimic pentru uraniu?",
+            "options": ["Un", "Ur", "U", "Ul"],
+            "correct_answer": 2
+        },
+        {
+            "id": "46",
+            "question": "Care este capitala Africii de Sud?",
+            "options": ["Cape Town", "Johannesburg", "Durban", "Pretoria"],
+            "correct_answer": 3
+        },
+        {
+            "id": "47",
+            "question": "Care planetă este cunoscută ca Planeta cu inele?",
+            "options": ["Jupiter", "Marte", "Saturn", "Uranus"],
+            "correct_answer": 2
+        },
+        {
+            "id": "48",
+            "question": "Cine a scris 'De veghe în lanul de secară'?",
+            "options": ["J.D. Salinger", "Ernest Hemingway", "F. Scott Fitzgerald", "Mark Twain"],
+            "correct_answer": 0
+        },
+        {
+            "id": "49",
+            "question": "Care este simbolul chimic pentru heliu?",
+            "options": ["H", "He", "Hee", "Hm"],
+            "correct_answer": 1
+        },
+        {
+            "id": "50",
+            "question": "Care este cea mai mare pasăre din lume?",
+            "options": ["Struț", "Vultur", "Condor", "Emu"],
+            "correct_answer": 0
+        }
+    ]
+}
+
 }

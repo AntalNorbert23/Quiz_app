@@ -10,7 +10,7 @@
                     class="absolute top-0 left-1/2 translate-x-[-50%] px-6 py-6 md:w-52 select-none rounded-b-lg text-center"
                     v-if="login.loginTextShowed"
                 >
-                    {{ login.loginSuccess ? "Successfully logged in" : "Failed login. Try again" }}
+                    {{ login.loginSuccess ?  localeStore.translate("successfullogin") : localeStore.translate("failedlogin") }}
                 </p>
             </transition>
         </div>
