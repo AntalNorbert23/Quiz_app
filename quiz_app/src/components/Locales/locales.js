@@ -38,7 +38,8 @@ export const useLocaleStore = defineStore('locale', {
 
                 //quizHeader
                 "quizapptext":"Quizes application",
-                "personaldata":"Personal data",
+                "personaldata":"Data",
+                "personaldatapc":"Personal data",
                 "correct":"Correct:",
                 "time":"Time:",
                 "language":"Language",
@@ -55,8 +56,23 @@ export const useLocaleStore = defineStore('locale', {
                 "generalknowledge":"General knowledge",
                 "claimquiz":"Claim quiz",
                 "hungarianknowledge":"Hungarian knowledge",
-                "errormsg":"Please complete the claimed quizzes first."
+                "errormsg":"Please complete the claimed quizzes first.",
 
+                //tasks
+                "taskstobedone":"Tasks to be done",
+                "processing":"Processing",
+                "done":"Done",
+                "markquiz":"Mark quiz",
+
+                //tasksDone
+                "completedtasks":"Completed tasks",
+                "correct":"Correct",
+
+                //quizQuestions
+                "quizquestions":"Quiz questions",
+                "congratulations":"Congratulations! {correctAnswersCount}/50 questions were correct!",
+                "noqavailable":"No questions available",
+                "submitquiz":"Submit Quiz"
 
             },
             hu: {
@@ -89,7 +105,8 @@ export const useLocaleStore = defineStore('locale', {
 
                 //quizHeader 
                 "quizapptext": "Kvízalkalmazás",
-                "personaldata": "Személyes adatok",
+                "personaldata": "Adatok",
+                "personaldatapc":"Személyes adatok",
                 "correct": "Helyes:",
                 "time": "Idő:",
                 "language": "Nyelv",
@@ -102,12 +119,27 @@ export const useLocaleStore = defineStore('locale', {
                 //claimTask
                 "name": "NÉV",
                 "tasknr": "Feladat Szám",
-                "claim": "Követelés",
+                "claim": "Elfogad",
                 "generalknowledge": "Általános ismeretek",
-                "claimquiz": "Kvíz követelése",
+                "claimquiz": "Kvíz elfogadása",
                 "hungarianknowledge": "Magyarországi ismeretek",
-                "errormsg": "Először fejezze be a követelt kvízeket.",
+                "errormsg": "Először fejezze be az elfogadott kvízeket.",
 
+                //tasks
+                "taskstobedone": "Elvégzendő feladatok",
+                "processing": "Feldolgozás",
+                "done": "Kész",
+                "markquiz": "Megjelöl",
+
+                //tasksDone
+                "completedtasks": "Befejezett feladatok",
+                "correct": "Helyes",
+
+                //quizQuestions
+                "quizquestions": "Kvízkérdések",
+                "congratulations": "Gratulálok! {correctAnswersCount}/50 kérdés volt helyes!",
+                "noqavailable": "Nincsenek elérhető kérdések",
+                "submitquiz": "Kvíz beküldése",
 
             },
             ro:{
@@ -140,7 +172,8 @@ export const useLocaleStore = defineStore('locale', {
 
                 //quizHeader
                 "quizapptext": "Aplicație de quiz",
-                "personaldata": "Date personale",
+                "personaldata": "Date",
+                "personaldatapc":"Date personale",
                 "correct": "Corect:",
                 "time": "Timp:",
                 "language": "Limba",
@@ -158,6 +191,22 @@ export const useLocaleStore = defineStore('locale', {
                 "claimquiz": "Solicită test",
                 "hungarianknowledge": "Cunoștințe-Ungaria",
                 "errormsg": "Vă rugăm să finalizați mai întâi testele revendicate.",
+                
+                //tasks
+                "taskstobedone": "Sarcini de făcut",
+                "processing": "Procesare",
+                "done": "Finalizat",
+                "markquiz": "Marchează",
+
+                //tasksDone
+                "completedtasks": "Sarcini completate",
+                "correct": "Corect",
+
+                //quizQuestions
+                "quizquestions": "Întrebări de test",
+                "congratulations": "Felicitări! {correctAnswersCount}/50 întrebări au fost corecte!",
+                "noqavailable": "Nu sunt întrebări disponibile",
+                "submitquiz": "Trimite testul",
             }
            
         },

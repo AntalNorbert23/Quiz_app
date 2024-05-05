@@ -1,4 +1,5 @@
-{
+{ 
+  "en":{
     "questions": [
       {
         "id": "101",
@@ -301,5 +302,614 @@
         "correct_answer": 3
       }
     ]
-  }
+  },
   
+    "hu": {
+        "questions": [
+            {
+                "id": "101",
+                "question": "Ki az a magyar zeneszerző, aki a 'Magyar rapszódiák' című kompozíciójáról ismert?",
+                "options": ["Liszt Ferenc", "Bartók Béla", "Kodály Zoltán", "Erkel Ferenc"],
+                "correct_answer": 0
+            },
+            {
+                "id": "102",
+                "question": "Melyik folyó folyik át Budapesten?",
+                "options": ["Tisza", "Száva", "Duna", "Dráva"],
+                "correct_answer": 2
+            },
+            {
+                "id": "103",
+                "question": "Mi a neve annak a magyar ételnek, amely csirke paprikából, tejfölből és paprikából készül?",
+                "options": ["Gulyásleves", "Halászlé", "Töltött káposzta", "Paprikás csirke"],
+                "correct_answer": 3
+            },
+            {
+                "id": "104",
+                "question": "Ki volt az a magyar matematikus, akit a matematikában ismert Erdős-számról neveztek el?",
+                "options": ["Neumann János", "Erdős Pál", "Bolyai János", "Rényi Alfréd"],
+                "correct_answer": 1
+            },
+            {
+                "id": "105",
+                "question": "Mi a neve annak a magyar borvidéknek, amely az édes fehér borairól ismert?",
+                "options": ["Tokaj", "Eger", "Sopron", "Villány"],
+                "correct_answer": 0
+            },
+            {
+                "id": "106",
+                "question": "Ki volt az a magyar-amerikai fizikus, aki a Manhattan-projekten dolgozott?",
+                "options": ["Teller Ede", "Neumann János", "Szilárd Leó", "Wigner Jenő"],
+                "correct_answer": 0
+            },
+            {
+                "id": "107",
+                "question": "Mi a neve annak a magyar ételnek, amely réteges torta dió- vagy mák töltelékkel?",
+                "options": ["Bejgli", "Kürtőskalács", "Pogácsa", "Rétes"],
+                "correct_answer": 0
+            },
+            {
+                "id": "108",
+                "question": "Ki volt az a magyar-amerikai színész, aki Lugosi Béla ellenfelét játszotta horror filmekben?",
+                "options": ["Vincent Price", "Peter Lorre", "Boris Karloff", "Lon Chaney"],
+                "correct_answer": 0
+            },
+            {
+                "id": "109",
+                "question": "Mi a neve annak a magyar ételnek, amely édes kenyértésztából készült, spirál alakú, majd grillezve és cukorral vagy más feltéttel bevonva?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "110",
+                "question": "Ki volt az a magyar fizikus, aki a Rubik-kocka feltalálója?",
+                "options": ["Szent-Györgyi Albert", "Gábor Dénes", "Rubik Ernő", "Bojár Gábor"],
+                "correct_answer": 2
+            },
+            {
+                "id": "111",
+                "question": "Mi a neve annak a magyar ételnek, amely édes tésztatekercsből készült, dió- vagy mákkrémmel töltött?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "112",
+                "question": "Ki volt az a magyar-amerikai üzletember és filantróp, aki a Közép-európai Egyetemet alapította?",
+                "options": ["Soros György", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+                "correct_answer": 0
+            },
+            {
+                "id": "113",
+                "question": "Mi a neve annak a magyar ételnek, amely édes kenyértésztából készült, spirál alakú, majd grillezve és cukorral vagy más feltéttel bevonva?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "114",
+                "question": "Ki volt az a magyar költő, aki Vörösmarty Mihály 'Versek' című művéért ismert?",
+                "options": ["Ady Endre", "Petőfi Sándor", "Arany János", "Vörösmarty Mihály"],
+                "correct_answer": 3
+            },
+            {
+                "id": "115",
+                "question": "Mi a neve annak a magyar ételnek, amely édes tésztatekercsből készült, dió- vagy mákkrémmel töltött?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "116",
+                "question": "Ki volt az a magyar költő, aki 'Toldi' című eposzáról ismert?",
+                "options": ["Babits Mihály", "Petőfi Sándor", "Ady Endre", "Arany János"],
+                "correct_answer": 3
+            },
+            {
+                "id": "117",
+                "question": "Mi a neve annak a magyar ételnek, amely réteges piskóta tortából, csokoládé krémből és sárgabarack lekvárból készült, csokoládé mázzal?",
+                "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+                "correct_answer": 0
+            },
+            {
+                "id": "118",
+                "question": "Ki volt az a magyar fizikus, aki hullámmechanikával kapcsolatos munkáiról ismert, kifejlesztette a Wigner–Seitz cellát a szilárdtestfizikában?",
+                "options": ["Teller Ede", "Neumann János", "Szilárd Leó", "Wigner Jenő"],
+                "correct_answer": 3
+            },
+            {
+                "id": "119",
+                "question": "Mi a neve annak a magyar ételnek, amely édes kenyértésztából készült, spirál alakú, majd grillezve és cukorral vagy más feltéttel bevonva?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "120",
+                "question": "Ki volt az a magyar-amerikai színész, aki Lugosi Béla ellenfelét játszotta horror filmekben?",
+                "options": ["Vincent Price", "Peter Lorre", "Boris Karloff", "Lon Chaney"],
+                "correct_answer": 0
+            },
+            {
+                "id": "121",
+                "question": "Mi a neve annak a magyar ételnek, amely réteges torta dió- vagy mák töltelékkel?",
+                "options": ["Bejgli", "Kürtőskalács", "Pogácsa", "Rétes"],
+                "correct_answer": 0
+            },
+            {
+                "id": "122",
+                "question": "Ki volt az a magyar fizikus, aki a Rubik-kocka feltalálója?",
+                "options": ["Szent-Györgyi Albert", "Gábor Dénes", "Rubik Ernő", "Bojár Gábor"],
+                "correct_answer": 2
+            },
+            {
+                "id": "123",
+                "question": "Mi a neve annak a magyar ételnek, amely édes tésztatekercsből készült, dió- vagy mákkrémmel töltött?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "124",
+                "question": "Ki volt az a magyar-amerikai üzletember és filantróp, aki a Közép-európai Egyetemet alapította?",
+                "options": ["Soros György", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+                "correct_answer": 0
+            },
+            {
+                "id": "125",
+                "question": "Mi a neve annak a magyar ételnek, amely édes kenyértésztából készült, spirál alakú, majd grillezve és cukorral vagy más feltéttel bevonva?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "126",
+                "question": "Ki volt az a magyar költő, aki Vörösmarty Mihály 'Versek' című művéért ismert?",
+                "options": ["Ady Endre", "Petőfi Sándor", "Arany János", "Vörösmarty Mihály"],
+                "correct_answer": 3
+            },
+            {
+                "id": "127",
+                "question": "Mi a neve annak a magyar ételnek, amely édes tésztatekercsből készült, dió- vagy mákkrémmel töltött?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "128",
+                "question": "Ki volt az a magyar költő, aki 'Toldi' című eposzáról ismert?",
+                "options": ["Babits Mihály", "Petőfi Sándor", "Ady Endre", "Arany János"],
+                "correct_answer": 3
+            },
+            {
+                "id": "129",
+                "question": "Mi a neve annak a magyar ételnek, amely réteges piskóta tortából, csokoládé krémből és sárgabarack lekvárból készült, csokoládé mázzal?",
+                "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+                "correct_answer": 0
+            },
+            {
+                "id": "130",
+                "question": "Ki volt az a magyar fizikus, aki hullámmechanikával kapcsolatos munkáiról ismert, kifejlesztette a Wigner–Seitz cellát a szilárdtestfizikában?",
+                "options": ["Teller Ede", "Neumann János", "Szilárd Leó", "Wigner Jenő"],
+                "correct_answer": 3
+            },
+            {
+                "id": "131",
+                "question": "Mi a neve annak a magyar ételnek, amely édes kenyértésztából készült, spirál alakú, majd grillezve és cukorral vagy más feltéttel bevonva?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "132",
+                "question": "Ki volt az a magyar-amerikai színész, aki Lugosi Béla ellenfelét játszotta horror filmekben?",
+                "options": ["Vincent Price", "Peter Lorre", "Boris Karloff", "Lon Chaney"],
+                "correct_answer": 0
+            },
+            {
+                "id": "133",
+                "question": "Mi a neve annak a magyar ételnek, amely réteges torta dió- vagy mák töltelékkel?",
+                "options": ["Bejgli", "Kürtőskalács", "Pogácsa", "Rétes"],
+                "correct_answer": 0
+            },
+            {
+                "id": "134",
+                "question": "Ki volt az a magyar fizikus, aki a Rubik-kocka feltalálója?",
+                "options": ["Szent-Györgyi Albert", "Gábor Dénes", "Rubik Ernő", "Bojár Gábor"],
+                "correct_answer": 2
+            },
+            {
+                "id": "135",
+                "question": "Mi a neve annak a magyar ételnek, amely édes tésztatekercsből készült, dió- vagy mákkrémmel töltött?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "136",
+                "question": "Ki volt az a magyar-amerikai üzletember és filantróp, aki a Közép-európai Egyetemet alapította?",
+                "options": ["Soros György", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+                "correct_answer": 0
+            },
+            {
+                "id": "137",
+                "question": "Mi a neve annak a magyar ételnek, amely édes kenyértésztából készült, spirál alakú, majd grillezve és cukorral vagy más feltéttel bevonva?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "138",
+                "question": "Ki volt az a magyar költő, aki Vörösmarty Mihály 'Versek' című művéért ismert?",
+                "options": ["Ady Endre", "Petőfi Sándor", "Arany János", "Vörösmarty Mihály"],
+                "correct_answer": 3
+            },
+            {
+                "id": "139",
+                "question": "Mi a neve annak a magyar ételnek, amely édes tésztatekercsből készült, dió- vagy mákkrémmel töltött?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "140",
+                "question": "Ki volt az a magyar költő, aki 'Toldi' című eposzáról ismert?",
+                "options": ["Babits Mihály", "Petőfi Sándor", "Ady Endre", "Arany János"],
+                "correct_answer": 3
+            },
+            {
+                "id": "141",
+                "question": "Mi a neve annak a magyar ételnek, amely réteges piskóta tortából, csokoládé krémből és sárgabarack lekvárral készült, csokoládé mázzal?",
+                "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+                "correct_answer": 0
+            },
+            {
+                "id": "142",
+                "question": "Ki volt az a magyar fizikus, aki hullámmechanikával kapcsolatos munkáiról ismert, kifejlesztette a Wigner–Seitz cellát a szilárdtestfizikában?",
+                "options": ["Teller Ede", "Neumann János", "Szilárd Leó", "Wigner Jenő"],
+                "correct_answer": 3
+            },
+            {
+                "id": "143",
+                "question": "Mi a neve annak a magyar ételnek, amely édes kenyértésztából készült, spirál alakú, majd grillezve és cukorral vagy más feltéttel bevonva?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "144",
+                "question": "Ki volt az a magyar-amerikai színész, aki Lugosi Béla ellenfelét játszotta horror filmekben?",
+                "options": ["Vincent Price", "Peter Lorre", "Boris Karloff", "Lon Chaney"],
+                "correct_answer": 0
+            },
+            {
+                "id": "145",
+                "question": "Mi a neve annak a magyar ételnek, amely réteges torta dió- vagy mák töltelékkel?",
+                "options": ["Bejgli", "Kürtőskalács", "Pogácsa", "Rétes"],
+                "correct_answer": 0
+            },
+            {
+                "id": "146",
+                "question": "Ki volt az a magyar fizikus, aki a Rubik-kocka feltalálója?",
+                "options": ["Szent-Györgyi Albert", "Gábor Dénes", "Rubik Ernő", "Bojár Gábor"],
+                "correct_answer": 2
+            },
+            {
+                "id": "147",
+                "question": "Mi a neve annak a magyar ételnek, amely édes tésztatekercsből készült, dió- vagy mákkrémmel töltött?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "148",
+                "question": "Ki volt az a magyar-amerikai üzletember és filantróp, aki a Közép-európai Egyetemet alapította?",
+                "options": ["Soros György", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+                "correct_answer": 0
+            },
+            {
+                "id": "149",
+                "question": "Mi a neve annak a magyar ételnek, amely édes kenyértésztából készült, spirál alakú, majd grillezve és cukorral vagy más feltéttel bevonva?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "150",
+                "question": "Ki volt az a magyar költő, aki Vörösmarty Mihály 'Versek' című művéért ismert?",
+                "options": ["Ady Endre", "Petőfi Sándor", "Arany János", "Vörösmarty Mihály"],
+                "correct_answer": 3
+            }
+        ]
+    },
+    "ro": {
+        "questions": [
+            {
+                "id": "101",
+                "question": "Cine este compozitorul maghiar cunoscut pentru compoziția sa 'Hungarian Rhapsodies'?",
+                "options": ["Franz Liszt", "Béla Bartók", "Zoltán Kodály", "Ferenc Erkel"],
+                "correct_answer": 0
+            },
+            {
+                "id": "102",
+                "question": "Care este râul care trece prin Budapesta?",
+                "options": ["Tisza", "Sava", "Dunărea", "Drava"],
+                "correct_answer": 2
+            },
+            {
+                "id": "103",
+                "question": "Cum se numește mâncarea maghiară preparată din pui, smântână și paprika?",
+                "options": ["Gulyásleves", "Halászlé", "Töltött káposzta", "Paprikás csirke"],
+                "correct_answer": 3
+            },
+            {
+                "id": "104",
+                "question": "Cine a fost matematicianul maghiar cunoscut pentru numărul Erdős în matematică?",
+                "options": ["John von Neumann", "Paul Erdős", "János Bolyai", "Alfréd Rényi"],
+                "correct_answer": 1
+            },
+            {
+                "id": "105",
+                "question": "Cum se numește regiunea viticolă maghiară cunoscută pentru vinurile sale albe dulci?",
+                "options": ["Tokaj", "Eger", "Sopron", "Villány"],
+                "correct_answer": 0
+            },
+            {
+                "id": "106",
+                "question": "Cine a fost fizicianul maghiar-american cunoscut pentru munca sa la Proiectul Manhattan?",
+                "options": ["Edward Teller", "John von Neumann", "Leó Szilárd", "Eugene Wigner"],
+                "correct_answer": 0
+            },
+            {
+                "id": "107",
+                "question": "Cum se numește desertul maghiar făcut dintr-un aluat cu straturi umplute cu nuci sau semințe de mac?",
+                "options": ["Bejgli", "Kürtőskalács", "Pogácsa", "Rétes"],
+                "correct_answer": 0
+            },
+            {
+                "id": "108",
+                "question": "Cine a fost actorul maghiar-american cunoscut pentru rolul său de rival al lui Bela Lugosi în filmele horror?",
+                "options": ["Vincent Price", "Peter Lorre", "Boris Karloff", "Lon Chaney"],
+                "correct_answer": 0
+            },
+            {
+                "id": "109",
+                "question": "Cum se numește mâncarea maghiară făcută dintr-un aluat dulce răsucit în formă de spirală, apoi fript și acoperit cu zahăr sau alte toppinguri?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "110",
+                "question": "Cine a fost fizicianul maghiar cunoscut pentru invenția Rubik's Cube?",
+                "options": ["Albert Szent-Györgyi", "Dennis Gábor", "Ernő Rubik", "Gábor Bojár"],
+                "correct_answer": 2
+            },
+            {
+                "id": "111",
+                "question": "Cum se numește desertul maghiar preparat dintr-un aluat dulce umplut cu nuci sau semințe de mac?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "112",
+                "question": "Cine a fost omul de afaceri și filantropul maghiar-american cunoscut pentru fondarea Universității Central Europene?",
+                "options": ["George Soros", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+                "correct_answer": 0
+            },
+            {
+                "id": "113",
+                "question": "Cum se numește mâncarea maghiară făcută dintr-un aluat dulce răsucit în formă de spirală, apoi fript și acoperit cu zahăr sau alte toppinguri?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "114",
+                "question": "Cine a fost poetul maghiar cunoscut pentru opera sa 'Poeziile lui Mihály Vörösmarty'?",
+                "options": ["Endre Ady", "Sándor Petőfi", "János Arany", "Mihály Vörösmarty"],
+                "correct_answer": 3
+            },
+            {
+                "id": "115",
+                "question": "Cum se numește desertul maghiar preparat dintr-un aluat dulce umplut cu nuci sau semințe de mac?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "116",
+                "question": "Cine a fost poetul maghiar cunoscut pentru epopeea sa 'Toldi'?",
+                "options": ["Mihály Babits", "Sándor Petőfi", "Endre Ady", "János Arany"],
+                "correct_answer": 3
+            },
+            {
+                "id": "117",
+                "question": "Cum se numește desertul maghiar preparat dintr-un tort cu straturi de pandișpan, cremă de ciocolată și gem de caise, acoperit cu glazură de ciocolată?",
+                "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+                "correct_answer": 0
+            },
+            {
+                "id": "118",
+                "question": "Cine a fost fizicianul maghiar cunoscut pentru munca sa în mecanica undelor, dezvoltând celula Wigner-Seitz în fizica solidelor?",
+                "options": ["Edward Teller", "John von Neumann", "Leó Szilárd", "Eugene Wigner"],
+                "correct_answer": 3
+            },
+            {
+                "id": "119",
+                "question": "Cum se numește mâncarea maghiară făcută dintr-un aluat dulce răsucit în formă de spirală, apoi fript și acoperit cu zahăr sau alte toppinguri?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "120",
+                "question": "Cine a fost actorul maghiar-american cunoscut pentru rolul său de rival al lui Bela Lugosi în filmele horror?",
+                "options": ["Vincent Price", "Peter Lorre", "Boris Karloff", "Lon Chaney"],
+                "correct_answer": 0
+            },
+            {
+                "id": "121",
+                "question": "Cum se numește desertul maghiar făcut dintr-un tort cu straturi de nuci sau semințe de mac?",
+                "options": ["Bejgli", "Kürtőskalács", "Pogácsa", "Rétes"],
+                "correct_answer": 0
+            },
+            {
+                "id": "122",
+                "question": "Cine a fost fizicianul maghiar cunoscut pentru invenția Rubik's Cube?",
+                "options": ["Albert Szent-Györgyi", "Dennis Gábor", "Ernő Rubik", "Gábor Bojár"],
+                "correct_answer": 2
+            },
+            {
+                "id": "123",
+                "question": "Cum se numește mâncarea maghiară făcută dintr-un aluat dulce răsucit în formă de spirală, apoi fript și acoperit cu zahăr sau alte toppinguri?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "124",
+                "question": "Cine a fost omul de afaceri și filantropul maghiar-american cunoscut pentru fondarea Universității Central Europene?",
+                "options": ["George Soros", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+                "correct_answer": 0
+            },
+            {
+                "id": "125",
+                "question": "Cum se numește mâncarea maghiară făcută dintr-un aluat dulce răsucit în formă de spirală, apoi fript și acoperit cu zahăr sau alte toppinguri?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "126",
+                "question": "Cine a fost poetul maghiar cunoscut pentru opera sa 'Poeziile lui Mihály Vörösmarty'?",
+                "options": ["Endre Ady", "Sándor Petőfi", "János Arany", "Mihály Vörösmarty"],
+                "correct_answer": 3
+            },
+            {
+                "id": "127",
+                "question": "Cum se numește desertul maghiar preparat dintr-un aluat dulce umplut cu nuci sau semințe de mac?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "128",
+                "question": "Cine a fost poetul maghiar cunoscut pentru epopeea sa 'Toldi'?",
+                "options": ["Mihály Babits", "Sándor Petőfi", "Endre Ady", "János Arany"],
+                "correct_answer": 3
+            },
+            {
+                "id": "129",
+                "question": "Cum se numește desertul maghiar preparat dintr-un tort cu straturi de pandișpan, cremă de ciocolată și gem de caise, acoperit cu glazură de ciocolată?",
+                "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+                "correct_answer": 0
+            },
+            {
+                "id": "130",
+                "question": "Cine a fost fizicianul maghiar cunoscut pentru munca sa în mecanica undelor, dezvoltând celula Wigner-Seitz în fizica solidelor?",
+                "options": ["Edward Teller", "John von Neumann", "Leó Szilárd", "Eugene Wigner"],
+                "correct_answer": 3
+            },
+            {
+                "id": "131",
+                "question": "Cum se numește mâncarea maghiară făcută dintr-un aluat dulce răsucit în formă de spirală, apoi fript și acoperit cu zahăr sau alte toppinguri?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "132",
+                "question": "Cine a fost actorul maghiar-american cunoscut pentru rolul său de rival al lui Bela Lugosi în filmele horror?",
+                "options": ["Vincent Price", "Peter Lorre", "Boris Karloff", "Lon Chaney"],
+                "correct_answer": 0
+            },
+            {
+                "id": "133",
+                "question": "Cum se numește desertul maghiar făcut dintr-un tort cu straturi de nuci sau semințe de mac?",
+                "options": ["Bejgli", "Kürtőskalács", "Pogácsa", "Rétes"],
+                "correct_answer": 0
+            },
+            {
+                "id": "134",
+                "question": "Cine a fost fizicianul maghiar cunoscut pentru invenția Rubik's Cube?",
+                "options": ["Albert Szent-Györgyi", "Dennis Gábor", "Ernő Rubik", "Gábor Bojár"],
+                "correct_answer": 2
+            },
+            {
+                "id": "135",
+                "question": "Cum se numește desertul maghiar preparat dintr-un aluat dulce umplut cu nuci sau semințe de mac?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "136",
+                "question": "Cine a fost omul de afaceri și filantropul maghiar-american cunoscut pentru fondarea Universității Central Europene?",
+                "options": ["George Soros", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+                "correct_answer": 0
+            },
+            {
+                "id": "137",
+                "question": "Cum se numește mâncarea maghiară făcută dintr-un aluat dulce răsucit în formă de spirală, apoi fript și acoperit cu zahăr sau alte toppinguri?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "138",
+                "question": "Cine a fost poetul maghiar cunoscut pentru opera sa 'Poeziile lui Mihály Vörösmarty'?",
+                "options": ["Endre Ady", "Sándor Petőfi", "János Arany", "Mihály Vörösmarty"],
+                "correct_answer": 3
+            },
+            {
+                "id": "139",
+                "question": "Cum se numește desertul maghiar preparat dintr-un aluat dulce umplut cu nuci sau semințe de mac?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "140",
+                "question": "Cine a fost poetul maghiar cunoscut pentru epopeea sa 'Toldi'?",
+                "options": ["Mihály Babits", "Sándor Petőfi", "Endre Ady", "János Arany"],
+                "correct_answer": 3
+            },
+            {
+                "id": "141",
+                "question": "Cum se numește desertul maghiar preparat dintr-un tort cu straturi de pandișpan, cremă de ciocolată și gem de caise, acoperit cu glazură de ciocolată?",
+                "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+                "correct_answer": 0
+            },
+            {
+                "id": "142",
+                "question": "Cine a fost fizicianul maghiar cunoscut pentru munca sa în mecanica undelor, dezvoltând celula Wigner-Seitz în fizica solidelor?",
+                "options": ["Edward Teller", "John von Neumann", "Leó Szilárd", "Eugene Wigner"],
+                "correct_answer": 3
+            },
+            {
+                "id": "143",
+                "question": "Cum se numește mâncarea maghiară făcută dintr-un aluat dulce răsucit în formă de spirală, apoi fript și acoperit cu zahăr sau alte toppinguri?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "144",
+                "question": "Cine a fost actorul maghiar-american cunoscut pentru rolul său de rival al lui Bela Lugosi în filmele horror?",
+                "options": ["Vincent Price", "Peter Lorre", "Boris Karloff", "Lon Chaney"],
+                "correct_answer": 0
+            },
+            {
+                "id": "145",
+                "question": "Cum se numește desertul maghiar făcut dintr-un tort cu straturi de nuci sau semințe de mac?",
+                "options": ["Bejgli", "Kürtőskalács", "Pogácsa", "Rétes"],
+                "correct_answer": 0
+            },
+            {
+                "id": "146",
+                "question": "Cine a fost fizicianul maghiar cunoscut pentru invenția Rubik's Cube?",
+                "options": ["Albert Szent-Györgyi", "Dennis Gábor", "Ernő Rubik", "Gábor Bojár"],
+                "correct_answer": 2
+            },
+            {
+                "id": "147",
+                "question": "Cum se numește desertul maghiar preparat dintr-un aluat dulce umplut cu nuci sau semințe de mac?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 3
+            },
+            {
+                "id": "148",
+                "question": "Cine a fost omul de afaceri și filantropul maghiar-american cunoscut pentru fondarea Universității Central Europene?",
+                "options": ["George Soros", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+                "correct_answer": 0
+            },
+            {
+                "id": "149",
+                "question": "Cum se numește desertul maghiar făcut dintr-un aluat dulce răsucit în formă de spirală, apoi fript și acoperit cu zahăr sau alte toppinguri?",
+                "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+                "correct_answer": 0
+            },
+            {
+                "id": "150",
+                "question": "Cine a fost poetul maghiar cunoscut pentru opera sa 'Poeziile lui Mihály Vörösmarty'?",
+                "options": ["Endre Ady", "Sándor Petőfi", "János Arany", "Mihály Vörösmarty"],
+                "correct_answer": 3
+            }
+          ]
+        }
+      }

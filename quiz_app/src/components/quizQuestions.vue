@@ -1,10 +1,10 @@
 <template>
   <div>
-      <h2 class="text-sm md:text-2xl p-3">Quiz questions</h2>
+      <h2 class="text-sm md:text-2xl p-3">{{localeStore.translate("quizquestions")}}</h2>
       <div v-if="questionsAnswered === true"
            class="flex  text-sm md:text-base justify-center items-center h-10 bg-green-500"
       >
-            Congratulations! {{ correctAnswersCount }}/50 questions were correct!
+      {{ localeStore.translate('congratulations').replace('{correctAnswersCount}', correctAnswersCount) }}
       </div>
       <div v-else-if="questionsAnswered === false">
             All questions must be answered!!
@@ -46,7 +46,7 @@
           </div>
       </div>
       <div v-else>
-          <p>No questions available</p>
+          <p class="ps-2">{{ localeStore.translate("noqavailable") }}</p>
       </div>
       <div class="flex justify-center pt-3">
             <button class="fa fa-arrow-left cursor-pointer text-2xl md:text-4xl hover:text-slate-400"
@@ -59,7 +59,7 @@
                     @click="submitQuiz(currentRowId)"
                     :class="{'cursor-not-allowed': !allQuestionsAnswered}"
             >
-                    Submit Quiz
+                  {{ localeStore.translate("submitquiz") }}
             </button>
             <button class="fa fa-arrow-right cursor-pointer text-2xl md:text-4xl hover:text-slate-400"
                     @click="nextQuestion"

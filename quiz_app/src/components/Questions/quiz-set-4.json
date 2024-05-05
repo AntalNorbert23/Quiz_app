@@ -1,4 +1,5 @@
-{
+{ 
+  "en":{
     "questions": [
       {
         "id": "1",
@@ -301,5 +302,614 @@
         "correct_answer": 0
       }
     ]
+  },
+  "hu": {
+    "questions": [
+        {
+            "id": "1",
+            "question": "Melyik évben született Liszt Ferenc zeneszerző?",
+            "options": ["1811", "1797", "1848", "1762"],
+            "correct_answer": 0
+        },
+        {
+            "id": "2",
+            "question": "Mennyi a Balaton maximális mélysége?",
+            "options": ["12 méter", "10 méter", "15 méter", "20 méter"],
+            "correct_answer": 3
+        },
+        {
+            "id": "3",
+            "question": "Ki vezette a magyar honfoglalást?",
+            "options": ["Szent István király", "Árpád", "Koppány", "Lehel"],
+            "correct_answer": 1
+        },
+        {
+            "id": "4",
+            "question": "Melyik városban található Európa legnagyobb termálfürdője?",
+            "options": ["Budapest", "Hévíz", "Szeged", "Debrecen"],
+            "correct_answer": 1
+        },
+        {
+            "id": "5",
+            "question": "Ki volt Magyarország első királya?",
+            "options": ["Szent István király", "Károly Róbert", "Luxemburgi Zsigmond", "Árpád"],
+            "correct_answer": 0
+        },
+        {
+            "id": "6",
+            "question": "Melyik évben fogadták el az első magyar alkotmányt?",
+            "options": ["1848", "1867", "1920", "1956"],
+            "correct_answer": 0
+        },
+        {
+            "id": "7",
+            "question": "Mi a neve a híres magyar fizikusnak, aki 1905-ben Nobel-díjat nyert fizikából?",
+            "options": ["Albert Einstein", "Niels Bohr", "Werner Heisenberg", "Philip Lenard"],
+            "correct_answer": 3
+        },
+        {
+            "id": "8",
+            "question": "Ki írta a magyar himnuszt?",
+            "options": ["Kölcsey Ferenc", "Petőfi Sándor", "Vörösmarty Mihály", "József Attila"],
+            "correct_answer": 0
+        },
+        {
+            "id": "9",
+            "question": "Mi a neve annak a magyar ételnek, amely párolt húsból, burgonyából és paprikából áll?",
+            "options": ["Gulyás", "Pörkölt", "Halászlé", "Lecsó"],
+            "correct_answer": 0
+        },
+        {
+            "id": "10",
+            "question": "Melyik magyar város híres középkori váráról?",
+            "options": ["Eger", "Sopron", "Szeged", "Pécs"],
+            "correct_answer": 0
+        },
+        {
+            "id": "11",
+            "question": "Ki tekinthető a modern magyar irodalom atyjának?",
+            "options": ["Kazinczy Ferenc", "Vörösmarty Mihály", "Petőfi Sándor", "Arany János"],
+            "correct_answer": 0
+        },
+        {
+            "id": "12",
+            "question": "Mi a neve annak a magyar ételnek, amely rétegezett burgonyából, kolbászból és tejfölből áll?",
+            "options": ["Töltött káposzta", "Lecsó", "Rakott krumpli", "Hortobágyi palacsinta"],
+            "correct_answer": 2
+        },
+        {
+            "id": "13",
+            "question": "Ki volt az a híres magyar zeneszerző, aki operákat komponált, mint például a 'Szevilla borbélya' és a 'Rigóletto'?",
+            "options": ["Bartók Béla", "Liszt Ferenc", "Schubert", "Liszt Ferenc"],
+            "correct_answer": 1
+        },
+        {
+            "id": "14",
+            "question": "Melyik magyar város híres borvidékéről?",
+            "options": ["Eger", "Sopron", "Szeged", "Pécs"],
+            "correct_answer": 0
+        },
+        {
+            "id": "15",
+            "question": "Mi a magyar szó a 'helló' jelentésére?",
+            "options": ["Helló", "Szia", "Üdvözlet", "Jó napot"],
+            "correct_answer": 1
+        },
+        {
+            "id": "16",
+            "question": "Ki volt az a híres magyar feltaláló, aki megalkotta a Rubik-kockát?",
+            "options": ["Rubik Ernő", "Ferenc Anka", "Gábor Bojár", "Szennay András"],
+            "correct_answer": 0
+        },
+        {
+            "id": "17",
+            "question": "Mi a neve annak a magyar ünnepnek, amelyet augusztus 20-án ünnepelnek, az államalapítás emlékére?",
+            "options": ["Szent István napja", "Nemzeti összetartozás napja", "Forradalmi nap", "Emléknap"],
+            "correct_answer": 0
+        },
+        {
+            "id": "18",
+            "question": "Ki volt az a híres magyar-amerikai bűvész és szabadulóművész, aki szenzációs szabadulási mutatványairól ismert?",
+            "options": ["Houdini", "Copperfield", "Blaine", "Angel"],
+            "correct_answer": 0
+        },
+        {
+            "id": "19",
+            "question": "Mi a neve annak a magyar desszertnek, amely réteges piskótából, csokoládékrémből és baracklekvárból áll, tetején csokoládébevonattal?",
+            "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "20",
+            "question": "Ki volt az a magyar matematikus, aki halmazelméletben és logikában végzett munkájáról ismert?",
+            "options": ["Erdős Pál", "Bolyai János", "Wigner Jenő", "Neumann János"],
+            "correct_answer": 0
+        },
+        {
+            "id": "21",
+            "question": "Mi a neve annak a magyar zeneszerzőnek, aki az operett 'A denevér' szerzője?",
+            "options": ["Liszt Ferenc", "Bartók Béla", "Erkel Ferenc", "Johann Strauss II"],
+            "correct_answer": 3
+        },
+        {
+            "id": "22",
+            "question": "Melyik évben csatlakozott Magyarország az Európai Unióhoz?",
+            "options": ["1995", "2004", "2010", "2016"],
+            "correct_answer": 1
+        },
+        {
+            "id": "23",
+            "question": "Mi a neve annak a magyar ételnek, amely rétegezett káposztalevelekből készül, hús- és rizstöltelékkel, paradicsomszószban főzve?",
+            "options": ["Töltött káposzta", "Lecsó", "Rakott krumpli", "Hortobágyi palacsinta"],
+            "correct_answer": 0
+        },
+        {
+            "id": "24",
+            "question": "Ki számít minden idők legnagyobb magyar labdarúgójának?",
+            "options": ["Puskás Ferenc", "Kocsis Sándor", "Czibor Zoltán", "Kubala László"],
+            "correct_answer": 0
+        },
+        {
+            "id": "25",
+            "question": "Mi a neve annak a magyar ünnepnek, amelyet március 15-én ünnepelnek, az 1848-as magyar forradalom emlékére?",
+            "options": ["Nemzeti összetartozás napja", "Forradalmi nap", "Emléknap", "Magyar Nemzeti Nap"],
+            "correct_answer": 0
+        },
+        {
+            "id": "26",
+            "question": "Ki volt az a magyar születésű tudós, aki 1937-ben Nobel-díjat nyert kémiai munkájáért a C-vitamin kutatásával kapcsolatban?",
+            "options": ["Szent-Györgyi Albert", "Hevesy György", "Polányi Mihály", "Gábor Dénes"],
+            "correct_answer": 0
+        },
+        {
+            "id": "27",
+            "question": "Mi a neve annak a magyar ételnek, amely ízletes hús- és zöldségpörköltből áll, paprikával fűszerezve és tejföllel tálalva?",
+            "options": ["Gulyás", "Pörkölt", "Halászlé", "Töltött káposzta"],
+            "correct_answer": 1
+        },
+        {
+            "id": "28",
+            "question": "Melyik magyar város híres termálfürdőiről és gyógyfürdőiről?",
+            "options": ["Budapest", "Debrecen", "Szeged", "Pécs"],
+            "correct_answer": 0
+        },
+        {
+            "id": "29",
+            "question": "Mi a neve annak a magyar ételnek, amely sült tésztából áll, gyakran porcukorral vagy más feltéttel tálalva?",
+            "options": ["Lángos", "Pogácsa", "Kürtőskalács", "Rétes"],
+            "correct_answer": 0
+        },
+        {
+            "id": "30",
+            "question": "Ki az a magyar-amerikai színész, aki szerepelt a 'A bárányok hallgatnak' és a 'Drakula' című filmekben?",
+            "options": ["Lugosi Béla", "Vincent Price", "Peter Lorre", "Anthony Hopkins"],
+            "correct_answer": 3
+        },
+        {
+            "id": "31",
+            "question": "Mi a magyar szó a 'köszönöm' jelentésére?",
+            "options": ["Köszönöm", "Szia", "Kérem", "Kérem szépen"],
+            "correct_answer": 0
+        },
+        {
+            "id": "32",
+            "question": "Ki volt az a híres magyar születésű bűvész és mutatványos, aki szenzációs szabadulási mutatványairól ismert?",
+            "options": ["Houdini", "Copperfield", "Blaine", "Angel"],
+            "correct_answer": 0
+        },
+        {
+            "id": "33",
+            "question": "Mi a neve annak a magyar ételnek, amely rétegezett burgonyaszeletekből, kolbászból és tejfölből készül, a sütőben sütve?",
+            "options": ["Töltött káposzta", "Lecsó", "Rakott krumpli", "Hortobágyi palacsinta"],
+            "correct_answer": 2
+        },
+        {
+            "id": "34",
+            "question": "Ki az a magyar-amerikai milliárdos és filantróp, aki támogatta a progresszív ügyeket és a polgári szabadságjogokat?",
+            "options": ["Soros György", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+            "correct_answer": 0
+        },
+        {
+            "id": "35",
+            "question": "Mi a neve annak a magyar hagyományos népi táncnak, amelyet bonyolult lábmunkája és élénk zenéje jellemez?",
+            "options": ["Verbunkos", "Csárdás", "Magyar keringő", "Lángos"],
+            "correct_answer": 1
+        },
+        {
+            "id": "36",
+            "question": "Ki volt az a magyar-amerikai fizikus, akit a hidrogénbomba 'atyjának' neveznek?",
+            "options": ["Teller Ede", "Neumann János", "Szilárd Leó", "Wigner Jenő"],
+            "correct_answer": 0
+        },
+        {
+            "id": "37",
+            "question": "Mi a neve annak a magyar ételnek, amely sült tésztából áll, gyakran tejföllel és sajttal tálalva?",
+            "options": ["Lángos", "Pogácsa", "Kürtőskalács", "Rétes"],
+            "correct_answer": 0
+        },
+        {
+            "id": "38",
+            "question": "Ki volt az a magyar-amerikai színésznő, aki szerepelt a 'Casablanca' és a 'Gaslight' című filmekben?",
+            "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gábor"],
+            "correct_answer": 2
+        },
+        {
+            "id": "39",
+            "question": "Mi a neve annak a magyar desszertnek, amely réteges piskótából, csokoládékrémből és baracklekvárral készül, tetején csokoládébevonattal?",
+            "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "40",
+            "question": "Ki volt az a magyar-amerikai bűvész, aki szabadulási mutatványairól ismert, például víz alatt megkötözve vagy egy ládába zárva a folyóba dobva?",
+            "options": ["Harry Houdini", "David Copperfield", "Criss Angel", "David Blaine"],
+            "correct_answer": 0
+        },
+        {
+            "id": "41",
+            "question": "Mi a neve annak a magyar ételnek, amely sült kenyértésztából áll, gyakran fokhagymával és tejföllel tálalva?",
+            "options": ["Lángos", "Pogácsa", "Kürtőskalács", "Rétes"],
+            "correct_answer": 0
+        },
+        {
+            "id": "42",
+            "question": "Ki volt az a magyar születésű színésznő és feltaláló, aki több hollywoodi filmben is szerepelt, és vezeték nélküli kommunikáció korai verzióját fejlesztette ki?",
+            "options": ["Hedy Lamarr", "Zsa Zsa Gábor", "Marlene Dietrich", "Greta Garbo"],
+            "correct_answer": 0
+        },
+        {
+            "id": "43",
+            "question": "Mi a neve annak a magyar ételnek, amely vékony palacsintákból készül, édes túrótöltelékkel, mazsolával és porcukorral?",
+            "options": ["Palacsinta", "Lecsó", "Rakott krumpli", "Töltött káposzta"],
+            "correct_answer": 0
+        },
+        {
+            "id": "44",
+            "question": "Ki az a magyar-amerikai üzletember és filantróp, aki megalapította a Nyílt Társadalom Alapítványokat?",
+            "options": ["Soros György", "Peter Thiel", "Warren Buffett", "Elon Musk"],
+            "correct_answer": 0
+        },
+        {
+            "id": "45",
+            "question": "Mi a magyar szó a 'kérem' jelentésére?",
+            "options": ["Köszönöm", "Szia", "Kérem", "Kérem szépen"],
+            "correct_answer": 2
+        },
+        {
+            "id": "46",
+            "question": "Ki volt az a magyar-amerikai színésznő, aki Gabrielle Solis szerepét játszotta a 'Született feleségek' című televíziós sorozatban?",
+            "options": ["Eva Green", "Eva Longoria", "Eva Mendes", "Eva Herzigova"],
+            "correct_answer": 1
+        },
+        {
+            "id": "47",
+            "question": "Mi a neve annak a magyar ételnek, amely rétegezett káposztalevelekből készül, hús- és rizstöltelékkel, paradicsomszószban főzve?",
+            "options": ["Töltött káposzta", "Lecsó", "Rakott krumpli", "Hortobágyi palacsinta"],
+            "correct_answer": 0
+        },
+        {
+            "id": "48",
+            "question": "Ki volt az a magyar-amerikai fizikus és feltaláló, aki kulcsszerepet játszott a radar és az atomenergia fejlesztésében?",
+            "options": ["Teller Ede", "Neumann János", "Szilárd Leó", "Wigner Jenő"],
+            "correct_answer": 2
+        },
+        {
+            "id": "49",
+            "question": "Mi a neve annak a magyar ételnek, amely vékony rétegekből áll, édes túrós töltelékkel és porcukorral tálalva?",
+            "options": ["Rétes", "Lecsó", "Rakott krumpli", "Töltött káposzta"],
+            "correct_answer": 0
+        },
+        {
+            "id": "50",
+            "question": "Mi a neve annak a magyar ételnek, amely sült tésztából áll, gyakran porcukorral vagy más feltéttel tálalva?",
+            "options": ["Lángos", "Pogácsa", "Kürtőskalács", "Rétes"],
+            "correct_answer": 0
+        }
+    ]
+},
+"ro": {
+    "questions": [
+        {
+            "id": "1",
+            "question": "În ce an s-a născut compozitorul Ferenc Liszt?",
+            "options": ["1811", "1797", "1848", "1762"],
+            "correct_answer": 0
+        },
+        {
+            "id": "2",
+            "question": "Care este adâncimea maximă a lacului Balaton?",
+            "options": ["12 metri", "10 metri", "15 metri", "20 metri"],
+            "correct_answer": 3
+        },
+        {
+            "id": "3",
+            "question": "Cine a fost liderul cuceririi ungare?",
+            "options": ["Ștefan I al Ungariei", "Árpád", "Koppány", "Lehel"],
+            "correct_answer": 1
+        },
+        {
+            "id": "4",
+            "question": "În ce oraș se află cea mai mare baie termală din Europa?",
+            "options": ["Budapesta", "Hévíz", "Szeged", "Debrecen"],
+            "correct_answer": 1
+        },
+        {
+            "id": "5",
+            "question": "Cine a fost primul rege al Ungariei?",
+            "options": ["Ștefan I al Ungariei", "Carol I al Ungariei", "Sigismund, împărat roman", "Árpád"],
+            "correct_answer": 0
+        },
+        {
+            "id": "6",
+            "question": "În ce an a fost adoptată prima constituție maghiară?",
+            "options": ["1848", "1867", "1920", "1956"],
+            "correct_answer": 0
+        },
+        {
+            "id": "7",
+            "question": "Care este numele celebrului fizician maghiar care a câștigat Premiul Nobel pentru fizică în 1905?",
+            "options": ["Albert Einstein", "Niels Bohr", "Werner Heisenberg", "Philip Lenard"],
+            "correct_answer": 3
+        },
+        {
+            "id": "8",
+            "question": "Cine a scris imnul național maghiar?",
+            "options": ["Ferenc Kölcsey", "Sándor Petőfi", "Mihály Vörösmarty", "József Attila"],
+            "correct_answer": 0
+        },
+        {
+            "id": "9",
+            "question": "Care este numele mâncării maghiare constând din carne tocată, cartofi și paprika?",
+            "options": ["Gulash", "Pörkölt", "Halászlé", "Lecsó"],
+            "correct_answer": 0
+        },
+        {
+            "id": "10",
+            "question": "Care oraș maghiar este cunoscut pentru castelul său medieval?",
+            "options": ["Eger", "Sopron", "Szeged", "Pécs"],
+            "correct_answer": 0
+        },
+        {
+            "id": "11",
+            "question": "Cine este considerat părintele literaturii maghiare moderne?",
+            "options": ["Ferenc Kazinczy", "Mihály Vörösmarty", "Sándor Petőfi", "János Arany"],
+            "correct_answer": 0
+        },
+        {
+            "id": "12",
+            "question": "Care este numele mâncării maghiare făcută din straturi de cartofi, cârnați și smântână acră?",
+            "options": ["Töltött káposzta", "Lecsó", "Rakott krumpli", "Hortobágyi palacsinta"],
+            "correct_answer": 2
+        },
+        {
+            "id": "13",
+            "question": "Cine a fost celebrul compozitor maghiar cunoscut pentru operele sale precum 'Frizerul din Sevilla' și 'Rigoletto'?",
+            "options": ["Béla Bartók", "Ferenc Liszt", "Franz Schubert", "Franz Liszt"],
+            "correct_answer": 1
+        },
+        {
+            "id": "14",
+            "question": "Care oraș maghiar este cunoscut pentru regiunea sa viticolă?",
+            "options": ["Eger", "Sopron", "Szeged", "Pécs"],
+            "correct_answer": 0
+        },
+        {
+            "id": "15",
+            "question": "Care este cuvântul maghiar pentru 'salut'?",
+            "options": ["Helló", "Szia", "Üdvözlet", "Jó napot"],
+            "correct_answer": 1
+        },
+        {
+            "id": "16",
+            "question": "Cine a fost celebrul inventator maghiar care a creat Cubul Rubik?",
+            "options": ["Ernő Rubik", "Ferenc Anka", "Gábor Bojár", "András Szennay"],
+            "correct_answer": 0
+        },
+        {
+            "id": "17",
+            "question": "Care este numele festivalului maghiar celebrat pe 20 august, care comemorează întemeierea statului maghiar?",
+            "options": ["Ziua Sfântului Ștefan", "Ziua unității naționale", "Ziua Revoluției", "Ziua Memorialului"],
+            "correct_answer": 0
+        },
+        {
+            "id": "18",
+            "question": "Cine a fost celebrul magician maghiar-american și escapolog cunoscut pentru actele sale de evadare senzaționale?",
+            "options": ["Houdini", "Copperfield", "Blaine", "Angel"],
+            "correct_answer": 0
+        },
+        {
+            "id": "19",
+            "question": "Care este numele desertului maghiar făcut din straturi de blat de pandișpan, cremă de ciocolată și gem de caise, acoperit cu glazură de ciocolată?",
+            "options": ["Tort Dobos", "Tort Esterházy", "Rigó Jancsi", "Galusca somloi"],
+            "correct_answer": 0
+        },
+        {
+            "id": "20",
+            "question": "Cine a fost matematicianul maghiar cunoscut pentru munca sa în teoria mulțimilor și logică?",
+            "options": ["Paul Erdős", "János Bolyai", "Eugene Wigner", "John von Neumann"],
+            "correct_answer": 0
+        },
+        {
+            "id": "21",
+            "question": "Care este numele compozitorului maghiar cunoscut pentru opereta sa 'Liliacul'?",
+            "options": ["Ferenc Liszt", "Béla Bartók", "Ferenc Erkel", "Johann Strauss II"],
+            "correct_answer": 3
+        },
+        {
+            "id": "22",
+            "question": "În ce an a aderat Ungaria la Uniunea Europeană?",
+            "options": ["1995", "2004", "2010", "2016"],
+            "correct_answer": 1
+        },
+        {
+            "id": "23",
+            "question": "Care este numele mâncării maghiare făcută din foi de varză umplute cu carne și orez, gătite într-un sos de roșii?",
+            "options": ["Töltött káposzta", "Lecsó", "Rakott krumpli", "Hortobágyi palacsinta"],
+            "correct_answer": 0
+        },
+        {
+            "id": "24",
+            "question": "Cine este considerat cel mai mare jucător de fotbal maghiar din toate timpurile?",
+            "options": ["Ferenc Puskás", "Sándor Kocsis", "Zoltán Czibor", "László Kubala"],
+            "correct_answer": 0
+        },
+        {
+            "id": "25",
+            "question": "Care este numele festivalului maghiar celebrat pe 15 martie, care comemorează Revoluția Maghiară din 1848?",
+            "options": ["Ziua unității naționale", "Ziua Revoluției", "Ziua Memorialului", "Ziua Națională a Ungariei"],
+            "correct_answer": 0
+        },
+        {
+            "id": "26",
+            "question": "Cine a fost celebrul om de știință maghiar care a câștigat Premiul Nobel pentru Chimie în 1937 pentru munca sa asupra vitaminei C?",
+            "options": ["Albert Szent-Györgyi", "George de Hevesy", "Michael Polanyi", "Dennis Gábor"],
+            "correct_answer": 0
+        },
+        {
+            "id": "27",
+            "question": "Care este numele mâncării maghiare făcută din făină prăjită, de obicei servită cu smântână acră și brânză?",
+            "options": ["Lángos", "Pogácsa", "Kürtőskalács", "Retez"],
+            "correct_answer": 0
+        },
+        {
+            "id": "28",
+            "question": "Care este capitala Ungariei?",
+            "options": ["Szeged", "Debrecen", "Budapesta", "Pécs"],
+            "correct_answer": 2
+        },
+        {
+            "id": "29",
+            "question": "Care este numele celebrului scriitor maghiar care a scris romanul 'Sub stele'?",
+            "options": ["Sándor Márai", "Miklós Radnóti", "Dezső Kosztolányi", "Ferenc Molnár"],
+            "correct_answer": 0
+        },
+        {
+            "id": "30",
+            "question": "Care este numele arhitectului maghiar care a proiectat clădirea Parlamentului din Budapesta?",
+            "options": ["Imre Steindl", "Friedrich von Schmidt", "Ferenc Lechner", "Miklós Ybl"],
+            "correct_answer": 0
+        },
+        {
+            "id": "31",
+            "question": "Cine a fost liderul politic maghiar care a condus Revoluția Maghiară din 1956?",
+            "options": ["Lajos Kossuth", "Imre Nagy", "Ferenc Gyurcsány", "Viktor Orbán"],
+            "correct_answer": 1
+        },
+        {
+            "id": "32",
+            "question": "Care este numele orașului maghiar cunoscut pentru festivalul său de teatru și operă?",
+            "options": ["Eger", "Sopron", "Szeged", "Debrecen"],
+            "correct_answer": 2
+        },
+        {
+            "id": "33",
+            "question": "Cine este autorul imnului maghiar?",
+            "options": ["Ferenc Kölcsey", "Sándor Petőfi", "János Arany", "József Attila"],
+            "correct_answer": 0
+        },
+        {
+            "id": "34",
+            "question": "Cine este considerat părintele arhitecturii maghiare moderne?",
+            "options": ["Imre Steindl", "Friedrich von Schmidt", "Ferenc Lechner", "Miklós Ybl"],
+            "correct_answer": 2
+        },
+        {
+            "id": "35",
+            "question": "Care este numele desertului maghiar făcut din aluat prăjit, de obicei servit cu zahăr pudră sau alte toppinguri?",
+            "options": ["Lángos", "Pogácsa", "Kürtőskalács", "Retez"],
+            "correct_answer": 0
+        },
+        {
+            "id": "36",
+            "question": "Care este numele lacului din Ungaria, care este cel mai mare lac din Europa Centrală?",
+            "options": ["Lacul Tisza", "Lacul Fertő", "Lacul Balaton", "Lacul Velence"],
+            "correct_answer": 2
+        },
+        {
+            "id": "37",
+            "question": "Care este numele dulciurilor tradiționale maghiare din făină prăjită, servite de obicei cu zahăr pudră sau alte toppinguri?",
+            "options": ["Lángos", "Pogácsa", "Kürtőskalács", "Rétes"],
+            "correct_answer": 0
+        },
+        {
+            "id": "38",
+            "question": "Care este capitala Ungariei?",
+            "options": ["Szeged", "Debrecen", "Budapesta", "Pécs"],
+            "correct_answer": 2
+        },
+        {
+            "id": "39",
+            "question": "Care este numele desertului maghiar din straturi de pandișpan, cremă de ciocolată și gem de caise, acoperit cu glazură de ciocolată?",
+            "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "40",
+            "question": "Care este numele orașului maghiar cunoscut pentru festivalul său de film?",
+            "options": ["Eger", "Sopron", "Szeged", "Debrecen"],
+            "correct_answer": 2
+        },
+        {
+            "id": "41",
+            "question": "Care este numele orașului maghiar cunoscut pentru universitatea sa istorică?",
+            "options": ["Eger", "Sopron", "Szeged", "Debrecen"],
+            "correct_answer": 2
+        },
+        {
+            "id": "42",
+            "question": "Care este numele desertului maghiar făcut din straturi de aluat, de obicei servite cu zahăr pudră sau alte toppinguri?",
+            "options": ["Lángos", "Pogácsa", "Kürtőskalács", "Rétes"],
+            "correct_answer": 0
+        },
+        {
+            "id": "43",
+            "question": "Care este numele orașului maghiar cunoscut pentru teatru?",
+            "options": ["Eger", "Sopron", "Szeged", "Debrecen"],
+            "correct_answer": 2
+        },
+        {
+            "id": "44",
+            "question": "Care este capitala Ungariei?",
+            "options": ["Szeged", "Debrecen", "Budapesta", "Pécs"],
+            "correct_answer": 2
+        },
+        {
+            "id": "45",
+            "question": "Care este numele mâncării maghiare din straturi de varză umplute cu carne și orez, gătite într-un sos de roșii?",
+            "options": ["Töltött káposzta", "Lecsó", "Rakott krumpli", "Hortobágyi palacsinta"],
+            "correct_answer": 0
+        },
+        {
+            "id": "46",
+            "question": "Care este numele desertului maghiar făcut din foi de pandișpan, cremă de ciocolată și gem de caise, acoperit cu glazură de ciocolată?",
+            "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "47",
+            "question": "Care este numele orașului maghiar cunoscut pentru festivalul său de teatru?",
+            "options": ["Eger", "Sopron", "Szeged", "Debrecen"],
+            "correct_answer": 2
+        },
+        {
+            "id": "48",
+            "question": "Care este numele orașului maghiar cunoscut pentru arhitectura sa istorică?",
+            "options": ["Eger", "Sopron", "Szeged", "Debrecen"],
+            "correct_answer": 2
+        },
+        {
+            "id": "49",
+            "question": "Care este numele orașului maghiar cunoscut pentru arhitectura sa modernă?",
+            "options": ["Eger", "Sopron", "Szeged", "Debrecen"],
+            "correct_answer": 2
+        },
+        {
+            "id": "50",
+            "question": "Care este numele desertului maghiar făcut din foi de pandișpan, cremă de ciocolată și gem de caise, acoperit cu glazură de ciocolată?",
+            "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        }
+      ]
+    }
   }
   

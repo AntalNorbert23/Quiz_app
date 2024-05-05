@@ -1,4 +1,5 @@
-{
+{   
+  "en":{
     "questions": [
       {
         "id": "301",
@@ -301,5 +302,614 @@
         "correct_answer": 2
       }
     ]
-  }
+  },
+  "hu": {
+    "questions": [
+        {
+            "id": "301",
+            "question": "Mi a neve a Budapesten található parlament épületének?",
+            "options": ["Országház", "Várkert Bazár", "Halászbástya", "Mátyás templom"],
+            "correct_answer": 0
+        },
+        {
+            "id": "302",
+            "question": "Ki volt a magyar-amerikai színész, aki szerepelt a 'Jó, a rossz és a csúf' című filmben?",
+            "options": ["Charles Bronson", "Clint Eastwood", "Lee Van Cleef", "Eli Wallach"],
+            "correct_answer": 2
+        },
+        {
+            "id": "303",
+            "question": "Melyik magyar város híres barokk stílusú építészeti és borászati hagyományairól?",
+            "options": ["Eger", "Pécs", "Debrecen", "Szeged"],
+            "correct_answer": 0
+        },
+        {
+            "id": "304",
+            "question": "Ki volt az a magyar zeneszerző, aki a 'Magyar rapszódiák' szerzője?",
+            "options": ["Zoltán Kodály", "Béla Bartók", "Liszt Ferenc", "Erkel Ferenc"],
+            "correct_answer": 2
+        },
+        {
+            "id": "305",
+            "question": "Mi a neve annak a magyar süteménynek, amely két réteg tészta közé rétegelt dióval vagy mákkal készül?",
+            "options": ["Bejgli", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "306",
+            "question": "Ki volt az a magyar-amerikai színésznő, aki szerepelt a 'Vágy villamosa' című filmben?",
+            "options": ["Vivien Leigh", "Greta Garbo", "Ingrid Bergman", "Lily Elsie"],
+            "correct_answer": 0
+        },
+        {
+            "id": "307",
+            "question": "Melyik folyó osztja ketté Budapestet?",
+            "options": ["Duna", "Tisza", "Dráva", "Száva"],
+            "correct_answer": 0
+        },
+        {
+            "id": "308",
+            "question": "Mi a neve annak a magyar pörköltnek, amely savanyú káposztával és sertéshússal készül?",
+            "options": ["Pörkölt", "Halászlé", "Lecsó", "Székelygulyás"],
+            "correct_answer": 3
+        },
+        {
+            "id": "309",
+            "question": "Ki volt az a magyar matematikus, aki a játékelmélethez és az elosztott számítások elméletéhez való hozzájárulásáról ismert?",
+            "options": ["Alfréd Rényi", "Paul Erdős", "John von Neumann", "László Lovász"],
+            "correct_answer": 2
+        },
+        {
+            "id": "310",
+            "question": "Mi a neve annak a magyar desszertnek, amely rétegezett piskótából, csokoládékrémből és sárgabaracklekvárból áll, csokoládémázzal a tetején?",
+            "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "311",
+            "question": "Ki volt az a magyar-amerikai színésznő, aki szerepelt a 'Casablanca' című filmben?",
+            "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gabor"],
+            "correct_answer": 2
+        },
+        {
+            "id": "312",
+            "question": "Melyik magyar város híres a termálfürdőiről, köztük a Széchenyi és Gellért fürdőkről?",
+            "options": ["Debrecen", "Szeged", "Miskolc", "Budapest"],
+            "correct_answer": 3
+        },
+        {
+            "id": "313",
+            "question": "Ki volt az a magyar feltaláló, aki a golyóstoll feltalálásáról ismert?",
+            "options": ["Bíró László", "Albert Szent-Györgyi", "Ignác Semmelweis", "Ernő Rubik"],
+            "correct_answer": 0
+        },
+        {
+            "id": "314",
+            "question": "Melyik magyar város ismert a 'fesztiválok városa' néven?",
+            "options": ["Eger", "Pécs", "Szeged", "Szentendre"],
+            "correct_answer": 1
+        },
+        {
+            "id": "315",
+            "question": "Mi a neve annak a magyar néptáncnak, amely élénk zenével és gyors ütemű mozgásokkal jellemezhető?",
+            "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+            "correct_answer": 0
+        },
+        {
+            "id": "316",
+            "question": "Ki volt az a magyar-amerikai illuzionista, aki szabadulási mutatványairól és kaszkadőrmutatványairól ismert?",
+            "options": ["Harry Houdini", "David Copperfield", "Criss Angel", "Dynamo"],
+            "correct_answer": 0
+        },
+        {
+            "id": "317",
+            "question": "Mi a neve annak a magyar desszertnek, amely rétegezett piskótából, csokoládékrémből és sárgabaracklekvárból áll, csokoládémázzal a tetején?",
+            "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "318",
+            "question": "Ki volt az a magyar-amerikai színésznő, aki szerepelt a 'Dracula' című filmben vámpír grófnőként?",
+            "options": ["Ingrid Bergman", "Bela Lugosi", "Lily Elsie", "Vivien Leigh"],
+            "correct_answer": 1
+        },
+        {
+            "id": "319",
+            "question": "Mi a neve annak a magyar néptáncnak, amely lassú, méltóságteljes ütemű?",
+            "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+            "correct_answer": 3
+        },
+        {
+            "id": "320",
+            "question": "Ki volt az a magyar zeneszerző, aki a 'Kékszakállú herceg vára' művéről ismert?",
+            "options": ["Liszt Ferenc", "Béla Bartók", "Zoltán Kodály", "Erkel Ferenc"],
+            "correct_answer": 1
+        },
+        {
+            "id": "321",
+            "question": "Mi a neve annak a magyar desszertnek, amely édes kenyértésztából készül, spirális alakúra csavarják, majd megsütik és cukorral vagy más feltétekkel bevonják?",
+            "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+            "correct_answer": 0
+        },
+        {
+            "id": "322",
+            "question": "Ki volt az a magyar-amerikai építész, aki a New York-i Guggenheim Múzeum tervezésében dolgozott?",
+            "options": ["Frank Lloyd Wright", "Ludwig Mies van der Rohe", "Le Corbusier", "I. M. Pei"],
+            "correct_answer": 0
+        },
+        {
+            "id": "323",
+            "question": "Mi a neve annak a magyar desszertnek, amely rétegezett piskótából, csokoládékrémből és sárgabaracklekvárból áll, csokoládémázzal a tetején?",
+            "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "324",
+            "question": "Ki volt az a magyar-amerikai színésznő, aki szerepelt a 'Casablanca' című filmben?",
+            "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gabor"],
+            "correct_answer": 2
+        },
+        {
+            "id": "325",
+            "question": "Melyik magyar város híres a termálfürdőiről, köztük a Széchenyi és Gellért fürdőkről?",
+            "options": ["Debrecen", "Szeged", "Miskolc", "Budapest"],
+            "correct_answer": 3
+        },
+        {
+            "id": "326",
+            "question": "Ki volt az a magyar feltaláló, aki a golyóstoll feltalálásáról ismert?",
+            "options": ["Bíró László", "Albert Szent-Györgyi", "Ignác Semmelweis", "Ernő Rubik"],
+            "correct_answer": 0
+        },
+        {
+            "id": "327",
+            "question": "Melyik magyar város ismert a 'fesztiválok városa' néven?",
+            "options": ["Eger", "Pécs", "Szeged", "Szentendre"],
+            "correct_answer": 1
+        },
+        {
+            "id": "328",
+            "question": "Mi a neve annak a magyar néptáncnak, amely élénk zenével és gyors ütemű mozgásokkal jellemezhető?",
+            "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+            "correct_answer": 0
+        },
+        {
+            "id": "329",
+            "question": "Ki volt az a magyar-amerikai illuzionista, aki szabadulási mutatványairól és kaszkadőrmutatványairól ismert?",
+            "options": ["Harry Houdini", "David Copperfield", "Criss Angel", "Dynamo"],
+            "correct_answer": 0
+        },
+        {
+            "id": "330",
+            "question": "Mi a neve annak a magyar desszertnek, amely rétegezett piskótából, csokoládékrémből és sárgabaracklekvárból áll, csokoládémázzal a tetején?",
+            "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "331",
+            "question": "Ki volt az a magyar-amerikai színésznő, aki szerepelt a 'Dracula' című filmben vámpír grófnőként?",
+            "options": ["Ingrid Bergman", "Bela Lugosi", "Lily Elsie", "Vivien Leigh"],
+            "correct_answer": 1
+        },
+        {
+            "id": "332",
+            "question": "Mi a neve annak a magyar néptáncnak, amely lassú, méltóságteljes ütemű?",
+            "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+            "correct_answer": 3
+        },
+        {
+            "id": "333",
+            "question": "Ki volt az a magyar zeneszerző, aki a 'Kékszakállú herceg vára' művéről ismert?",
+            "options": ["Liszt Ferenc", "Béla Bartók", "Zoltán Kodály", "Erkel Ferenc"],
+            "correct_answer": 1
+        },
+        {
+            "id": "334",
+            "question": "Mi a neve annak a magyar desszertnek, amely édes kenyértésztából készül, spirális alakúra csavarják, majd megsütik és cukorral vagy más feltétekkel bevonják?",
+            "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+            "correct_answer": 0
+        },
+        {
+            "id": "335",
+            "question": "Ki volt az a magyar-amerikai építész, aki a New York-i Guggenheim Múzeum tervezésében dolgozott?",
+            "options": ["Frank Lloyd Wright", "Ludwig Mies van der Rohe", "Le Corbusier", "I. M. Pei"],
+            "correct_answer": 0
+        },
+        {
+            "id": "336",
+            "question": "Mi a neve annak a magyar desszertnek, amely rétegezett piskótából, csokoládékrémből és sárgabaracklekvárból áll, csokoládémázzal a tetején?",
+            "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "337",
+            "question": "Ki volt az a magyar-amerikai színésznő, aki szerepelt a 'Casablanca' című filmben?",
+            "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gabor"],
+            "correct_answer": 2
+        },
+        {
+            "id": "338",
+            "question": "Melyik magyar város híres a termálfürdőiről, köztük a Széchenyi és Gellért fürdőkről?",
+            "options": ["Debrecen", "Szeged", "Miskolc", "Budapest"],
+            "correct_answer": 3
+        },
+        {
+            "id": "339",
+            "question": "Ki volt az a magyar feltaláló, aki a golyóstoll feltalálásáról ismert?",
+            "options": ["Bíró László", "Albert Szent-Györgyi", "Ignác Semmelweis", "Ernő Rubik"],
+            "correct_answer": 0
+        },
+        {
+            "id": "340",
+            "question": "Melyik magyar város ismert a 'fesztiválok városa' néven?",
+            "options": ["Eger", "Pécs", "Szeged", "Szentendre"],
+            "correct_answer": 1
+        },
+        {
+            "id": "341",
+            "question": "Mi a neve annak a magyar néptáncnak, amely élénk zenével és gyors ütemű mozgásokkal jellemezhető?",
+            "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+            "correct_answer": 0
+        },
+        {
+            "id": "342",
+            "question": "Ki volt az a magyar-amerikai illuzionista, aki szabadulási mutatványairól és kaszkadőrmutatványairól ismert?",
+            "options": ["Harry Houdini", "David Copperfield", "Criss Angel", "Dynamo"],
+            "correct_answer": 0
+        },
+        {
+            "id": "343",
+            "question": "Mi a neve annak a magyar desszertnek, amely rétegezett piskótából, csokoládékrémből és sárgabaracklekvárból áll, csokoládémázzal a tetején?",
+            "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "344",
+            "question": "Ki volt az a magyar-amerikai színésznő, aki szerepelt a 'Dracula' című filmben vámpír grófnőként?",
+            "options": ["Ingrid Bergman", "Bela Lugosi", "Lily Elsie", "Vivien Leigh"],
+            "correct_answer": 1
+        },
+        {
+            "id": "345",
+            "question": "Mi a neve annak a magyar néptáncnak, amely lassú, méltóságteljes ütemű?",
+            "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+            "correct_answer": 3
+        },
+        {
+            "id": "346",
+            "question": "Ki volt az a magyar zeneszerző, aki a 'Kékszakállú herceg vára' művéről ismert?",
+            "options": ["Liszt Ferenc", "Béla Bartók", "Zoltán Kodály", "Erkel Ferenc"],
+            "correct_answer": 1
+        },
+        {
+            "id": "347",
+            "question": "Mi a neve annak a magyar desszertnek, amely édes kenyértésztából készül, spirális alakúra csavarják, majd megsütik és cukorral vagy más feltétekkel bevonják?",
+            "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+            "correct_answer": 0
+        },
+        {
+            "id": "348",
+            "question": "Ki volt az a magyar-amerikai építész, aki a New York-i Guggenheim Múzeum tervezésében dolgozott?",
+            "options": ["Frank Lloyd Wright", "Ludwig Mies van der Rohe", "Le Corbusier", "I. M. Pei"],
+            "correct_answer": 0
+        },
+        {
+            "id": "349",
+            "question": "Mi a neve annak a magyar ételnek, amely rétegezett piskótából, csokoládékrémből és sárgabaracklekvárból áll, csokoládémázzal a tetején?",
+            "options": ["Dobos torta", "Esterházy torta", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "350",
+            "question": "Ki volt az a magyar-amerikai színésznő, aki szerepelt a 'Casablanca' című filmben?",
+            "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gabor"],
+            "correct_answer": 2
+        }
+    ]
+  },
+  "ro": {
+    "questions": [
+        {
+            "id": "301",
+            "question": "Care este numele maghiar pentru clădirea parlamentului situată în Budapesta?",
+            "options": ["Országház", "Várkert Bazár", "Halászbástya", "Biserica Matthias"],
+            "correct_answer": 0
+        },
+        {
+            "id": "302",
+            "question": "Cine a fost actorul maghiar-american cunoscut pentru rolul său în 'The Good, the Bad and the Ugly'?",
+            "options": ["Charles Bronson", "Clint Eastwood", "Lee Van Cleef", "Eli Wallach"],
+            "correct_answer": 2
+        },
+        {
+            "id": "303",
+            "question": "Care oraș maghiar este renumit pentru arhitectura sa în stil baroc și pentru producția de vin?",
+            "options": ["Eger", "Pécs", "Debrecen", "Szeged"],
+            "correct_answer": 0
+        },
+        {
+            "id": "304",
+            "question": "Cine a fost compozitorul maghiar cunoscut pentru 'Rapsodiile ungurești'?",
+            "options": ["Zoltán Kodály", "Béla Bartók", "Franz Liszt", "Ferenc Erkel"],
+            "correct_answer": 2
+        },
+        {
+            "id": "305",
+            "question": "Care este numele prăjiturii maghiare făcute cu un strat de nuci sau semințe de mac între două straturi de aluat?",
+            "options": ["Bejgli", "Tort Esterházy", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "306",
+            "question": "Cine a fost actrița maghiar-americană cunoscută pentru rolul său în 'A Streetcar Named Desire'?",
+            "options": ["Vivien Leigh", "Greta Garbo", "Ingrid Bergman", "Lily Elsie"],
+            "correct_answer": 0
+        },
+        {
+            "id": "307",
+            "question": "Care râu împarte Budapesta în două părți?",
+            "options": ["Dunărea", "Tisa", "Drava", "Sava"],
+            "correct_answer": 0
+        },
+        {
+            "id": "308",
+            "question": "Care este numele tocăniței maghiare făcute cu varză acră și carne de porc?",
+            "options": ["Pörkölt", "Halászlé", "Lecsó", "Székelygulyás"],
+            "correct_answer": 3
+        },
+        {
+            "id": "309",
+            "question": "Cine a fost matematicianul maghiar cunoscut pentru contribuțiile sale la teoria jocurilor și la teoria calcului distribuit?",
+            "options": ["Alfréd Rényi", "Paul Erdős", "John von Neumann", "László Lovász"],
+            "correct_answer": 2
+        },
+        {
+            "id": "310",
+            "question": "Care este numele prăjiturii maghiare făcute din straturi de blat de pandișpan, cremă de ciocolată și gem de caise, acoperite cu glazură de ciocolată?",
+            "options": ["Tort Dobos", "Tort Esterházy", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "311",
+            "question": "Cine a fost actrița maghiar-americană cunoscută pentru rolul său în 'Casablanca'?",
+            "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gabor"],
+            "correct_answer": 2
+        },
+        {
+            "id": "312",
+            "question": "Care oraș maghiar este cunoscut pentru băile sale termale renumite, inclusiv Széchenyi și Gellért?",
+            "options": ["Debrecen", "Szeged", "Miskolc", "Budapesta"],
+            "correct_answer": 3
+        },
+        {
+            "id": "313",
+            "question": "Cine a fost inventatorul maghiar cunoscut pentru invenția pixului?",
+            "options": ["László Bíró", "Albert Szent-Györgyi", "Ignác Semmelweis", "Ernő Rubik"],
+            "correct_answer": 0
+        },
+        {
+            "id": "314",
+            "question": "Care oraș maghiar este cunoscut sub numele de 'Orașul Festivalurilor'?",
+            "options": ["Eger", "Pécs", "Szeged", "Szentendre"],
+            "correct_answer": 1
+        },
+        {
+            "id": "315",
+            "question": "Care este numele dansului popular maghiar caracterizat de muzică vioaie și mișcări rapide?",
+            "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+            "correct_answer": 0
+        },
+        {
+            "id": "316",
+            "question": "Cine a fost iluzionistul maghiar-american cunoscut pentru actele sale de evadare și cascadorii?",
+            "options": ["Harry Houdini", "David Copperfield", "Criss Angel", "Dynamo"],
+            "correct_answer": 0
+        },
+        {
+            "id": "317",
+            "question": "Care este numele prăjiturii maghiare făcute din straturi de blat de pandișpan, cremă de ciocolată și gem de caise, acoperite cu glazură de ciocolată?",
+            "options": ["Tort Dobos", "Tort Esterházy", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "318",
+            "question": "Cine a fost actrița maghiar-americană cunoscută pentru rolul său ca contesă vampiră în 'Dracula'?",
+            "options": ["Ingrid Bergman", "Bela Lugosi", "Lily Elsie", "Vivien Leigh"],
+            "correct_answer": 1
+        },
+        {
+            "id": "319",
+            "question": "Care este numele dansului popular maghiar caracterizat de un ritm lent și solemn?",
+            "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+            "correct_answer": 3
+        },
+        {
+            "id": "320",
+            "question": "Cine a fost compozitorul maghiar cunoscut pentru opera sa 'Castelul lui Barba Albastră'?",
+            "options": ["Franz Liszt", "Béla Bartók", "Zoltán Kodály", "Ferenc Erkel"],
+            "correct_answer": 1
+        },
+        {
+            "id": "321",
+            "question": "Care este numele prăjiturii maghiare făcute dintr-un aluat de pâine dulce în forma unei spirale, apoi prăjită și acoperită cu zahăr sau alte toppinguri?",
+            "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+            "correct_answer": 0
+        },
+        {
+            "id": "322",
+            "question": "Cine a fost arhitectul maghiar-american cunoscut pentru lucrările sale la Muzeul Guggenheim din New York?",
+            "options": ["Frank Lloyd Wright", "Ludwig Mies van der Rohe", "Le Corbusier", "I. M. Pei"],
+            "correct_answer": 0
+        },
+        {
+            "id": "323",
+            "question": "Care este numele prăjiturii maghiare făcute din straturi de blat de pandișpan, cremă de ciocolată și gem de caise, acoperite cu glazură de ciocolată?",
+            "options": ["Tort Dobos", "Tort Esterházy", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "324",
+            "question": "Cine a fost actrița maghiar-americană cunoscută pentru rolul său în 'Casablanca'?",
+            "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gabor"],
+            "correct_answer": 2
+        },
+        {
+            "id": "325",
+            "question": "Care oraș maghiar este cunoscut pentru băile sale termale renumite, inclusiv Széchenyi și Gellért?",
+            "options": ["Debrecen", "Szeged", "Miskolc", "Budapesta"],
+            "correct_answer": 3
+        },
+        {
+            "id": "326",
+            "question": "Cine a fost inventatorul maghiar cunoscut pentru invenția pixului?",
+            "options": ["László Bíró", "Albert Szent-Györgyi", "Ignác Semmelweis", "Ernő Rubik"],
+            "correct_answer": 0
+        },
+        {
+            "id": "327",
+            "question": "Care oraș maghiar este cunoscut sub numele de 'Orașul Festivalurilor'?",
+            "options": ["Eger", "Pécs", "Szeged", "Szentendre"],
+            "correct_answer": 1
+        },
+        {
+            "id": "328",
+            "question": "Care este numele dansului popular maghiar caracterizat de muzică vioaie și mișcări rapide?",
+            "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+            "correct_answer": 0
+        },
+        {
+            "id": "329",
+            "question": "Cine a fost iluzionistul maghiar-american cunoscut pentru actele sale de evadare și cascadorii?",
+            "options": ["Harry Houdini", "David Copperfield", "Criss Angel", "Dynamo"],
+            "correct_answer": 0
+        },
+        {
+            "id": "330",
+            "question": "Care este numele prăjiturii maghiare făcute din straturi de blat de pandișpan, cremă de ciocolată și gem de caise, acoperite cu glazură de ciocolată?",
+            "options": ["Tort Dobos", "Tort Esterházy", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "331",
+            "question": "Cine a fost actrița maghiar-americană cunoscută pentru rolul său ca contesă vampiră în 'Dracula'?",
+            "options": ["Ingrid Bergman", "Bela Lugosi", "Lily Elsie", "Vivien Leigh"],
+            "correct_answer": 1
+        },
+        {
+            "id": "332",
+            "question": "Care este numele dansului popular maghiar caracterizat de un ritm lent și solemn?",
+            "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+            "correct_answer": 3
+        },
+        {
+            "id": "333",
+            "question": "Cine a fost compozitorul maghiar cunoscut pentru opera sa 'Castelul lui Barba Albastră'?",
+            "options": ["Franz Liszt", "Béla Bartók", "Zoltán Kodály", "Ferenc Erkel"],
+            "correct_answer": 1
+        },
+        {
+            "id": "334",
+            "question": "Care este numele prăjiturii maghiare făcute dintr-un aluat de pâine dulce în forma unei spirale, apoi prăjită și acoperită cu zahăr sau alte toppinguri?",
+            "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+            "correct_answer": 0
+        },
+        {
+            "id": "335",
+            "question": "Cine a fost arhitectul maghiar-american cunoscut pentru lucrările sale la Muzeul Guggenheim din New York?",
+            "options": ["Frank Lloyd Wright", "Ludwig Mies van der Rohe", "Le Corbusier", "I. M. Pei"],
+            "correct_answer": 0
+        },
+        {
+            "id": "336",
+            "question": "Care este numele prăjiturii maghiare făcute din straturi de blat de pandișpan, cremă de ciocolată și gem de caise, acoperite cu glazură de ciocolată?",
+            "options": ["Tort Dobos", "Tort Esterházy", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "337",
+            "question": "Cine a fost actrița maghiar-americană cunoscută pentru rolul său în 'Casablanca'?",
+            "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gabor"],
+            "correct_answer": 2
+        },
+        {
+            "id": "338",
+            "question": "Care oraș maghiar este cunoscut pentru băile sale termale renumite, inclusiv Széchenyi și Gellért?",
+            "options": ["Debrecen", "Szeged", "Miskolc", "Budapesta"],
+            "correct_answer": 3
+        },
+        {
+            "id": "339",
+            "question": "Cine a fost inventatorul maghiar cunoscut pentru invenția pixului?",
+            "options": ["László Bíró", "Albert Szent-Györgyi", "Ignác Semmelweis", "Ernő Rubik"],
+            "correct_answer": 0
+        },
+        {
+            "id": "340",
+            "question": "Care oraș maghiar este cunoscut sub numele de 'Orașul Festivalurilor'?",
+            "options": ["Eger", "Pécs", "Szeged", "Szentendre"],
+            "correct_answer": 1
+        },
+        {
+            "id": "341",
+            "question": "Care este numele dansului popular maghiar caracterizat de muzică vioaie și mișcări rapide?",
+            "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+            "correct_answer": 0
+        },
+        {
+            "id": "342",
+            "question": "Cine a fost iluzionistul maghiar-american cunoscut pentru actele sale de evadare și cascadorii?",
+            "options": ["Harry Houdini", "David Copperfield", "Criss Angel", "Dynamo"],
+            "correct_answer": 0
+        },
+        {
+            "id": "343",
+            "question": "Care este numele prăjiturii maghiare făcute din straturi de blat de pandișpan, cremă de ciocolată și gem de caise, acoperite cu glazură de ciocolată?",
+            "options": ["Tort Dobos", "Tort Esterházy", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+            "id": "344",
+            "question": "Cine a fost actrița maghiar-americană cunoscută pentru rolul său ca contesă vampiră în 'Dracula'?",
+            "options": ["Ingrid Bergman", "Bela Lugosi", "Lily Elsie", "Vivien Leigh"],
+            "correct_answer": 1
+        },
+        {
+            "id": "345",
+            "question": "Care este numele dansului popular maghiar caracterizat de un ritm lent și solemn?",
+            "options": ["Csárdás", "Verbunkos", "Lakodalmas", "Lassú magyar"],
+            "correct_answer": 3
+        },
+        {
+            "id": "346",
+            "question": "Cine a fost compozitorul maghiar cunoscut pentru opera sa 'Castelul lui Barba Albastră'?",
+            "options": ["Franz Liszt", "Béla Bartók", "Zoltán Kodály", "Ferenc Erkel"],
+            "correct_answer": 1
+        },
+        {
+            "id": "347",
+            "question": "Care este numele prăjiturii maghiare făcute dintr-un aluat de pâine dulce în forma unei spirale, apoi prăjită și acoperită cu zahăr sau alte toppinguri?",
+            "options": ["Kürtőskalács", "Pogácsa", "Rétes", "Bejgli"],
+            "correct_answer": 0
+        },
+        {
+            "id": "348",
+            "question": "Cine a fost arhitectul maghiar-american cunoscut pentru lucrările sale la Muzeul Guggenheim din New York?",
+            "options": ["Frank Lloyd Wright", "Ludwig Mies van der Rohe", "Le Corbusier", "I. M. Pei"],
+            "correct_answer": 0
+        },
+        {
+            "id": "349",
+            "question": "Care este numele prăjiturii maghiare făcute din straturi de blat de pandișpan, cremă de ciocolată și gem de caise, acoperite cu glazură de ciocolată?",
+            "options": ["Tort Dobos", "Tort Esterházy", "Rigó Jancsi", "Somlói galuska"],
+            "correct_answer": 0
+        },
+        {
+          "id": "350",
+          "question": "Cine a fost actrița maghiar-americană cunoscută pentru rolul său din 'Casablanca'?",
+          "options": ["Marlene Dietrich", "Greta Garbo", "Ingrid Bergman", "Zsa Zsa Gabor"],
+          "correct_answer": 2
+        }
+      ]
+    }
+}
   
