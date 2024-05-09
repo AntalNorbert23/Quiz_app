@@ -20,25 +20,30 @@
                 <button @click="showDropdown = !showDropdown" class="p-2 focus:outline-none">
                     <i class="fa fa-language"></i>
                 </button>
-                <div v-if="showDropdown" class="absolute right-0 mt-2 bg-white shadow-lg rounded z-10">
-                    <ul>
-                        <li class="py-1">
-                            <button @click="changeLanguage('en')" class="block px-4 py-2 hover:bg-gray-200">
-                                <i class="fi fi-us"></i>
-                            </button>
-                        </li>
-                        <li class="py-1">
-                            <button @click="changeLanguage('hu')" class="block px-4 py-2 hover:bg-gray-200">
-                                <i class="fi fi-hu"></i>
-                            </button>
-                        </li>
-                        <li class="py-1">
-                            <button @click="changeLanguage('ro')" class="block px-4 py-2 hover:bg-gray-200">
-                                <i class="fi fi-ro"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+                <transition
+                            enter-active-class="animate__animated animate__zoomIn"
+                            leave-active-class="animate__animated animate__zoomOut"
+                >
+                    <div v-if="showDropdown" class="absolute right-0 mt-2 bg-white shadow-lg rounded z-10">
+                        <ul>
+                            <li class="py-1">
+                                <button @click="changeLanguage('en')" class="block px-4 py-2 hover:bg-gray-200">
+                                    <i class="fi fi-us"></i>
+                                </button>
+                            </li>
+                            <li class="py-1">
+                                <button @click="changeLanguage('hu')" class="block px-4 py-2 hover:bg-gray-200">
+                                    <i class="fi fi-hu"></i>
+                                </button>
+                            </li>
+                            <li class="py-1">
+                                <button @click="changeLanguage('ro')" class="block px-4 py-2 hover:bg-gray-200">
+                                    <i class="fi fi-ro"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </transition>
             </div>
         </div>
         <div id="logincontainer" class="relative flex flex-col justify-between h-[350px] w-[275px] md:w-[400px] border-2 border-black rounded-lg"> 

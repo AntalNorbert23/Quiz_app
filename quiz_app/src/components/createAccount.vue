@@ -19,25 +19,30 @@
                 <button @click="showDropdown = !showDropdown" class="p-2 focus:outline-none">
                     <i class="fa fa-language"></i>
                 </button>
-                <div v-if="showDropdown" class="absolute right-0 mt-2 bg-white shadow-lg rounded z-10">
-                    <ul>
-                        <li class="py-1">
-                            <button @click="changeLanguage('en')" class="block px-4 py-2 hover:bg-gray-200">
-                                <i class="fi fi-us"></i>
-                            </button>
-                        </li>
-                        <li class="py-1">
-                            <button @click="changeLanguage('hu')" class="block px-4 py-2 hover:bg-gray-200">
-                                <i class="fi fi-hu"></i>
-                            </button>
-                        </li>
-                        <li class="py-1">
-                            <button @click="changeLanguage('ro')" class="block px-4 py-2 hover:bg-gray-200">
-                                <i class="fi fi-ro"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+                <transition
+                            enter-active-class="animate__animated animate__zoomIn"
+                            leave-active-class="animate__animated animate__zoomOut"
+                >
+                    <div v-if="showDropdown" class="absolute right-0 mt-2 bg-white shadow-lg rounded z-10">
+                        <ul>
+                            <li class="py-1">
+                                <button @click="changeLanguage('en')" class="block px-4 py-2 hover:bg-gray-200">
+                                    <i class="fi fi-us"></i>
+                                </button>
+                            </li>
+                            <li class="py-1">
+                                <button @click="changeLanguage('hu')" class="block px-4 py-2 hover:bg-gray-200">
+                                    <i class="fi fi-hu"></i>
+                                </button>
+                            </li>
+                            <li class="py-1">
+                                <button @click="changeLanguage('ro')" class="block px-4 py-2 hover:bg-gray-200">
+                                    <i class="fi fi-ro"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </transition>
             </div>
         </div>
     <div id="logincontainer" class="flex flex-col justify-between h-[400px] w-[275px] md:w-[400px] border-2 border-black rounded-lg"> 
@@ -71,7 +76,11 @@
                id="verifyPassword"
                @keydown.enter="createAccount"
         >
-
+        <router-link to="/" 
+                         class="px-2 md:px-5 text-blue-400 text-sm text-center mt-4 mb-2"
+            >
+               {{ localeStore.translate("alreadyhaveacc") }}
+            </router-link>
         <button class="loginbutton w-11/12 mx-3 md:mx-4 p-4 mb-6 mt-4 tracking-widest bg-blue-500 border-2 border-blue-500 hover:bg-white hover:text-blue-900"
                 @click="createAccount"
         >
